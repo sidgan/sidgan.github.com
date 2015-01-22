@@ -1,437 +1,586 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Jekyll Bootstrap</title>
- <link href="http://username.github.io/" rel="self"/>
- <link href="http://username.github.io"/>
- <updated>2015-01-22T23:46:19+05:30</updated>
- <id>http://username.github.io</id>
+ <title>Frob Yard</title>
+ <link href="http://sidgan.github.io/" rel="self"/>
+ <link href="http://sidgan.github.io"/>
+ <updated>2015-01-22T23:52:44+05:30</updated>
+ <id>http://sidgan.github.io</id>
  <author>
-   <name>Name Lastname</name>
-   <email>blah@email.test</email>
+   <name>Siddha Ganju</name>
+   <email>siddhaganju@gmail.com</email>
  </author>
 
  
  <entry>
-   <title>Jekyll Introduction</title>
-   <link href="http://username.github.io/lessons/2011/12/29/jekyll-introduction"/>
-   <updated>2011-12-29T00:00:00+05:30</updated>
-   <id>http://username.github.io/lessons/2011/12/29/jekyll-introduction</id>
+   <title>Creating and Revoking GPG keys</title>
+   <link href="http://sidgan.github.io/technical/2015/01/05/creating%20and%20revoking%20gpg%20keys"/>
+   <updated>2015-01-05T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/technical/2015/01/05/creating and revoking gpg keys</id>
    <content type="html">
-&lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
-Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
+&lt;h2 id=&quot;gpg-keys&quot;&gt;GPG Keys&lt;/h2&gt;
+&lt;p&gt;OpenGP standards define the semantics for secure information exchange. GPG is the software that follows OpenPG standards. GPG is an acronym for GNU Privacy Guard.&lt;/p&gt;
 
-&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Alice and Bob are the foo-bar, the spam-eggs of the world of computer security. Symmetric key cryptography takes place by two different methods. The first in which there are two keys, both same, and the second in which both keys are different. GPG helps in symmetric key cryptography. &lt;/p&gt;
 
-&lt;h3 id=&quot;what-is-jekyll&quot;&gt;What is Jekyll?&lt;/h3&gt;
+&lt;p&gt;Assuming Alice and Bob to be two people who want to communicate and send messages to each other. Both will possess their own private and public keys. The public keys are known to all, hence their name public keys. The private keys are known only to the user and under all circumustances must be kept secured. For communication, Alice will sign a message with Bob’s public key and send the complete packet to Bob. Now the only key that can decipher Alice’s message is Bob’s private key, which he possesses, so Bob will easily decipher it. &lt;/p&gt;
 
-&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
-dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.&lt;/p&gt;
+&lt;p&gt;For digitally signing messages, Alice will sign using her own private key and send the message, to check the authenticity of the user, the receiving party can use Alice’s public key to make sure that it is indeed her. &lt;/p&gt;
 
-&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
+&lt;h2 id=&quot;creating-keys&quot;&gt;Creating keys&lt;/h2&gt;
+&lt;p&gt;Ubuntu comes pre-installed with GPG, but it can be installed via the apt-get command as: &lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+sudo apt-get install gpg`
+&lt;/code&gt;
+&lt;/p&gt;
 
-&lt;p&gt;This website is created with Jekyll. &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Sites&quot;&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After the software is installed, generate the keys using: &lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+gpg --gen-key
+&lt;/code&gt;
+&lt;/p&gt;
 
-&lt;h3 id=&quot;what-does-jekyll-do&quot;&gt;What does Jekyll Do?&lt;/h3&gt;
+&lt;p&gt;Now a series of questions are presented on the terminal, the software is extremely interactive and easy to use. It asks for options regarding the number of bits for the keys, the real name, email-address and finally the passphrase. The passphrase is a security shied that is used to unlock the private key. Everytime the private key is needed, the terminal will prompt for the passphrase and only then can the private key be unlocked for use. &lt;/p&gt;
 
-&lt;p&gt;Jekyll is a ruby gem you install on your local system.
-Once there you can call &lt;code&gt;jekyll --server&lt;/code&gt; on a directory and provided that directory
-is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files,
-compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
+&lt;p&gt;After generating the key, export it and set its key-id as the default in the &lt;code&gt;.bashrc&lt;/code&gt; file. Now anytime you need to use the key, you do not need to input its key-id. &lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+export GPGKEY=XXXXXXXX
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+sudo emacs ~/.bashrc
+&lt;/code&gt;
+&lt;/p&gt;
 
-&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static &lt;code&gt;_site&lt;/code&gt; folder.
-The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
+&lt;h2 id=&quot;uploading-to-server&quot;&gt;Uploading to Server&lt;/h2&gt;
 
-&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags
-on each request, Jekyll does this once &lt;em&gt;beforehand&lt;/em&gt; and caches the &lt;em&gt;entire website&lt;/em&gt; in a folder for serving statically.&lt;/p&gt;
+&lt;p&gt;Communication is possible when the public keys can be found and used by other developers. To facilitate this public keys are uploaded to the keyserver. MIT provides a keyserver amongst many others.&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+gpg --output mykey.asc --export -a $GPGKEY
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+gpg --send-keys --keyserver keyserver.ubuntu.com XXXXXXXX
+&lt;/code&gt;
+&lt;/p&gt;
 
-&lt;h3 id=&quot;jekyll-is-not-blogging-software&quot;&gt;Jekyll is Not Blogging Software&lt;/h3&gt;
+&lt;h2 id=&quot;revoking-keys&quot;&gt;Revoking keys&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Jekyll is a parsing engine.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Several conditions may occur which lead to the requirement of a new secret key. These include the key getting compromised, the private key becoming known to another party, the passphrase becoming known to another party or the user forgetting the passphrase.&lt;/p&gt;
 
-&lt;p&gt;Jekyll does not come with any content nor does it have any templates or design elements.
-This is a common source of confusion when getting started.
-Jekyll does not come with anything you actually use or see on your website - you have to make it.&lt;/p&gt;
+&lt;p&gt;In any condition, when the key or the passphrase gets compromised it is necessary to revoke the key. This is so that no one uses the compromised key to send messages because now these can be deciphered by the intruder party. &lt;/p&gt;
 
-&lt;h3 id=&quot;why-should-i-care&quot;&gt;Why Should I Care?&lt;/h3&gt;
+&lt;p&gt;After revoking it is preferred that the new key is signed by another developer. The revocation certificate must be kept safe, if an intruder gets hold of this revocation certificate, they may revoke all the keys of that developer. &lt;/p&gt;
 
-&lt;p&gt;Jekyll is very minimalistic and very efficient.
-The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server.
-Traditional dynamic blogs like Wordpress require a database and server-side code.
-Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+gpg --output revoke.asc --gen-revoke $GPGKEY
+&lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Who Said it?</title>
+   <link href="http://sidgan.github.io/technical/2015/01/01/who-said-it"/>
+   <updated>2015-01-01T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/technical/2015/01/01/who-said-it</id>
+   <content type="html">
+&lt;p&gt;“I love reading Jeffery Archer.” It is possible to guess which of your friends said it. The computer can also guess who! In a group of people, who is more likely to have said something can be predicted if the computer has heard them talk before. The computer can analyze their thought process while interacting with them and, in due course of time, predict the most probable speaker, given a statement. &lt;/p&gt;
 
-&lt;p&gt;Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.&lt;/p&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Developers like Jekyll because we can write content like we write code:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;‘Who Said It?’ aims at mirroring the analytical power of the human brain. Just as the human brain can process a given amount of data to deduce something, we can train our computer to analyse a training data set, learn from it, and answer from what it has learnt when queried upon.&lt;/p&gt;
 
+&lt;p&gt;A dataset comprising of statements made by three Indian politicians, Narendra Modi, Arvind Kejriwal and Rahul Gandhi is analysed by the computer. When a statement is given to it, it will use this analysis to name the politician who is most likely to have said it.&lt;/p&gt;
+
+&lt;h2 id=&quot;training-dataset&quot;&gt;Training Dataset&lt;/h2&gt;
+
+&lt;p&gt;The training dataset is a collection of statements that is stored in csv (comma separated values) format. An approximately equal number of statements made by the three politicians Arvind Kejriwal from Aam Aadmi Party, Rahul Gandhi from Congress and Narendra Modi from BJP are present in the dataset. These statements are derived from their speeches obtained from various sources on the Internet. &lt;/p&gt;
+
+&lt;h3 id=&quot;removing-redundant-data&quot;&gt;Removing redundant data&lt;/h3&gt;
+
+&lt;p&gt;To create the feature vector we need to get rid of redundant data. These include additional white spaces and neutral words that do not contribute towards identification of the speaker. We call the latter &lt;a href=&quot;https://github.com/sidgan/Who-Said-It-/stopwords.txt&quot;&gt;stop words&lt;/a&gt; (e.g. a, and, party, the, election etc.) &lt;/p&gt;
+
+&lt;h3 id=&quot;creating-the-feature-vector&quot;&gt;Creating the feature vector&lt;/h3&gt;
+
+&lt;p&gt;The statements in the training dataset are processed word by word producing a string of important words binary values which is later used for prediction of the model. The feature vector is also devoid of redundant data such as repeats, punctuation, numerical values and stop words. Hence, these are ignored while prediction.&lt;/p&gt;
+
+&lt;h3 id=&quot;extracting-features&quot;&gt;Extracting Features&lt;/h3&gt;
+
+&lt;p&gt;Now from the feature vector generated, binary values indicating confidence value of that feature is appended to each feature. &lt;/p&gt;
+
+&lt;h3 id=&quot;working&quot;&gt;Working&lt;/h3&gt;
+
+&lt;p&gt;The model is based on extracting the feature vector of the problem statement and comparing it against the training dataset using a classifier. &lt;/p&gt;
+
+&lt;h3 id=&quot;extracting-features-of-problem-statement&quot;&gt;Extracting features of problem statement&lt;/h3&gt;
+
+&lt;p&gt;The data redundancy is removed just like it is done for the training dataset.  A feature vector is created and extraction is performed. &lt;/p&gt;
+
+&lt;h3 id=&quot;classification-of-the-problem-statement&quot;&gt;Classification of the problem statement&lt;/h3&gt;
+
+&lt;p&gt;The problem statement is classified using the Naive Bayes classifier on the extracted feature vector. Thus, the machine is able to predict the most probable speaker of the problem statement. &lt;/p&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;The machine was successfully able to predict known statements of the speakers. To improve the prediction more precise classifiers can be utilized. &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>I'm at ShanghAI!!</title>
+   <link href="http://sidgan.github.io/technical/2014/12/30/shanghai"/>
+   <updated>2014-12-30T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/technical/2014/12/30/shanghai</id>
+   <content type="html">
+&lt;p&gt;These are my beginner steps in robotics. I have always been fascinated by robotics, and given my interest in artificial intelligence, this area has always been a region of wanderlust for me. However, my interest in robotics was limited to being dazed by the advancements in its field, reading about various types of bots and shaking hands with them. I have never built one, but now, after attending classes in the Global Virtual Lecture Hall of &lt;a href=&quot;http://shanghailectures.org/&quot;&gt;ShanghAI&lt;/a&gt;, I definately am capable enough to give it a try. ShanghAI has helped me to delve deeper into exactly how they work, it turns out that they are much more complicated than just a simple input-output scheme. &lt;/p&gt;
+
+&lt;p&gt;The first intersection between artificial intelligence and robotics was the Sheky robot that I had read about in the book &lt;a href=&quot;http://www.amazon.in/Artificial-Intelligence-Elaine-Rich/dp/0070522634&quot;&gt;Artificial Intelligence, by Elaine Rich and Kevin Knight&lt;/a&gt;. This is a great book. If anyone is interested in Artificial Intelligence, this book is a must read. It provides in-depth information and tactical ideas that help in understanding elegantly how the machine brain works. Another robot is the dock worker robot that helped me understand knowledge representation and automated planning in artificial intelligence. &lt;/p&gt;
+
+&lt;h2 id=&quot;assignment&quot;&gt;Assignment&lt;/h2&gt;
+
+&lt;p&gt;As a part of the ShanghAI lectures, we were assigned into groups, called &lt;a href=&quot;http://en.wikipedia.org/wiki/K%C5%8Dan&quot;&gt;Koan&lt;/a&gt; based on our choice of robots and assignments. The word Koan means to invoke greater doubt. I was in the first Koan. I tried to make my own robots and this was possible using Webbots. &lt;/p&gt;
+
+&lt;p&gt;The assignment problem was to deal with Swiss Robots and their adaptive morphology and understand how they interact with one another. &lt;/p&gt;
+
+&lt;p&gt;Swiss Robots foremost are dependent on sensor morphology for performing a complex collective behavior (collecting boxes in piles) with extremely simple controllers and no explicit inter-robot communication. We were free to adapt the sensor morphology using the robot’s controller, e.g. changing the pitch/yaw of the proximity sensors. We also had to prepare a hypothesis taking into account the condition of introduction of a slope.&lt;/p&gt;
+
+&lt;h3 id=&quot;swiss-robots&quot;&gt;Swiss Robots&lt;/h3&gt;
+
+&lt;p&gt;Swiss Robots are simple robots that demonstrate the sophisticated collective behaviour of heap formation through a technique called ‘strategy of errors’. The robots cannot differentiate amongst obstacles, objects and walls, so, react to each in the same way. During its movement it tries to avoid contact with them. However, if any one stands in the way and the robot is unable to detect it, then the object and robot will face a collision and the robot will push the item. If it is an object, pushing will ultimately lead to heap formation whereas no effect is seen on the wall or obstacle. The behaviour of Swiss robots is achieved using Didabots. &lt;/p&gt;
+
+&lt;p&gt;The behaviour of the Swiss Robots is achieved through &lt;a href=&quot;https://github.com/sidgan/SwissRobots&quot;&gt;this&lt;/a&gt; code snippet on GitHub which is provided by ShanghAI. &lt;/p&gt;
+
+&lt;h2 id=&quot;initial-solution&quot;&gt;Initial Solution&lt;/h2&gt;
+
+&lt;h3 id=&quot;ideas&quot;&gt;Ideas&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Ability to write content in markdown or textile in your favorite text-editor.&lt;/li&gt;
-  &lt;li&gt;Ability to write and preview your content via localhost.&lt;/li&gt;
-  &lt;li&gt;No internet connection required.&lt;/li&gt;
-  &lt;li&gt;Ability to publish via git.&lt;/li&gt;
-  &lt;li&gt;Ability to host your blog on a static web-server.&lt;/li&gt;
-  &lt;li&gt;Ability to host freely on GitHub Pages.&lt;/li&gt;
-  &lt;li&gt;No database required.&lt;/li&gt;
+&lt;li&gt;
+Use machine learning to calculate the optimum numerical values of all parameters viz. pitch, yaw. 
+&lt;/li&gt;
+&lt;li&gt;
+Adaptive boosting, Grid Search CV for finding the best values of the parameters and their appropriate weightage.
+&lt;/li&gt;
+&lt;li&gt;
+Find and mark cubes and use neural network to inform other robots to collect cubes. The robots should tell other robots if cubes have been collected or have already been marked.
+&lt;/li&gt;
+&lt;li&gt;
+Use the GPS node to model a Global Positioning Sensor (GPS) which can obtain information about its absolute position from the controller program. 
+&lt;/li&gt;
+&lt;li&gt;
+Use a Supervisor controller that reads and transmits the position information to the robot. Then, keep track of several robots simultaneously. 
+&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;how-jekyll-works&quot;&gt;How Jekyll Works&lt;/h1&gt;
+&lt;h3 id=&quot;plans&quot;&gt;Plans&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Change morphology of sensors and robots by adding distance sensors, collision sensors and GPS. 
+&lt;/li&gt;
+&lt;li&gt;
+Use simple rotational joints to control from controller (Hinge Joint).
+&lt;/li&gt;
+&lt;li&gt;
+Change the type of the field.
+&lt;/li&gt;
+&lt;li&gt;
+Make a neural network for robots controlling.
+&lt;/li&gt;
+&lt;li&gt;
+Realize the Swiss robots behavior on a real robot.
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Spider</title>
+   <link href="http://sidgan.github.io/technical/2014/12/29/spider"/>
+   <updated>2014-12-29T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/technical/2014/12/29/spider</id>
+   <content type="html">
+&lt;h2 id=&quot;spider-or-ant&quot;&gt;Spider or Ant&lt;/h2&gt;
 
-&lt;p&gt;The following is a complete but concise outline of exactly how Jekyll works.&lt;/p&gt;
+&lt;p&gt;According to the philosophies of computer science a spider is the same as a ant. Yes! that, in fact is true because this almost jargon is talking about web crawling or web scuttering which is further used for automatic indexing and web scraping. I used the spider algorithm to get data from a few sites. The first hack was using lynx and &lt;a href=&quot;http://www.crummy.com/software/BeautifulSoup/bs4/doc/&quot;&gt;Beautiful Soup&lt;/a&gt; and, later, a better and elegant solution using Python’s urlparse and urllib instead of lynx. Beautiful Soup is indeed beautiful, as beautiful as the morning Sun shining on the dew covered grass. Excuse the poetess in me! So, coming back, I have used Beautiful Soup extensively till now and it makes getting data into an accessible format much, much easier. I cannot imagine a more elegant way to get and process data. Through this project I learnt the intricacies that the Google Search Bot must have done through and solved using their googliness. Also the research paper &lt;a href=&quot;http://infolab.stanford.edu/~backrub/google.html&quot;&gt;‘The Anatomy of a Large-Scale Hypertextual Web Search Engine’&lt;/a&gt; by Sergey Brin and Lawrence Page is a good read. &lt;/p&gt;
 
-&lt;p&gt;Be aware that core concepts are introduced in rapid succession without code examples.
-This information is not intended to specifically teach you how to do anything, rather it
-is intended to give you the &lt;em&gt;full picture&lt;/em&gt; relative to what is going on in Jekyll-world.&lt;/p&gt;
+&lt;h2 id=&quot;spiders&quot;&gt;Spiders&lt;/h2&gt;
 
-&lt;p&gt;Learning these core concepts should help you avoid common frustrations and ultimately
-help you better understand the code examples contained throughout Jekyll-Bootstrap.&lt;/p&gt;
+&lt;p&gt;A spider algorithm or a web crawler is an internet bot that crawls a site for information usually in the form of text. A spider works by first going to the seminal link and then parsing the text on that web page to find more links that direct it to other web pages. These freshly found links are added to a stack or queue. All the links or urls in this stack or queue are traversed by the spider one by one.&lt;/p&gt;
 
-&lt;h2 id=&quot;initial-setup&quot;&gt;Initial Setup&lt;/h2&gt;
+&lt;p&gt;So, from the initial web page the spider lands to another web page and continues its journey forth, recursively. In this way it crawls throughout the web. This means that from one page the spider should be able to access all the pages that are present on the World Wide Web, but my spider does not do that because I have limited it to access only the links present on the initial web page.&lt;/p&gt;
 
-&lt;p&gt;After &lt;a href=&quot;/index.html#start-now&quot;&gt;installing jekyll&lt;/a&gt; you’ll need to format your website directory in a way jekyll expects.
-Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
+&lt;p&gt;Spiders are usually used for web indexing. Other uses are to update web content or indexes. Spiders have the ability to copy all the content of a web page (if the page permits). All this data will be processed by a search engine at a later stage for indexing so that searching and information retrieval is rendered faster and easier.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-jekyll-application-base-format&quot;&gt;The Jekyll Application Base Format&lt;/h3&gt;
+&lt;p&gt;In order to get data from a site I usually use one of the following four methods:&lt;/p&gt;
 
-&lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+curl command - Tool to transfer data from or to a server using http/https/ftp
+&lt;/li&gt;
+&lt;li&gt;
+lynx command - World Wide Web (WWW) client/browser for users running terminals.
+&lt;/li&gt;
+&lt;li&gt;
+wget command - Enables non-interactive download of files from the Web. It supports HTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.
+&lt;/li&gt;
+&lt;li&gt;
+w3m command - It is a text based Web browser and pager.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;.
-|-- _config.yml
-|-- _includes
-|-- _layouts
-|   |-- default.html
-|   |-- post.html
-|-- _posts
-|   |-- 2011-10-25-open-source-is-good.markdown
-|   |-- 2011-04-26-hello-world.markdown
-|-- _site
-|-- index.html
-|-- assets
-    |-- css
-        |-- style.css
-    |-- javascripts
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These are not the only way to get links or urls from a site. An easier and direct way is to use Python’s parsing libraries namely urlparse, urllib along with Beautiful Soup. Another alternate way is to use HTTP get and post requests.&lt;/p&gt;
+
+&lt;h3 id=&quot;privacy-policy&quot;&gt;Privacy Policy&lt;/h3&gt;
+
+&lt;p&gt;The file robots.txt provides permission to the crawler to get the data from the page. It is essential that scraping be done only for those web pages that allow it. In order to read this file we can employ robotparser of Python. Then if the permission is granted the spider will create a separate thread and go to this site to parse it.&lt;/p&gt;
+
+&lt;h3 id=&quot;tags&quot;&gt;Tags&lt;/h3&gt;
+
+&lt;p&gt;The biggest advantage of using Beautiful Soup is its soup objects. These soup objects are flexible enough to be used capriciously. I have used them by sorting according to tags. This enables me to differentiate between the various HTML tags which is very important because this entails the basis of all web pages. I have used ‘href’ tags to find the url of the next page that will be appended to the list of the urls. If instead I had used the ‘a’ tag, then the url would turn out to be only a page and no hyperlink would exist, so a better option was to use the ‘href’ tags. &lt;/p&gt;
+
+&lt;h3 id=&quot;implementation&quot;&gt;Implementation&lt;/h3&gt;
+
+&lt;p&gt;The implementation of the spider algorithm can be found on &lt;a href=&quot;https://github.com/sidgan/Spider&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Gender Identifier</title>
+   <link href="http://sidgan.github.io/technical/2014/12/10/gender-identifier"/>
+   <updated>2014-12-10T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/technical/2014/12/10/gender-identifier</id>
+   <content type="html">
+&lt;h2 id=&quot;name-based-gender-identification-using-nltk&quot;&gt;Name based gender identification using NLTK&lt;/h2&gt;
+
+&lt;p&gt;This project is based on a simple idea that usually the female names end in vowels like ‘a’, ‘e’ and ‘i’, whereas male names usually end in ‘k’, ‘o’, ‘r’, ‘s’ and ‘t’. Using this feature, we can generate a confidence value if the input name belongs to a male or a female. So far, I have not found any such study on Indian names and so decided to do one. The study on English names can be found &lt;a href=&quot;http://www.nltk.org/book/ch06.html&quot;&gt;here&lt;/a&gt;. The English name corpus has been included in the ‘names’ package of NLTK. It can be used by:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+from nltk.corpus import names
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Indian names entail a much bigger challenge because sometimes same names are given to both girls and boys. My very name, ‘Siddha’ is both a girls and a boys name. Similar names include ‘Harpreet’. The only way to gauge the gender for these cases is to rely on better training. &lt;/p&gt;
+
+&lt;h3 id=&quot;nltk&quot;&gt;NLTK&lt;/h3&gt;
+
+&lt;p&gt;Natural Language Processing though quite intense and arduous becomes manageable with the &lt;a href=&quot;http://www.nltk.org/&quot;&gt;Natural Language Tool Kit&lt;/a&gt;, originally authored by Steven Bird, Edward Loper and Ewan Klein.&lt;/p&gt;
+
+&lt;h2 id=&quot;procedure&quot;&gt;Procedure&lt;/h2&gt;
+
+&lt;h3 id=&quot;data-collection&quot;&gt;Data Collection&lt;/h3&gt;
+
+&lt;p&gt;I started by scraping a few websites that provided names of boys and girls and formatted the data into a csv file. Two separate data corpuses were made, one for the male and the second for female.&lt;/p&gt;
+
+&lt;h3 id=&quot;feature-extraction&quot;&gt;Feature Extraction&lt;/h3&gt;
+
+&lt;p&gt;The last alphabet of the word is the major distinguishing factor, hence, only that alphabet is extracted and used by the classifier.&lt;/p&gt;
+
+&lt;h3 id=&quot;technique&quot;&gt;Technique&lt;/h3&gt;
+
+&lt;p&gt;It’s a supervised classification technique. In the training data set labels are provided that help to learn the classification. Naive Bayes Classifier has been used.&lt;/p&gt;
+
+&lt;h3 id=&quot;cross-validation&quot;&gt;Cross Validation&lt;/h3&gt;
+
+&lt;p&gt;When provided with a data set, it is advisable to reserve part of it as a test data set so that the generated hypothesis can be tested. Usually a 70/30 or 60/40 division is used. So, 70/60 of the data is used in training and 30/40 in testing. Based on a similar analogy cross validation is implemented which enables the hypothesis generated from the training data set to be validated and worked upon to create a better and efficient hypothesis. For this a division of 60/20/20 is used. Training data constitutes 60%, cross validation set 20% and the testing data set another 20%. Cross validation is much in use because it provides a chance to fine tune the feature vector.&lt;/p&gt;
+
+&lt;h3 id=&quot;accuracy&quot;&gt;Accuracy&lt;/h3&gt;
+
+&lt;p&gt;Based on the test set we can measure the precision of the classifier using:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt; print nltk.classify.accuracy(classifier, test_set) &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Initially we had a hypothesis stating that female names usually end in vowels like ‘a’, ‘e’ and ‘i’. Whereas male names usually end in ‘k’, ‘o’, ‘r’, ‘s’ and ‘t’. This was based on prior experience. Now let’s see if this is actually true or not. Based on the corpus of data provided to the classifier it has generated its own hypothesis. It tells us based on which letters is it performing the classification.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt; print classifier.show_most_informative_features(5) &lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Grace Hopper Conference & Hackathon</title>
+   <link href="http://sidgan.github.io/conference/hackathon/2014/11/25/ghc"/>
+   <updated>2014-11-25T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/conference/hackathon/2014/11/25/ghc</id>
+   <content type="html">
+&lt;h3 id=&quot;bangalore-india-2014&quot;&gt;Bangalore, India, 2014&lt;/h3&gt;
+
+&lt;p&gt;Grace Hopper was a computer scientist and a US Navy Admiral who is credited to several laurels in the field of computers alone that she was nicknamed ‘Amazing Grace’. Amongst her computer genius, is her invention of the first compiler and the idea of a machine independent, high-level, programming language which ultimately led to the development of COBOL. &lt;/p&gt;
+
+&lt;p&gt;To celebrate Grace Hopper and her achievements, the Anita Borg Institute holds the Grace Hopper Celebration of Women in Computing partnering with ACM India. It is India’s largest gathering of Women Technologists. This year, I got the opportunity of attending the Grace Hopper Celebration Hackathon at Bangalore. &lt;/p&gt;
+
+&lt;p&gt;A women’s hackathon provides ample opportunities that allow women to escape boundaries, that, have in the past constrained their activities and their individuality. One such women’s hackathon was the Grace Hopper Conference Hackathon at Bangalore, India, which was a great opportunity to meet like minded women from all around India.&lt;/p&gt;
+
+&lt;p&gt;It was a mecca of ignited minds where women, students and young leaders in computer science came together, explored computing and become producers of future innovations. Along with fun, it provided a safe and encouraging environment where I was able to put my thoughts together. My team mates and I contributed our unique perspectives towards solving challenges that the world faces today. &lt;/p&gt;
+
+&lt;p&gt;Two main issues raised at the hackathon were of security and health. A general consensus stated these as the major challenges faced by Indian women. At the hackathon I was able to exchange ideas with other inspiring technosavy women. All this and being away from the hackneyed routine of college, increased my creativity and enhanced my performance. I am quite sure that all the knowledge gained from this congregation will enable me to produce paradigm-shifting results one day.&lt;/p&gt;
+
+&lt;p&gt;This was my first hackathon that continued for over a month and had people simultaneously committing code from different geographical locations. Being in constant communication and up-to-date with the latest code commits was in itself a challenge. Soon after classes, every day, I would find myself peering over new email threads, modifying the code base, optimizing algorithms and deploying the existing code. &lt;/p&gt;
+
+&lt;h3 id=&quot;kaam-hai-hackathon-entry&quot;&gt;Kaam Hai?, Hackathon entry&lt;/h3&gt;
+
+&lt;p&gt;Our team developed the winning hackathon entry, ‘Kaam Hai?’, a web based app that connects low skilled job seekers with potential employers. This app can also be used by Non Governmental Organizations to extend their services in finding a job for other people.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hadoop Installation</title>
+   <link href="http://sidgan.github.io/technical/2014/10/31/hadoop-installation"/>
+   <updated>2014-10-31T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/technical/2014/10/31/hadoop-installation</id>
+   <content type="html">
+&lt;h2&gt;Requirements:&lt;/h2&gt;
+
+&lt;h3&gt;Java&lt;/h3&gt;
+
+&lt;p&gt;See installation of the latest version &lt;a href=&quot;http://openjdk.java.net/install/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt; A dedicated Hadoop user&lt;/h3&gt;
+
+&lt;p&gt;Add a new Hadoop user and group that will access all the Hadoop files. This is the user in whose directory Hadoop will be installed and will communicate via SSH to the local user.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;code&gt;
+sudo addgroup hadoop
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+sudo adduser --ingroup hadoop hduser
+&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;h4&gt; Chaos &lt;/h4&gt;
+
+&lt;p&gt;In my first Hadoop installation, I did not create a separate Hadoop user and only then could I understand why the existence of a separate user was necessary. Creating a separate user helps tremendously in terms of file permissions, security and backups. &lt;/p&gt;
+
+&lt;p&gt;I did not have a separate user and so with my first execution run on Hadoop, my normal user suffered. All my file permissions changed and on booting I was only able to log into my normal account and thereafter I could not do anything. The only screen I could see was my desktop, but it was barren. All the files, disks, profile settings, directories were no where to be seen. I could not even access the terminal. The on-screen buttons like unity, network, battery, time and date settings appeared disabled. &lt;/p&gt;
+
+&lt;p&gt;My, just a moment ago, perfectly configured laptop (or so I thought) was rendered unusable. I do not know the exact cause of this, but the only place where I deviated from the &lt;a href=&quot;http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html&quot;&gt;Installation Manual&lt;/a&gt; was not creating a serparate user and that is why I emphasise on creating one. &lt;/p&gt;
+
+&lt;h4&gt; Terminal is king &lt;/h4&gt;
+
+&lt;p&gt;The terminal &lt;strong&gt;ALWAYS&lt;/strong&gt; comes to the rescue. Thats why I love Linux so much. No matter how badly you think you have screwed up and the only possible way out now is a fresh installation (which too comes free. :D) the terminal always provides a solution. I cannot stress on the utmost importance and utility of the terminal even if I were to talk about it every single day. &lt;/p&gt;
+
+&lt;p&gt;So, here is what I did. I opened my Terminal using Ctrl+Alt+F7. I checked my profile setting, and using &lt;code&gt;ls&lt;/code&gt; I could see that sure enough my files were still present in my computer, but I could not view them. I figured out the problem. All the files and settings that were of my normal user had been shifted from my home directory into &lt;code&gt;/&lt;/code&gt;, hence one up the directory hierarchy. I do not know why this happened. I could see the &lt;code&gt;sidgan&lt;/code&gt; folder, which is my normal user within my &lt;code&gt;home&lt;/code&gt; and sure enough it was completely empty. From here on, the solution seemed trivial, all I had to do was to move the entire directory structure one level down. This, I did by one simple command: &lt;/p&gt;
+
+&lt;p&gt;
+&lt;code&gt;
+mv source dest
+&lt;/code&gt; 
+&lt;/p&gt;
+
+&lt;p&gt;I breathed a sigh of relief and could see my splendid laptop back to its normal state with all its configuration files intact. &lt;/p&gt;
+
+&lt;h3&gt; SSH &lt;/h3&gt;
+
+&lt;p&gt;In order to access the different nodes, Hadoop uses SSH. All this is done while being logged into the &lt;code&gt;hduser&lt;/code&gt; account.
+Simply &lt;a href=&quot;&quot;&gt;generate SSH key&lt;/a&gt; for &lt;code&gt;hduser&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;One important thing to keep in mind is to not enter any password for the &lt;code&gt;hduser&lt;/code&gt; because all the while Hadoop interacts with the nodes, the user will have to input the password each time. This is not possible, so, it is a better idea to not keep any password in the first place. &lt;/p&gt;
+
+&lt;p&gt;After generating SSH key for &lt;code&gt;hduser&lt;/code&gt; the next step is to enable access to the machine, ie the normal user, in my case &lt;code&gt;sidgan&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;Test the SSH setup once by establishing a connection between the normal user and &lt;code&gt;hduser&lt;/code&gt; by: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+ssh localhost
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3&gt; IPv6 and IPv4 &lt;/h3&gt;
+
+&lt;p&gt;Disable IPv6 only for Hadoop by adding the given line to &lt;code&gt; conf/hadoop-env.sh &lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+export HADOOP_OPTS=-Djava.net.preferIPv4Stack=true
+&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;h2&gt; Installation &lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_config.yml&lt;/strong&gt;
-  Stores configuration data.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_includes&lt;/strong&gt;
-  This folder is for partial views.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_layouts&lt;/strong&gt;
-  This folder is for the main templates your content will be inserted into.
-  You can have different layouts for different pages or page sections.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_posts&lt;/strong&gt;
-  This folder contains your dynamic content/posts.
-  the naming format is required to be &lt;code&gt;@YEAR-MONTH-DATE-title.MARKUP@&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt;
-  This is where the generated site will be placed once Jekyll is done transforming it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;assets&lt;/strong&gt;
-  This folder is not part of the standard jekyll structure.
-  The assets folder represents &lt;em&gt;any generic&lt;/em&gt; folder you happen to create in your root directory.
-  Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.&lt;/p&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+[Download Hadoop](http://www.apache.org/dyn/closer.cgi/hadoop/core) and extract its contents.
+&lt;p&gt;
+&lt;code&gt;
+tar -xzf hadoop-1.0.3.tar.gz
+&lt;/code&gt;
+&lt;p&gt;
+It should be placed in the &lt;code&gt;hduser&lt;/code&gt; directory. 
+&lt;/p&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+Change the owner of all files to &lt;code&gt;hduser&lt;/code&gt; user and &lt;code&gt;hadoop&lt;/code&gt; group. 
+&lt;p&gt;
+&lt;code&gt;
+sudo chown -R hduser:hadoop hadoop-1.0.3
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;(read more: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Usage&quot;&gt;https://github.com/mojombo/jekyll/wiki/Usage&lt;/a&gt;)&lt;/p&gt;
+&lt;h2&gt; Configuration &lt;/h2&gt;
+
+&lt;h3&gt; Step 1: Update &lt;code&gt;.bashrc&lt;/code&gt; file &lt;/h3&gt;
+
+&lt;p&gt;Since the &lt;code&gt;hduser&lt;/code&gt; user will be accessing the Hadoop installation, it makes sense to update the &lt;code&gt;.bashrc&lt;/code&gt; file of &lt;code&gt;hduser&lt;/code&gt;. The following lines as suggested in the &lt;a href=&quot;http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html&quot;&gt;Installation Manual&lt;/a&gt; have to be appended at the end of the &lt;code&gt;.bashrc&lt;/code&gt; file. &lt;/p&gt;
+
+&lt;h3&gt; Step 2: Update environment variables &lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;JAVA_HOME&lt;/code&gt; path must be changed to the Sun JDK or JRE directory &lt;/p&gt;
+
+&lt;p&gt;
+&lt;code&gt;
+export JAVA_HOME=/usr/lib/jvm/java-7-sun
+&lt;/code&gt;
+&lt;p&gt;
+This is done for the &lt;code&gt;hduser&lt;/code&gt;.
+&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;h3&gt; Step 3: HDFS &lt;/h3&gt;
+
+&lt;p&gt;Hadoop Dedicated File System (HDFS) is the directory where Hadoop stores all the data. &lt;/p&gt;
+
+&lt;h3&gt; Step 4: Update &lt;code&gt; hadoop-env.sh &lt;/code&gt; &lt;/h3&gt;
 
-&lt;h3 id=&quot;jekyll-configuration&quot;&gt;Jekyll Configuration&lt;/h3&gt;
+&lt;p&gt;Uncomment the line &lt;code&gt; export JAVA_HOME=/usr/lib/jvm/java-X-sun &lt;/code&gt;, where &lt;code&gt; X &lt;/code&gt; is the version number. &lt;/p&gt;
 
-&lt;p&gt;Jekyll supports various configuration options that are fully outlined here:
-(&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;)&lt;/p&gt;
+&lt;h3&gt; Step 4: Update &lt;code&gt; conf/core-site.xml &lt;/code&gt; &lt;/h3&gt;
 
-&lt;h2 id=&quot;content-in-jekyll&quot;&gt;Content in Jekyll&lt;/h2&gt;
+&lt;p&gt;Add the following lines within the &lt;code&gt; configuration &lt;/code&gt;  tags. &lt;/p&gt;
 
-&lt;p&gt;Content in Jekyll is either a post or a page.
-These content “objects” get inserted into one or more templates to build the final output for its respective static-page.&lt;/p&gt;
+&lt;div class=&quot;bogus-wrapper&quot;&gt;&lt;notextile&gt;&lt;figure class=&quot;code&quot;&gt;
+&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;property&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;hadoop.tmp.dir&lt;span class=&quot;nt&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt;/app/hadoop/tmp&lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;description&amp;gt;&lt;/span&gt;A base for other temporary directories.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;property&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;fs.default.name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt;hdfs://localhost:54310&lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;description&amp;gt;&lt;/span&gt;The name of the default file system.  A URI whose
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  scheme and authority determine the FileSystem implementation.  The
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  uri&amp;#39;s scheme determines the config property (fs.SCHEME.impl) naming
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  the FileSystem implementation class.  The uri&amp;#39;s authority is used to
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  determine the host, port, etc. for a filesystem.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/figure&gt;&lt;/notextile&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;posts-and-pages&quot;&gt;Posts and Pages&lt;/h3&gt;
+&lt;h3&gt; Step 4: Update &lt;code&gt; conf/mapred-site.xml &lt;/code&gt; &lt;/h3&gt;
 
-&lt;p&gt;Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax.
-Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.&lt;/p&gt;
+&lt;p&gt;Add the following lines within the &lt;code&gt; configuration &lt;/code&gt; tags.&lt;/p&gt;
 
-&lt;h3 id=&quot;working-with-posts&quot;&gt;Working With Posts&lt;/h3&gt;
+&lt;div class=&quot;bogus-wrapper&quot;&gt;&lt;notextile&gt;&lt;figure class=&quot;code&quot;&gt;
+&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;property&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;mapred.job.tracker&lt;span class=&quot;nt&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt;localhost:54311&lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;description&amp;gt;&lt;/span&gt;The host and port that the MapReduce job tracker runs
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  at.  If &amp;quot;local&amp;quot;, then jobs are run in-process as a single map
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  and reduce task.
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/figure&gt;&lt;/notextile&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt;
-Posts are created by properly formatting a file and placing it the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/p&gt;
+&lt;h3&gt; Step 4: Update &lt;code&gt; conf/hdfs-site.xml &lt;/code&gt; &lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-A post must have a valid filename in the form &lt;code&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code&gt;_posts&lt;/code&gt; directory.
-If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.
-Additionally, each file must have &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt; prepended to its content.
-YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.&lt;/p&gt;
+&lt;p&gt;Add the following lines within the &lt;code&gt; configuration &lt;/code&gt; tags. &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Order&lt;/strong&gt;
-Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy.
-Only reverse chronological and chronological ordering is supported in Jekyll.&lt;/p&gt;
+&lt;div class=&quot;bogus-wrapper&quot;&gt;&lt;notextile&gt;&lt;figure class=&quot;code&quot;&gt;
+&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;property&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;dfs.replication&lt;span class=&quot;nt&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt;1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;description&amp;gt;&lt;/span&gt;Default block replication.
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  The actual number of replications can be specified when the file is created.
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  The default is used if replication is not specified in create time.
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/figure&gt;&lt;/notextile&gt;&lt;/div&gt;
 
-&lt;p&gt;Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.&lt;/p&gt;
+&lt;h2&gt; Start Hadoop&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;
-Posts can have tags associated with them as part of their meta-data.
-Tags may be placed on posts by providing them in the post’s YAML front matter.
-You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.&lt;/p&gt;
+&lt;p&gt;Run the following commands as the hadoop user, &lt;code&gt;hduser&lt;/code&gt;: &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt;
-Posts may be categorized by providing one or more categories in the YAML front matter.
-Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
-Note categories in Jekyll work in a specific way.
-If you define more than one category you are defining a category hierarchy “set”.
-Example:&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+/usr/local/hadoop/bin/hadoop namenode -format
+&lt;/code&gt;
+&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;---
-title :  Hello World
-categories : [lessons, beginner]
----
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+&lt;code&gt;
+/usr/local/hadoop/bin/start-all.sh
+&lt;/code&gt;
+&lt;/p&gt;
 
-&lt;p&gt;This defines the category hierarchy “lessons/beginner”. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll.
-You won’t find “lessons” and “beginner” as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
+&lt;h2&gt; Stop Hadoop&lt;/h2&gt;
 
-&lt;h3 id=&quot;working-with-pages&quot;&gt;Working With Pages&lt;/h3&gt;
+&lt;p&gt;Run the following commands as the hadoop user, &lt;code&gt;hduser&lt;/code&gt;: &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Creating a Page&lt;/strong&gt;
-Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do &lt;em&gt;not&lt;/em&gt; start with an underscore.&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+ /usr/local/hadoop/bin/stop-all.sh
+&lt;/code&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-In order to register as a Jekyll page the file must contain &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt;.
-Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the &lt;code&gt;site.pages&lt;/code&gt; array for inclusion into your templates.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Data Scientists: Who, What, How?</title>
+   <link href="http://sidgan.github.io/article/2014/10/10/data-scientists-who-what-how"/>
+   <updated>2014-10-10T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/article/2014/10/10/data-scientists-who-what-how</id>
+   <content type="html">
+&lt;p&gt;The newspaper reads “Data Scientist: The Sexiest Job of the 21st Century”. For a minute you are like “I thought medical and engineering were the only two domains”. Then you smirk “Does it even pay?”. Then somehow you start to read the article. “Best paid job of the century”. Ahem Ahem! You close the news paper, and realize you know nothing.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Categories and Tags&lt;/strong&gt;
-Pages do not compute categories nor tags so defining them will have no effect.&lt;/p&gt;
+&lt;p&gt;Who’s a data scientist you ask? This image (source: Wikipedia) explains it quite well. A data scientist is a blend of maths and statistics, hacking skills and substantive expertise. So what does a data scientist do? He sees zetta bytes of data and goes “Zetta, play no vendetta”. But wait, where did you get zetta bytes of data? Let’s see, how many photos have you uploaded to Facebook till date? How many answers have you submitted to Quora? How many code patches have you contributed? Online shopping: how much or what items do you buy? Do you know what all that is, primarily? Its all data. Bytes making up photos, which is basically an array of RGB values. &amp;lt;Data?&amp;gt; Text in the ASCII format.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Sub-Directories&lt;/strong&gt;
-If pages are defined in sub-directories, the path to the page will be reflected in the url.
-Example:&lt;/p&gt;
+&lt;p&gt;&amp;lt;Data, again!&amp;gt; Online shopping records your preference for items. &lt;so much=&quot;&quot; data=&quot;&quot;&gt; So, data and a lot of data. “As for Facebook proper, it gets 208,300 photos uploaded every minute. Facebook has always been a bit vague about exactly how many photos they get over a period of time, but they’ve gone on record to say that it’s over six billion photos per month. It’s likely even more than that now.”, quoted from sources on the Internet. I am sure we all agree that a picture speaks a thousand words and consumes a thousand times more memory. Quora till date has approximately 8.6 millions questions. Yahoo! Answers has 300 million. Just imagine how much data we have out there. Now, what does the data scientist do with all that data. He tries to find structure in it, process it, learn from it and so many more things.&lt;/so&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;.
-|-- people
-    |-- bob
-        |-- essay.html
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Take online shopping for example. Recommendation systems are a huge YES for this industry. As Steve Jobs says “People don’t know what they want until you show it to them.”&lt;/p&gt;
 
-&lt;p&gt;This page will be available at &lt;code&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;They provide you with diverse options based on your selection and recommend what you might like. Based on the items bought in the past, they find the similarity between you and other people. Now, if that other person has bought something and liked it/rated it, you might get a recommendation to try it out as well.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Recommended Pages&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Remember Google’s Page Ranking algorithm. Its based on similar stuff. Why is it that the moment you type “F” on your keyboard Facebook is the first link that appears. Because millions of people typed “F”, and then clicked on Facebook, certifying the fact that they were actually searching for Facebook. Hence, its rank increases. Another connotation is, while searching for an error, you get StackOverflow, Cross Validated, Ubuntu Forums and other such sites, because people who searched for the same error before you clicked these sites thus increasing ranks. This is just the basic idea, in reality its a lot more complicated that than.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;index.html&lt;/strong&gt;
-You will always want to define the root index.html page as this will display on your root URL.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;404.html&lt;/strong&gt;
-Create a root 404.html page and GitHub Pages will serve it as your 404 response.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;sitemap.html&lt;/strong&gt;
-Generating a sitemap is good practice for SEO.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;about.html&lt;/strong&gt;
-A nice about page is easy to do and gives the human perspective to your website.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Coming back to the question at hand, processing the data. Since the data is titanic, it will take time, enormous amount of time. You might want to try to process the data one by one, or parallely. You will probably agree that the parallel task is much, much faster. Thats why they use Hadoop. It is a framework for storage and large-scale processing petabytes of data. Pretty name, eh? Doug Cutting named it after his son’s toy elephant. Doug Cutting and Mike Cafarella created Hadoop. Its implementation is based on Google File System and Google Map Reduce. Since it is Java-based, Hadoop runs on all the platforms. Hadoop entails the Hadoop Distributed File System and MapReduce. There are many new alternatives to Hadoop like Spark and Cassandra. The documentation provided by Yahoo! is great for understanding the architecture and working of Hadoop.&lt;/p&gt;
 
-&lt;h2 id=&quot;templates-in-jekyll&quot;&gt;Templates in Jekyll&lt;/h2&gt;
+&lt;p&gt;This has been published in the &lt;a href=&quot;http://yugma.bridgenit.com/&quot;&gt;YUGMA BridgeNIT&lt;/a&gt; magazine, you can also view the published version &lt;a href=&quot;http://yugma.bridgenit.com/data-scientist/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Templates are used to contain a page’s or post’s content.
-All templates have access to a global site object variable: &lt;code&gt;site&lt;/code&gt; as well as a page object variable: &lt;code&gt;page&lt;/code&gt;.
-The site variable holds all accessible content and metadata relative to the site.
-The page variable holds accessible data for the given page or post being rendered at that point.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Pipeline for Machine Learning</title>
+   <link href="http://sidgan.github.io/technical/2014/10/01/pipeline-for-machine-learning"/>
+   <updated>2014-10-01T00:00:00+05:30</updated>
+   <id>http://sidgan.github.io/technical/2014/10/01/pipeline-for-machine-learning</id>
+   <content type="html">
+&lt;h2 id=&quot;automated-pipeline-for-machine-learning-problems&quot;&gt;Automated Pipeline for Machine Learning Problems&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Create a Template&lt;/strong&gt;
-Templates are created by properly formatting a file and placing it in the &lt;code&gt;_layouts&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;This project deals with aggregating methods for machine learning. Machine learning is a broad spectrum term. It involves churn prediction, recommendation systems and time series analysis just to name a few.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;
-Templates should be coded in HTML and contain YAML Front Matter.
-All templates can contain Liquid code to work with your site’s data.&lt;/p&gt;
+&lt;p&gt;Initially I had to work on &lt;a href=&quot;http://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt; problems trying to gain first hand experience at cleaning data and figuring out what are the most efficient algorithms on which kinds of problems. The first problem that I started on was the Titanic Trainer Challenge. My first prediction lay at a mere 50%, barely, just touching the last position.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Rending Page/Post Content in a Template&lt;/strong&gt;
-There is a special variable in all templates named : &lt;code&gt;content&lt;/code&gt;.
-The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined.
-Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&quot;first_submission.png&quot; /&gt;
+&lt;img src=&quot;final_submission.png&quot; /&gt;
+&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;...
-&amp;lt;body&amp;gt;
-  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
-  &amp;lt;div id=&quot;main&quot;&amp;gt;
-    &amp;#123;{content}&amp;#125;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, continually working on the predictions and using the scikit package provided by Python I was able to come up to the 182nd  position. Through this exercise I learnt the intricacies of data cleaning and that multiple imputation is extremely vital. This exercise was actually fun. I played around with the python scikit packages and learnt a lot. While working on the problem, I found myself devoting time to data cleaning more than expected. Afterwards, hours on experimental tuning. I came across a few articles and blogs on the net which shared these thoughts as well. Some even provided an outline of such an ‘automated pipeline’. I was intrigued and decided to get my hands dirty.&lt;/p&gt;
 
-&lt;h3 id=&quot;sub-templates&quot;&gt;Sub-Templates&lt;/h3&gt;
+&lt;p&gt;I started by building a simple command line application. Initially, I used the optparse package with Python. Python is a fun language to work with. It has numerous packages thanks to the great open source community and ample help is provided on several forums. The work seemed good. I had to take in the options using the command line and process each of them to see what kind of a problem the user had specified. The user could say ‘clustering’, ‘classification’, ‘dimensionality reduction’, ‘regression’ and accordingly I would pass the input data into the pipeline. Other options included imputation method, by mean or by median.&lt;/p&gt;
 
-&lt;p&gt;Sub-templates are exactly templates with the only difference being they
-define another “root” layout/template within their YAML Front Matter.
-This essentially means a template will render inside of another template.&lt;/p&gt;
+&lt;p&gt;It worked out pretty well because in machine learning output of one stage serves as the input of the next. Also, the main steps in any machine learning problem are pretty much the same. Elucidating, first is the training of the algorithm, then testing and finally cross validation. Now, with minimum configuration changes, it will be possible to run almost any problem. This gets as good as the data that is being provided to it. If data is clean and devoid of nan values then definitely better prediction will take place. By doing this project I even learnt the various methods of detecting the sources of nan values. These can be random, independent. This was by far the most daunting task. Once, I ended by experimenting so wickedly that all I had in the end was nan values. Columns full of just nan values. I somehow (due to an error in the code) managed to turn the originally non-nan values into nan. What a nightmare that was!&lt;/p&gt;
 
-&lt;h3 id=&quot;includes&quot;&gt;Includes&lt;/h3&gt;
-&lt;p&gt;In Jekyll you can define include files by placing them in the &lt;code&gt;_includes&lt;/code&gt; folder.
-Includes are NOT templates, rather they are just code snippets that get included into templates.
-In this way, you can treat the code inside includes as if it was native to the parent template.&lt;/p&gt;
-
-&lt;p&gt;Any valid template code may be used in includes.&lt;/p&gt;
-
-&lt;h2 id=&quot;using-liquid-for-templating&quot;&gt;Using Liquid for Templating&lt;/h2&gt;
-
-&lt;p&gt;Templating is perhaps the most confusing and frustrating part of Jekyll.
-This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-liquid&quot;&gt;What is Liquid?&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Shopify/liquid&quot;&gt;Liquid&lt;/a&gt; is a secure templating language developed by &lt;a href=&quot;http://shopify.com&quot;&gt;Shopify&lt;/a&gt;.
-Liquid is designed for end-users to be able to execute logic within template files
-without imposing any security risk on the hosting server.&lt;/p&gt;
-
-&lt;p&gt;Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with
-your site and post/page data.&lt;/p&gt;
-
-&lt;h3 id=&quot;why-do-we-have-to-use-liquid&quot;&gt;Why Do We Have to Use Liquid?&lt;/h3&gt;
-
-&lt;p&gt;GitHub uses Jekyll to power &lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;.
-GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.&lt;/p&gt;
-
-&lt;h3 id=&quot;liquid-is-not-programmer-friendly&quot;&gt;Liquid is Not Programmer-Friendly.&lt;/h3&gt;
-
-&lt;p&gt;The short story is liquid is not real code and its not intended to execute real code.
-The point being you can’t do jackshit in liquid that hasn’t been allowed explicitly by the implementation.
-What’s more you can only access data-structures that have been explicitly passed to the template.&lt;/p&gt;
-
-&lt;p&gt;In Jekyll’s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins.
-Both of which cannot be supported by GitHub Pages.&lt;/p&gt;
-
-&lt;p&gt;As a programmer - this is very frustrating.&lt;/p&gt;
-
-&lt;p&gt;But rather than look a gift horse in the mouth we are going to
-suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Aside&lt;/strong&gt;
-My personal stance is to not invest time trying to hack liquid. It’s really unnecessary
-&lt;em&gt;from a programmer’s&lt;/em&gt; perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)
-you are better off sticking with ruby. Toward that end I’ve built &lt;a href=&quot;http://github.com/plusjade/mustache-with-jekyll&quot;&gt;Mustache-with-Jekyll&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;static-assets&quot;&gt;Static Assets&lt;/h2&gt;
-
-&lt;p&gt;Static assets are any file in the root or non-underscored subfolders that are not pages.
-That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.&lt;/p&gt;
-
-&lt;p&gt;Static assets should be used for images, css, and javascript files.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-jekyll-parses-files&quot;&gt;How Jekyll Parses Files&lt;/h2&gt;
-
-&lt;p&gt;Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Content parsing.&lt;/strong&gt;
-  This is done with textile or markdown.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Template parsing.&lt;/strong&gt;
-This is done with the liquid templating language.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And thus there are two main types of file formats needed for this parsing.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Post and Page files.&lt;/strong&gt;
-All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Template files.&lt;/strong&gt;
-  These files go in &lt;code&gt;_layouts&lt;/code&gt; folder and contain your blogs &lt;strong&gt;templates&lt;/strong&gt;. They should be made in HTML with the help of Liquid syntax.
-  Since include files are simply injected into templates they are essentially parsed as if they were native to the template.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Arbitrary files and folders.&lt;/strong&gt;
-Files that &lt;em&gt;are not&lt;/em&gt; valid pages are treated as static content and pass through
-Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.&lt;/p&gt;
-
-&lt;h3 id=&quot;formatting-files-for-parsing&quot;&gt;Formatting Files for Parsing.&lt;/h3&gt;
-
-&lt;p&gt;We’ve outlined the need for valid formatting using &lt;strong&gt;YAML Front Matter&lt;/strong&gt;.
-Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty.
-This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
-
-&lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-layout: post
-category : pages
-tags : [how-to, jekyll]
----
-
-... contents ...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
-The data inside the block must be valid YAML.&lt;/p&gt;
-
-&lt;p&gt;Configuration parameters for YAML Front-Matter is outlined here:
-&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;A comprehensive explanation of YAML Front Matter&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;defining-layouts-for-posts-and-templates-parsing&quot;&gt;Defining Layouts for Posts and Templates Parsing.&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
-If a template file specifies its own layout, it is effectively being used as a &lt;code&gt;sub-template.&lt;/code&gt;
-That is to say loading a post file into a template file that refers to another template file with work in the way you’d expect; as a nested sub-template.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-jekyll-generates-the-final-static-files&quot;&gt;How Jekyll Generates the Final Static Files.&lt;/h2&gt;
-
-&lt;p&gt;Ultimately, Jekyll’s job is to generate a static representation of your website.
-The following is an outline of how that’s done:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll collects data.&lt;/strong&gt;
-  Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll computes data.&lt;/strong&gt;
-  Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one
-  big &lt;code&gt;site&lt;/code&gt; object that holds all the posts, pages, layouts, and respective metadata.
-  At this stage your site is one big computed ruby object.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll liquifies posts and templates.&lt;/strong&gt;
-  Next jekyll loops through each post file and converts (through markdown or textile) and &lt;strong&gt;liquifies&lt;/strong&gt; the post inside of its respective layout(s).
-  Once the post is parsed and liquified inside the the proper layout structure, the layout itself is “liquified”.
- &lt;strong&gt;Liquification&lt;/strong&gt; is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler
-  hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll generates output.&lt;/strong&gt;
- Finally the liquid templates are “rendered”, thereby processing any liquid syntax provided in the templates
- and saving the final, static representation of the file.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Notes.&lt;/strong&gt;
-Because Jekyll computes the entire site in one fell swoop, each template is given access to
-a global &lt;code&gt;site&lt;/code&gt; hash that contains useful data. It is this data that you’ll iterate through and format
-using the Liquid tags and filters in order to render it onto a given page.&lt;/p&gt;
-
-&lt;p&gt;Remember, in Jekyll you are an end-user. Your API has only two components:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The manner in which you setup your directory.&lt;/li&gt;
-  &lt;li&gt;The liquid syntax and variables passed into the liquid templates.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;All the data objects available to you in the templates via Liquid are outlined in the &lt;strong&gt;API Section&lt;/strong&gt; of Jekyll-Bootstrap.
-You can also read the original documentation here: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;https://github.com/mojombo/jekyll/wiki/Template-Data&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does.
-As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.&lt;/p&gt;
-
-&lt;p&gt;Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt; for reading this far.&lt;/p&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
-
-&lt;p&gt;Please take a look at []()
-or jump right into &lt;a href=&quot;&quot;&gt;Usage&lt;/a&gt; if you’d like.&lt;/p&gt;
+&lt;p&gt;It seemed a good idea to produce a report from each phase and based on the data produced manually add/remove any parameter. I listened to talks from PyCon, KDD, Texata and a lot of them emphasised the importance of giving clean data. The algorithm gives the best results when you provide it with the best data. I don’t think that I have been able to achieve that level of efficacy in data cleaning that I would be able to make a machine do the cleaning automatically. But, its the algorithm tuning part that the computer can do efficiently, so let the machine do what it’s best at and the rest, a person can handle.&lt;/p&gt;
 </content>
  </entry>
  

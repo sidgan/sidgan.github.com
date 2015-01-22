@@ -1,10 +1,32 @@
 ---
 layout: page
-title : Archive
-header : Post Archive
-group: navigation
+title : Archives
+header : Archives
+group : navigation
 ---
 {% include JB/setup %}
 
+ <div class="span7">
+<h4> Posts sorted by date of publishing. </h4>
 {% assign posts_collate = site.posts %}
 {% include JB/posts_collate %}
+
+  </div>
+ 
+<div class="span4" >
+<br/>
+<center> 
+<h4> To change the post assortment, click below.</h4>
+
+<br/><br/>
+<a href="categories.html">Sort Posts by categories</a>
+
+
+<br/><br/>
+
+<a href="tags.html">Sort Posts by Tags</a>
+
+</center>
+
+</div>
+

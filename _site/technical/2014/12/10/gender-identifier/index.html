@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gender Identifier</title>
+    <meta name="description" content="">
+    <meta name="author" content="Siddha Ganju">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Gender Identifier <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    
+<h2 id="name-based-gender-identification-using-nltk">Name based gender identification using NLTK</h2>
+
+<p>This project is based on a simple idea that usually the female names end in vowels like ‘a’, ‘e’ and ‘i’, whereas male names usually end in ‘k’, ‘o’, ‘r’, ‘s’ and ‘t’. Using this feature, we can generate a confidence value if the input name belongs to a male or a female. So far, I have not found any such study on Indian names and so decided to do one. The study on English names can be found <a href="http://www.nltk.org/book/ch06.html">here</a>. The English name corpus has been included in the ‘names’ package of NLTK. It can be used by:</p>
+
+<p><code>
+from nltk.corpus import names
+</code></p>
+
+<p>Indian names entail a much bigger challenge because sometimes same names are given to both girls and boys. My very name, ‘Siddha’ is both a girls and a boys name. Similar names include ‘Harpreet’. The only way to gauge the gender for these cases is to rely on better training. </p>
+
+<h3 id="nltk">NLTK</h3>
+
+<p>Natural Language Processing though quite intense and arduous becomes manageable with the <a href="http://www.nltk.org/">Natural Language Tool Kit</a>, originally authored by Steven Bird, Edward Loper and Ewan Klein.</p>
+
+<h2 id="procedure">Procedure</h2>
+
+<h3 id="data-collection">Data Collection</h3>
+
+<p>I started by scraping a few websites that provided names of boys and girls and formatted the data into a csv file. Two separate data corpuses were made, one for the male and the second for female.</p>
+
+<h3 id="feature-extraction">Feature Extraction</h3>
+
+<p>The last alphabet of the word is the major distinguishing factor, hence, only that alphabet is extracted and used by the classifier.</p>
+
+<h3 id="technique">Technique</h3>
+
+<p>It’s a supervised classification technique. In the training data set labels are provided that help to learn the classification. Naive Bayes Classifier has been used.</p>
+
+<h3 id="cross-validation">Cross Validation</h3>
+
+<p>When provided with a data set, it is advisable to reserve part of it as a test data set so that the generated hypothesis can be tested. Usually a 70/30 or 60/40 division is used. So, 70/60 of the data is used in training and 30/40 in testing. Based on a similar analogy cross validation is implemented which enables the hypothesis generated from the training data set to be validated and worked upon to create a better and efficient hypothesis. For this a division of 60/20/20 is used. Training data constitutes 60%, cross validation set 20% and the testing data set another 20%. Cross validation is much in use because it provides a chance to fine tune the feature vector.</p>
+
+<h3 id="accuracy">Accuracy</h3>
+
+<p>Based on the test set we can measure the precision of the classifier using:</p>
+
+<p><code> print nltk.classify.accuracy(classifier, test_set) </code></p>
+
+<p>Initially we had a hypothesis stating that female names usually end in vowels like ‘a’, ‘e’ and ‘i’. Whereas male names usually end in ‘k’, ‘o’, ‘r’, ‘s’ and ‘t’. This was based on prior experience. Now let’s see if this is actually true or not. Based on the corpus of data provided to the classifier it has generated its own hypothesis. It tells us based on which letters is it performing the classification.</p>
+
+<p><code> print classifier.show_most_informative_features(5) </code></p>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/conference/hackathon/2014/11/25/ghc" title="Grace Hopper Conference & Hackathon">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/technical/2014/12/29/spider" title="Spider">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>10 December 2014</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#nlp-ref">nlp <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#nltk-ref">nltk <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#ml-ref">ml <span>4</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Spider</title>
+    <meta name="description" content="">
+    <meta name="author" content="Siddha Ganju">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Spider <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    
+<h2 id="spider-or-ant">Spider or Ant</h2>
+
+<p>According to the philosophies of computer science a spider is the same as a ant. Yes! that, in fact is true because this almost jargon is talking about web crawling or web scuttering which is further used for automatic indexing and web scraping. I used the spider algorithm to get data from a few sites. The first hack was using lynx and <a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> and, later, a better and elegant solution using Python’s urlparse and urllib instead of lynx. Beautiful Soup is indeed beautiful, as beautiful as the morning Sun shining on the dew covered grass. Excuse the poetess in me! So, coming back, I have used Beautiful Soup extensively till now and it makes getting data into an accessible format much, much easier. I cannot imagine a more elegant way to get and process data. Through this project I learnt the intricacies that the Google Search Bot must have done through and solved using their googliness. Also the research paper <a href="http://infolab.stanford.edu/~backrub/google.html">‘The Anatomy of a Large-Scale Hypertextual Web Search Engine’</a> by Sergey Brin and Lawrence Page is a good read. </p>
+
+<h2 id="spiders">Spiders</h2>
+
+<p>A spider algorithm or a web crawler is an internet bot that crawls a site for information usually in the form of text. A spider works by first going to the seminal link and then parsing the text on that web page to find more links that direct it to other web pages. These freshly found links are added to a stack or queue. All the links or urls in this stack or queue are traversed by the spider one by one.</p>
+
+<p>So, from the initial web page the spider lands to another web page and continues its journey forth, recursively. In this way it crawls throughout the web. This means that from one page the spider should be able to access all the pages that are present on the World Wide Web, but my spider does not do that because I have limited it to access only the links present on the initial web page.</p>
+
+<p>Spiders are usually used for web indexing. Other uses are to update web content or indexes. Spiders have the ability to copy all the content of a web page (if the page permits). All this data will be processed by a search engine at a later stage for indexing so that searching and information retrieval is rendered faster and easier.</p>
+
+<p>In order to get data from a site I usually use one of the following four methods:</p>
+
+<p>
+<ul>
+<li>
+curl command - Tool to transfer data from or to a server using http/https/ftp
+</li>
+<li>
+lynx command - World Wide Web (WWW) client/browser for users running terminals.
+</li>
+<li>
+wget command - Enables non-interactive download of files from the Web. It supports HTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.
+</li>
+<li>
+w3m command - It is a text based Web browser and pager.
+</li>
+</ul>
+</p>
+
+<p>These are not the only way to get links or urls from a site. An easier and direct way is to use Python’s parsing libraries namely urlparse, urllib along with Beautiful Soup. Another alternate way is to use HTTP get and post requests.</p>
+
+<h3 id="privacy-policy">Privacy Policy</h3>
+
+<p>The file robots.txt provides permission to the crawler to get the data from the page. It is essential that scraping be done only for those web pages that allow it. In order to read this file we can employ robotparser of Python. Then if the permission is granted the spider will create a separate thread and go to this site to parse it.</p>
+
+<h3 id="tags">Tags</h3>
+
+<p>The biggest advantage of using Beautiful Soup is its soup objects. These soup objects are flexible enough to be used capriciously. I have used them by sorting according to tags. This enables me to differentiate between the various HTML tags which is very important because this entails the basis of all web pages. I have used ‘href’ tags to find the url of the next page that will be appended to the list of the urls. If instead I had used the ‘a’ tag, then the url would turn out to be only a page and no hyperlink would exist, so a better option was to use the ‘href’ tags. </p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>The implementation of the spider algorithm can be found on <a href="https://github.com/sidgan/Spider">GitHub</a>.</p>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/technical/2014/12/10/gender-identifier" title="Gender Identifier">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/technical/2014/12/30/shanghai" title="I'm at ShanghAI!!">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>29 December 2014</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#ml-ref">ml <span>4</span></a></li>
+     
+    	<li><a href="/tags.html#ir-ref">ir <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

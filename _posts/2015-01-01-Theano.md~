@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Theano"
+description: ""
+category: [technical]
+tags: [deep learning]
+---
+{% include JB/setup %}

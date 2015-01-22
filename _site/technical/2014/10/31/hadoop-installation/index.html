@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hadoop Installation</title>
+    <meta name="description" content="">
+    <meta name="author" content="Siddha Ganju">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Hadoop Installation <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    
+<h2>Requirements:</h2>
+
+<h3>Java</h3>
+
+<p>See installation of the latest version <a href="http://openjdk.java.net/install/">here</a></p>
+
+<h3> A dedicated Hadoop user</h3>
+
+<p>Add a new Hadoop user and group that will access all the Hadoop files. This is the user in whose directory Hadoop will be installed and will communicate via SSH to the local user.</p>
+
+<p>
+<code>
+sudo addgroup hadoop
+</code>
+</p>
+<p>
+<code>
+sudo adduser --ingroup hadoop hduser
+</code>
+</p>
+
+<h4> Chaos </h4>
+
+<p>In my first Hadoop installation, I did not create a separate Hadoop user and only then could I understand why the existence of a separate user was necessary. Creating a separate user helps tremendously in terms of file permissions, security and backups. </p>
+
+<p>I did not have a separate user and so with my first execution run on Hadoop, my normal user suffered. All my file permissions changed and on booting I was only able to log into my normal account and thereafter I could not do anything. The only screen I could see was my desktop, but it was barren. All the files, disks, profile settings, directories were no where to be seen. I could not even access the terminal. The on-screen buttons like unity, network, battery, time and date settings appeared disabled. </p>
+
+<p>My, just a moment ago, perfectly configured laptop (or so I thought) was rendered unusable. I do not know the exact cause of this, but the only place where I deviated from the <a href="http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html">Installation Manual</a> was not creating a serparate user and that is why I emphasise on creating one. </p>
+
+<h4> Terminal is king </h4>
+
+<p>The terminal <strong>ALWAYS</strong> comes to the rescue. Thats why I love Linux so much. No matter how badly you think you have screwed up and the only possible way out now is a fresh installation (which too comes free. :D) the terminal always provides a solution. I cannot stress on the utmost importance and utility of the terminal even if I were to talk about it every single day. </p>
+
+<p>So, here is what I did. I opened my Terminal using Ctrl+Alt+F7. I checked my profile setting, and using <code>ls</code> I could see that sure enough my files were still present in my computer, but I could not view them. I figured out the problem. All the files and settings that were of my normal user had been shifted from my home directory into <code>/</code>, hence one up the directory hierarchy. I do not know why this happened. I could see the <code>sidgan</code> folder, which is my normal user within my <code>home</code> and sure enough it was completely empty. From here on, the solution seemed trivial, all I had to do was to move the entire directory structure one level down. This, I did by one simple command: </p>
+
+<p>
+<code>
+mv source dest
+</code> 
+</p>
+
+<p>I breathed a sigh of relief and could see my splendid laptop back to its normal state with all its configuration files intact. </p>
+
+<h3> SSH </h3>
+
+<p>In order to access the different nodes, Hadoop uses SSH. All this is done while being logged into the <code>hduser</code> account.
+Simply <a href="">generate SSH key</a> for <code>hduser</code>. </p>
+
+<p>One important thing to keep in mind is to not enter any password for the <code>hduser</code> because all the while Hadoop interacts with the nodes, the user will have to input the password each time. This is not possible, so, it is a better idea to not keep any password in the first place. </p>
+
+<p>After generating SSH key for <code>hduser</code> the next step is to enable access to the machine, ie the normal user, in my case <code>sidgan</code>. </p>
+
+<p>Test the SSH setup once by establishing a connection between the normal user and <code>hduser</code> by: </p>
+
+<p><code>
+ssh localhost
+</code></p>
+
+<h3> IPv6 and IPv4 </h3>
+
+<p>Disable IPv6 only for Hadoop by adding the given line to <code> conf/hadoop-env.sh </code>:</p>
+<p>
+<code>
+export HADOOP_OPTS=-Djava.net.preferIPv4Stack=true
+</code>
+</p>
+
+<h2> Installation </h2>
+
+<ul>
+<li>
+[Download Hadoop](http://www.apache.org/dyn/closer.cgi/hadoop/core) and extract its contents.
+<p>
+<code>
+tar -xzf hadoop-1.0.3.tar.gz
+</code>
+<p>
+It should be placed in the <code>hduser</code> directory. 
+</p>
+</p>
+</li>
+<li>
+Change the owner of all files to <code>hduser</code> user and <code>hadoop</code> group. 
+<p>
+<code>
+sudo chown -R hduser:hadoop hadoop-1.0.3
+</code>
+</p>
+</li>
+</ul>
+
+<h2> Configuration </h2>
+
+<h3> Step 1: Update <code>.bashrc</code> file </h3>
+
+<p>Since the <code>hduser</code> user will be accessing the Hadoop installation, it makes sense to update the <code>.bashrc</code> file of <code>hduser</code>. The following lines as suggested in the <a href="http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html">Installation Manual</a> have to be appended at the end of the <code>.bashrc</code> file. </p>
+
+<h3> Step 2: Update environment variables </h3>
+
+<p>The <code>JAVA_HOME</code> path must be changed to the Sun JDK or JRE directory </p>
+
+<p>
+<code>
+export JAVA_HOME=/usr/lib/jvm/java-7-sun
+</code>
+<p>
+This is done for the <code>hduser</code>.
+</p>
+</p>
+
+<h3> Step 3: HDFS </h3>
+
+<p>Hadoop Dedicated File System (HDFS) is the directory where Hadoop stores all the data. </p>
+
+<h3> Step 4: Update <code> hadoop-env.sh </code> </h3>
+
+<p>Uncomment the line <code> export JAVA_HOME=/usr/lib/jvm/java-X-sun </code>, where <code> X </code> is the version number. </p>
+
+<h3> Step 4: Update <code> conf/core-site.xml </code> </h3>
+
+<p>Add the following lines within the <code> configuration </code>  tags. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code">
+<td class="code"><pre><code class="xml"><span class="line"><span class="nt">&lt;property&gt;</span>
+</span><span class="line">  <span class="nt">&lt;name&gt;</span>hadoop.tmp.dir<span class="nt">&lt;/name&gt;</span>
+</span><span class="line">  <span class="nt">&lt;value&gt;</span>/app/hadoop/tmp<span class="nt">&lt;/value&gt;</span>
+</span><span class="line">  <span class="nt">&lt;description&gt;</span>A base for other temporary directories.<span class="nt">&lt;/description&gt;</span>
+</span><span class="line"><span class="nt">&lt;/property&gt;</span>
+</span><span class="line">
+</span><span class="line"><span class="nt">&lt;property&gt;</span>
+</span><span class="line">  <span class="nt">&lt;name&gt;</span>fs.default.name<span class="nt">&lt;/name&gt;</span>
+</span><span class="line">  <span class="nt">&lt;value&gt;</span>hdfs://localhost:54310<span class="nt">&lt;/value&gt;</span>
+</span><span class="line">  <span class="nt">&lt;description&gt;</span>The name of the default file system.  A URI whose
+</span><span class="line">  scheme and authority determine the FileSystem implementation.  The
+</span><span class="line">  uri&#39;s scheme determines the config property (fs.SCHEME.impl) naming
+</span><span class="line">  the FileSystem implementation class.  The uri&#39;s authority is used to
+</span><span class="line">  determine the host, port, etc. for a filesystem.<span class="nt">&lt;/description&gt;</span>
+</span><span class="line"><span class="nt">&lt;/property&gt;</span>
+</span></code></pre></td></figure></notextile></div>
+
+<h3> Step 4: Update <code> conf/mapred-site.xml </code> </h3>
+
+<p>Add the following lines within the <code> configuration </code> tags.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code">
+<td class="code"><pre><code class="xml"><span class="line"><span class="nt">&lt;property&gt;</span>
+</span><span class="line">  <span class="nt">&lt;name&gt;</span>mapred.job.tracker<span class="nt">&lt;/name&gt;</span>
+</span><span class="line">  <span class="nt">&lt;value&gt;</span>localhost:54311<span class="nt">&lt;/value&gt;</span>
+</span><span class="line">  <span class="nt">&lt;description&gt;</span>The host and port that the MapReduce job tracker runs
+</span><span class="line">  at.  If &quot;local&quot;, then jobs are run in-process as a single map
+</span><span class="line">  and reduce task.
+</span><span class="line">  <span class="nt">&lt;/description&gt;</span>
+</span><span class="line"><span class="nt">&lt;/property&gt;</span>
+</span></code></pre></td></figure></notextile></div>
+
+<h3> Step 4: Update <code> conf/hdfs-site.xml </code> </h3>
+
+<p>Add the following lines within the <code> configuration </code> tags. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code">
+<td class="code"><pre><code class="xml"><span class="line"><span class="nt">&lt;property&gt;</span>
+</span><span class="line">  <span class="nt">&lt;name&gt;</span>dfs.replication<span class="nt">&lt;/name&gt;</span>
+</span><span class="line">  <span class="nt">&lt;value&gt;</span>1<span class="nt">&lt;/value&gt;</span>
+</span><span class="line">  <span class="nt">&lt;description&gt;</span>Default block replication.
+</span><span class="line">  The actual number of replications can be specified when the file is created.
+</span><span class="line">  The default is used if replication is not specified in create time.
+</span><span class="line">  <span class="nt">&lt;/description&gt;</span>
+</span><span class="line"><span class="nt">&lt;/property&gt;</span>
+</span></code></pre></td></figure></notextile></div>
+
+<h2> Start Hadoop</h2>
+
+<p>Run the following commands as the hadoop user, <code>hduser</code>: </p>
+
+<p>
+<code>
+/usr/local/hadoop/bin/hadoop namenode -format
+</code>
+</p>
+
+<p>
+<code>
+/usr/local/hadoop/bin/start-all.sh
+</code>
+</p>
+
+<h2> Stop Hadoop</h2>
+
+<p>Run the following commands as the hadoop user, <code>hduser</code>: </p>
+
+<p>
+<code>
+ /usr/local/hadoop/bin/stop-all.sh
+</code>
+</p>
+
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/article/2014/10/10/data-scientists-who-what-how" title="Data Scientists: Who, What, How?">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/conference/hackathon/2014/11/25/ghc" title="Grace Hopper Conference & Hackathon">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>31 October 2014</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#hadoop-ref">hadoop <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#big data-ref">big data <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#installation-ref">installation <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#terminal-ref">terminal <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

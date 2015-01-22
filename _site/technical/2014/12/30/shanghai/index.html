@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>I'm at ShanghAI!!</title>
+    <meta name="description" content=" ">
+    <meta name="author" content="Siddha Ganju">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>I'm at ShanghAI!! <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    
+<p>These are my beginner steps in robotics. I have always been fascinated by robotics, and given my interest in artificial intelligence, this area has always been a region of wanderlust for me. However, my interest in robotics was limited to being dazed by the advancements in its field, reading about various types of bots and shaking hands with them. I have never built one, but now, after attending classes in the Global Virtual Lecture Hall of <a href="http://shanghailectures.org/">ShanghAI</a>, I definately am capable enough to give it a try. ShanghAI has helped me to delve deeper into exactly how they work, it turns out that they are much more complicated than just a simple input-output scheme. </p>
+
+<p>The first intersection between artificial intelligence and robotics was the Sheky robot that I had read about in the book <a href="http://www.amazon.in/Artificial-Intelligence-Elaine-Rich/dp/0070522634">Artificial Intelligence, by Elaine Rich and Kevin Knight</a>. This is a great book. If anyone is interested in Artificial Intelligence, this book is a must read. It provides in-depth information and tactical ideas that help in understanding elegantly how the machine brain works. Another robot is the dock worker robot that helped me understand knowledge representation and automated planning in artificial intelligence. </p>
+
+<h2 id="assignment">Assignment</h2>
+
+<p>As a part of the ShanghAI lectures, we were assigned into groups, called <a href="http://en.wikipedia.org/wiki/K%C5%8Dan">Koan</a> based on our choice of robots and assignments. The word Koan means to invoke greater doubt. I was in the first Koan. I tried to make my own robots and this was possible using Webbots. </p>
+
+<p>The assignment problem was to deal with Swiss Robots and their adaptive morphology and understand how they interact with one another. </p>
+
+<p>Swiss Robots foremost are dependent on sensor morphology for performing a complex collective behavior (collecting boxes in piles) with extremely simple controllers and no explicit inter-robot communication. We were free to adapt the sensor morphology using the robot’s controller, e.g. changing the pitch/yaw of the proximity sensors. We also had to prepare a hypothesis taking into account the condition of introduction of a slope.</p>
+
+<h3 id="swiss-robots">Swiss Robots</h3>
+
+<p>Swiss Robots are simple robots that demonstrate the sophisticated collective behaviour of heap formation through a technique called ‘strategy of errors’. The robots cannot differentiate amongst obstacles, objects and walls, so, react to each in the same way. During its movement it tries to avoid contact with them. However, if any one stands in the way and the robot is unable to detect it, then the object and robot will face a collision and the robot will push the item. If it is an object, pushing will ultimately lead to heap formation whereas no effect is seen on the wall or obstacle. The behaviour of Swiss robots is achieved using Didabots. </p>
+
+<p>The behaviour of the Swiss Robots is achieved through <a href="https://github.com/sidgan/SwissRobots">this</a> code snippet on GitHub which is provided by ShanghAI. </p>
+
+<h2 id="initial-solution">Initial Solution</h2>
+
+<h3 id="ideas">Ideas</h3>
+<ul>
+<li>
+Use machine learning to calculate the optimum numerical values of all parameters viz. pitch, yaw. 
+</li>
+<li>
+Adaptive boosting, Grid Search CV for finding the best values of the parameters and their appropriate weightage.
+</li>
+<li>
+Find and mark cubes and use neural network to inform other robots to collect cubes. The robots should tell other robots if cubes have been collected or have already been marked.
+</li>
+<li>
+Use the GPS node to model a Global Positioning Sensor (GPS) which can obtain information about its absolute position from the controller program. 
+</li>
+<li>
+Use a Supervisor controller that reads and transmits the position information to the robot. Then, keep track of several robots simultaneously. 
+</li>
+</ul>
+
+<h3 id="plans">Plans</h3>
+<ul>
+<li>
+Change morphology of sensors and robots by adding distance sensors, collision sensors and GPS. 
+</li>
+<li>
+Use simple rotational joints to control from controller (Hinge Joint).
+</li>
+<li>
+Change the type of the field.
+</li>
+<li>
+Make a neural network for robots controlling.
+</li>
+<li>
+Realize the Swiss robots behavior on a real robot.
+</li>
+</ul>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/technical/2014/12/29/spider" title="Spider">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/technical/2015/01/01/who-said-it" title="Who Said it?">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>30 December 2014</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#robotics-ref">robotics <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#ai-ref">ai <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

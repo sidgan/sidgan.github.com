@@ -1,11 +1,23 @@
 
-http://username.github.io/archive.html
-http://username.github.io/atom.xml
-http://username.github.io/categories.html
-http://username.github.io/index.html
-http://username.github.io/pages.html
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags.html
+http://sidgan.github.io/404.html
+http://sidgan.github.io/about.html
+http://sidgan.github.io/aboutme.html
+http://sidgan.github.io/archive.html
+http://sidgan.github.io/atom.xml
+http://sidgan.github.io/categories.html
+http://sidgan.github.io/index.html
+http://sidgan.github.io/pages.html
+http://sidgan.github.io/rss.xml
+http://sidgan.github.io/sitemap.html
+http://sidgan.github.io/sitemap.txt
+http://sidgan.github.io/tags.html
 
-http://username.github.io/lessons/2011/12/29/jekyll-introduction
+http://sidgan.github.io/technical/2015/01/05/creating%20and%20revoking%20gpg%20keys
+http://sidgan.github.io/technical/2015/01/01/who-said-it
+http://sidgan.github.io/technical/2014/12/30/shanghai
+http://sidgan.github.io/technical/2014/12/29/spider
+http://sidgan.github.io/technical/2014/12/10/gender-identifier
+http://sidgan.github.io/conference/hackathon/2014/11/25/ghc
+http://sidgan.github.io/technical/2014/10/31/hadoop-installation
+http://sidgan.github.io/article/2014/10/10/data-scientists-who-what-how
+http://sidgan.github.io/technical/2014/10/01/pipeline-for-machine-learning
