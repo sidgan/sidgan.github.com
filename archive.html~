@@ -6,13 +6,14 @@ group : navigation
 ---
 {% include JB/setup %}
 
-<div class="span7">
+ <div class="span7">
 <h4> Posts sorted by date of publishing. </h4>
 {% assign posts_collate = site.posts %}
 {% include JB/posts_collate %}
-</div>
+
+  </div>
  
-<div class="span7" >
+<div class="span4" >
 <br/>
 <center> 
 <h4> To change the post assortment, click below.</h4>
