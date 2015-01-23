@@ -1,8 +1,0 @@
----
-layout: post
-title: "Hadoop Installation"
-description: ""
-category: [technical]
-tags: [hadoop, big data]
----
-{% include JB/setup %}
