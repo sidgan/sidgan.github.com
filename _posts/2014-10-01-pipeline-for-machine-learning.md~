@@ -15,6 +15,7 @@ Initially I had to work on [Kaggle](http://www.kaggle.com/) problems trying to g
 
 <p>
 <img src="first_submission.png">
+<img src="spot.png">
 <img src="final_submission.png">
 </p>
 
