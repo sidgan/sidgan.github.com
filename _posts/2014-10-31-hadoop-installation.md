@@ -75,12 +75,7 @@ export HADOOP_OPTS=-Djava.net.preferIPv4Stack=true
 </p>
 
 <h2> Installation </h2> 
-
-
-
-<p> [Download Hadoop](http://www.apache.org/dvn/closer.cgi/hadoop/core)
 [Download Hadoop](http://www.apache.org/dyn/closer.cgi/hadoop/core) and extract its contents.
-</p>
 <p>
 <code>
 tar -xzf hadoop-1.0.3.tar.gz
