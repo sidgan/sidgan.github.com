@@ -76,9 +76,11 @@ export HADOOP_OPTS=-Djava.net.preferIPv4Stack=true
 
 <h2> Installation </h2> 
 
-<ul>
-<li>
+
+
+<p> [Download Hadoop](http://www.apache.org/dvn/closer.cgi/hadoop/core)
 [Download Hadoop](http://www.apache.org/dyn/closer.cgi/hadoop/core) and extract its contents.
+</p>
 <p>
 <code>
 tar -xzf hadoop-1.0.3.tar.gz
@@ -87,16 +89,14 @@ tar -xzf hadoop-1.0.3.tar.gz
 It should be placed in the <code>hduser</code> directory. 
 </p>
 </p>
-</li>
-<li>
+
 Change the owner of all files to <code>hduser</code> user and <code>hadoop</code> group. 
 <p>
 <code>
 sudo chown -R hduser:hadoop hadoop-1.0.3
 </code>
 </p>
-</li>
-</ul>
+
 
 <h2> Configuration </h2>
 
@@ -196,6 +196,10 @@ Run the following commands as the hadoop user, <code>hduser</code>:
 </code>
 </p>
 
+<p>
+<img src="starting_hadoop.png">
+</p>
+
 <h2> Stop Hadoop</h2>
 
 Run the following commands as the hadoop user, <code>hduser</code>: 
@@ -206,3 +210,6 @@ Run the following commands as the hadoop user, <code>hduser</code>:
 </code>
 </p>
 
+<p>
+<img src="stopping_hadoop.png">
+</p>

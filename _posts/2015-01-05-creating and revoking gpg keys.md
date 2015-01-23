@@ -22,7 +22,7 @@ For digitally signing messages, Alice will sign using her own private key and se
 Ubuntu comes pre-installed with GPG, but it can be installed via the apt-get command as: 
 <p>
 <code>
-sudo apt-get install gpg`
+sudo apt-get install gpg
 </code>
 </p>
 
