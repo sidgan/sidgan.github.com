@@ -18,9 +18,6 @@ Initially I had to work on [Kaggle](http://www.kaggle.com/) problems trying to g
 <img src="final_submission.png">
 </p>
 
-<p>
-	<img src="me.jpg" align="right">
-</p>
 
 
 However, continually working on the predictions and using the scikit package provided by Python I was able to come up to the 182nd  position. Through this exercise I learnt the intricacies of data cleaning and that multiple imputation is extremely vital. This exercise was actually fun. I played around with the python scikit packages and learnt a lot. While working on the problem, I found myself devoting time to data cleaning more than expected. Afterwards, hours on experimental tuning. I came across a few articles and blogs on the net which shared these thoughts as well. Some even provided an outline of such an ‘automated pipeline’. I was intrigued and decided to get my hands dirty.
