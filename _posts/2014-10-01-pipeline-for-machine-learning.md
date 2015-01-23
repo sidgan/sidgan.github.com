@@ -18,6 +18,8 @@ Initially I had to work on [Kaggle](http://www.kaggle.com/) problems trying to g
 <img src="final_submission.png">
 </p>
 
+
+
 However, continually working on the predictions and using the scikit package provided by Python I was able to come up to the 182nd  position. Through this exercise I learnt the intricacies of data cleaning and that multiple imputation is extremely vital. This exercise was actually fun. I played around with the python scikit packages and learnt a lot. While working on the problem, I found myself devoting time to data cleaning more than expected. Afterwards, hours on experimental tuning. I came across a few articles and blogs on the net which shared these thoughts as well. Some even provided an outline of such an ‘automated pipeline’. I was intrigued and decided to get my hands dirty.
 
 I started by building a simple command line application. Initially, I used the optparse package with Python. Python is a fun language to work with. It has numerous packages thanks to the great open source community and ample help is provided on several forums. The work seemed good. I had to take in the options using the command line and process each of them to see what kind of a problem the user had specified. The user could say ‘clustering’, ‘classification’, ‘dimensionality reduction’, ‘regression’ and accordingly I would pass the input data into the pipeline. Other options included imputation method, by mean or by median.
