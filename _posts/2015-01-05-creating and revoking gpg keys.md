@@ -12,7 +12,7 @@ OpenGP standards define the semantics for secure information exchange. GPG is th
 
 Alice and Bob are the foo-bar, the spam-eggs of the world of computer security. Symmetric key cryptography takes place by two different methods. The first in which there are two keys, both same, and the second in which both keys are different. GPG helps in symmetric key cryptography. 
 
-Assuming Alice and Bob to be two people who want to communicate and send messages to each other. Both will possess their own private and public keys. The public keys are known to all, hence their name public keys. The private keys are known only to the user and under all circumustances must be kept secured. For communication, Alice will sign a message with Bob's public key and send the complete packet to Bob. Now the only key that can decipher Alice's message is Bob's private key, which he possesses, so Bob will easily decipher it. 
+Assuming Alice and Bob to be two people who want to communicate and send messages to each other. Both will possess their own private and public keys. The public keys are known to all, hence their name public keys. The private keys are known only to the user and under all circumstances must be kept secured. For communication, Alice will sign a message with Bob's public key and send the complete packet to Bob. Now the only key that can decipher Alice's message is Bob's private key, which he possesses, so Bob will easily decipher it. 
 
 For digitally signing messages, Alice will sign using her own private key and send the message, to check the authenticity of the user, the receiving party can use Alice's public key to make sure that it is indeed her. 
 

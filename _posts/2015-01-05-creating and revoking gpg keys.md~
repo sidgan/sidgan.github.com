@@ -33,7 +33,7 @@ gpg --gen-key
 </code>
 </p>
 
-Now a series of questions are presented on the terminal, the software is extremely interactive and easy to use. It asks for options regarding the number of bits for the keys, the real name, email-address and finally the passphrase. The passphrase is a security shied that is used to unlock the private key. Everytime the private key is needed, the terminal will prompt for the passphrase and only then can the private key be unlocked for use. 
+Now a series of questions are presented on the terminal, the software is extremely interactive and easy to use. It asks for options regarding the number of bits for the keys, the real name, email-address and finally the passphrase. The passphrase is a security shield that is used to unlock the private key. Everytime the private key is needed, the terminal will prompt for the passphrase and only then can the private key be unlocked for use. 
 
 After generating the key, export it and set its key-id as the default in the `.bashrc` file. Now anytime you need to use the key, you do not need to input its key-id. 
 <p>
