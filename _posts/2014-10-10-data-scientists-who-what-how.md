@@ -7,7 +7,7 @@ tags: [big data, data science, ml]
 ---
 {% include JB/setup %}
 
-The newspaper reads “Data Scientist: The Sexiest Job of the 21st Century”. For a minute you are like “I thought medical and engineering were the only two domains”. Then you smirk “Does it even pay?”. Then somehow you start to read the article. “Best paid job of the century”. Ahem Ahem! You close the news paper, and realize you know nothing.
+The newspaper reads “Data Scientist: The Sexiest Job of the 21st Century”. For a minute you are like “I thought medical and engineering were the only two domains”. Then you smirk “Does it even pay?”. Then somehow you start to read the article. “Best paid job of the century”. Ahem Ahem! You close the newspaper, and realize you know nothing.
 
 Who’s a data scientist you ask? This image (source: Wikipedia) explains it quite well. A data scientist is a blend of maths and statistics, hacking skills and substantive expertise. So what does a data scientist do? He sees zetta bytes of data and goes “Zetta, play no vendetta”. But wait, where did you get zetta bytes of data? Let’s see, how many photos have you uploaded to Facebook till date? How many answers have you submitted to Quora? How many code patches have you contributed? Online shopping: how much or what items do you buy? Do you know what all that is, primarily? Its all data. Bytes making up photos, which is basically an array of RGB values. <Data?> Text in the ASCII format.
 
