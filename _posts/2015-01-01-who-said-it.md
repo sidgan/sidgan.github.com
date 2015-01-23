@@ -23,7 +23,7 @@ The training dataset is a collection of statements that is stored in csv (comma 
 
 ### Removing redundant data
 
-To create the feature vector we need to get rid of redundant data. These include additional white spaces and neutral words that do not contribute towards identification of the speaker. We call the latter [stop words](https://github.com/sidgan/Who-Said-It-/stopwords.txt) (e.g. a, and, party, the, election etc.) 
+To create the feature vector we need to get rid of redundant data. These include additional white spaces and neutral words that do not contribute towards identification of the speaker. We call the latter [stop words](https://github.com/sidgan/Who-Said-it-/blob/master/stopwords.txt) (e.g. a, and, party, the, election etc.) 
 
 ### Creating the feature vector
 
