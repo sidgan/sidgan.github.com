@@ -22,7 +22,7 @@ For digitally signing messages, Alice will sign using her own private key and se
 Ubuntu comes pre-installed with GPG, but it can be installed via the apt-get command as: 
 <p>
 <code>
-sudo apt-get install gpg`
+sudo apt-get install gpg
 </code>
 </p>
 
@@ -72,3 +72,20 @@ After revoking it is preferred that the new key is signed by another developer. 
 <code>
 gpg --output revoke.asc --gen-revoke $GPGKEY
 </code>
+
+Now the revocation certificate has to be uploaded on the server so that other developers can be informed about this change. As soon as someone refreshes their key database, your key will be updated and they will know that the old key has been revoked. 
+
+<p>
+<code>
+gpg --import revoke.asc
+
+</code>
+</p>
+<p>
+<code>
+gpg --keyserver pgp.mit.edu --send-key $REVOKED_KEY
+</code>
+</p>
+
+
+
