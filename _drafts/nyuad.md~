@@ -1,0 +1,16 @@
+---
+layout: post
+title: "New York University Hackathon"
+description: ""
+category: [hackathon]
+tags: []
+---
+{% include JB/setup %}
+
+## New York Abu Dhabi Hackathon 
+
+I was gratified to be selected to represent India at the [New York Abu Dhabi Hackathon](). Hackathons are always great and this was another great one. We developed a web app 'Orphan Locator'. Before the hackathon, ideation had already begun on Google Groups and this forced us to put our thinking caps and suggest ideas. As more ideas came in, people started discussing their implementation and use cases and it felt like we were already part of the hackathon. 
+
+## Orphan Locator 
+
+Orphan Locator was answering the need of the hour because Gaza was grief stricken with the war. So, this app would come in handy for finding all missing people. The idea behind the application was that when a person went missing, there were two existing databases that contained information about the person. First the police station, where the person was reported missing and the second, where the person was living. Given the war zone, the person would be living in a refugee camp or would be admitted in a hospital, or another similar place. Now, the job was to compare these two databases for a match of the persons profile. This is exactly what our team at NYUAD did. Data from NGO's was obtained by coordinating with [Baraka Bits]() founder [Rama Chakaki]() and a test person was employed for locating purposes. Face profiles and information about the person, both were compared to obtain a confidence value. These confidence values were then sorted and the profile with the highest confidence value were displayed as results to the user. Viola Jones algorithm for face recognition and Levenshtien distance for textual information was used. 
