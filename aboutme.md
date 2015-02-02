@@ -8,7 +8,7 @@ group: navigation
 {% include JB/setup %}
 
 
-## [About me](http://about.me/siddha.ganju) 
+## [whoami](http://about.me/siddha.ganju) 
 
 I am a final year computer science student at [National Institute of Technology](http://nith.ac.in/). I am absolutely fascinated by computers and decided to major in this engineering branch. My main interests are in Artificial Intelligence, Machine learning and recently I started discovering Deep Learning. Working on projects related to these make my childhood dreams seem alive. Learning something new everyday is exciting and this is what I strive for. 
 
