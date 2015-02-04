@@ -14,4 +14,4 @@ Visualization also introduced me to the formula of my face. That is just plain a
 
 Data visualization helps in seeing the information that is present. Being able to visualize data makes it much easier to understand the data and make formulas that define its rules. By making graphs of data it is possible to understand where the outliers lie. If we see a graph of K means clustering then we can see what properties are within each cluster and how they merge into the other clusters. This helps us to understand exactly how to formulate the rules that define the clusters. 
 
-
+Wilkerson’s “grammar of graphics
