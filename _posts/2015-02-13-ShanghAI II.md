@@ -3,12 +3,12 @@ layout: post
 title: "ShanghAI II"
 description: ""
 category: technical
-tags: [robotics, ai]
+tags: [robotics, ai, shanghai]
 ---
 {% include JB/setup %}
 
 
-The initial idea that we started out with were worked upon, implemented on WebBots and along the way got modified slightly. The end result is full of better ideas and implementations. Robotics derives a lot of inspiration from animal behaviour and this iteration of ShanghAI is all about how robotics couples with animal behaviour. The act of evolution has perfected almost every task and we just need to learn from it[1].
+The initial ideas that we started out with were worked upon, implemented on WebBots and along the way got modified slightly. The end result, I believe is full of better ideas and implementations. Robotics derives a lot of inspiration from animal behaviour and this iteration of ShanghAI is all about how robotics is coupled with animal behaviour. The act of evolution has perfected almost every task and we just need to learn from it[1].
 
 ## Initial Ideas
 <ul>
@@ -20,7 +20,7 @@ Machine learning to calculate the optimum numerical values of all parameters viz
 Adaptive boosting for finding the best values of the parameters and their appropriate weightage.
 </li>
 <li>
-Grid Search CV for hyper parameter optimization
+Grid Search CV for hyper parameter optimization.
 </li>
 </ul>
 <li>
@@ -28,7 +28,7 @@ Neural networks
 </li>
 <ul>
 <li>
-Find and mark cubes and use neural network to inform other robots to collect cubes.
+Find and mark cubes and use neural networks to inform other robots to collect cubes.
 </li>
 <li>
 Robots tell other robots if cubes have been collected or have already been marked by communication.
@@ -39,7 +39,7 @@ Global Position System node to model a Global Positioning Sensor (GPS)
 </li>
 <ul>
 <li>
-Supervisor controller obtains information about robots and cubes absolute position from the controller program and transmits this information to the robot. Hence, keeps track of several robots simultaneously.
+Supervisor controller obtains information about robots' and cubes' absolute position from the controller program and transmits this information to the robot. Hence, it keeps track of several robots simultaneously.
 </li>
 <li>
 This communication enables the robots to understand how they should manoeuvre their movement to get to the appropriate cube at the right location.
@@ -52,7 +52,7 @@ This communication enables the robots to understand how they should manoeuvre th
 
 ### Swiss Robots
 
-Each robot has its own coordinate system where the origin it the position of the first cube found. THe current position is relative to the cluster point and is calculated using a method called path integration. Swiss robots are extremely simple robots and no not reply heavily on communication. The robots develop themselves to understand how to move and in which direction to move. They need to distinguish between other robots, walls and cubes. The wall is distinguished from cubes and robots by its width. The walls have a greater width. Now, to differentiate between cubes and robots the ability of communication comes into place. Only the robots can communicate, so, if communication is carried out successfully then it is a robot, else a cube.
+Each robot has its own coordinate system where the origin is the position of the first cube found. The current position is relative to the cluster point and is calculated using a method called path integration. Swiss robots are extremely simple robots and no not rely heavily on communication. The robots develop themselves to understand how to move and in which direction to move. They need to distinguish between other robots, walls and cubes. The wall is distinguished from cubes and robots by its width. The walls have a greater width. Now, to differentiate between cubes and robots the ability of communication comes into place. Only the robots can communicate, so, if communication is carried out successfully then it is a robot, else a cube.
 
 ### Distance Sensors
 
@@ -80,7 +80,7 @@ Light Sensors
 </li>
 <ul>
 <li>
-These direct the bot to moves in the direction in which light falls.
+These direct the bot to move in the direction in which light falls.
 </li>
 </ul>
 <li>
@@ -108,10 +108,10 @@ Wheels are driven by electrical motors.
 </li>
 <ul>
 <li>
-If both wheels turn at equal speed, the robot moves straight
+If both wheels turn at equal speed, the robot moves straight.
 </li>
 <li>
-If the right wheel is stopped and only the left wheel moves, the robot will turn to the right side
+If the right wheel is stopped and only the left wheel moves, the robot will turn to the right side.
 </li>
 <li>
 If both wheels move in opposite direction with equal speed, hence the left wheel moves forward and right moves backward or vice versa, the robot turns on spot.
@@ -140,10 +140,10 @@ Evolution has perfected the task and we just need to learn from it.
 Cognition and behavior are a function of the environment, the body, and the brain.
 </li>
 <li>
-We need to find how the swiss robots resemble an animal in some specific
+We need to find how the swiss robots resemble an animal in some specific environment.
 <ul>
 <li>
-Swiss Robots may be treated as ants and the cubes as the ants food.
+Swiss robots may be treated as ants and the cubes as the ants food.
 </li>
 </ul>
 </li>
