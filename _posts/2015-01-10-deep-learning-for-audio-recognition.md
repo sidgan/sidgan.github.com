@@ -18,18 +18,21 @@ The main objective of this project is to make an automatic audio recognition sys
 <li>
 Classification of sounds
 </li>
+<ul>
 <li>
 Classification based on human and non-human sounds
 </li>
 </ul>
-<ul>
 <li>
 Displaying the spoken words
 </li>
+<ul>
 <li>
 Display the words that can be interpreted, if they are of human origin
 </li>
 </ul>
+</ul>
+
 
 <h2>Data Collection </h2>
 The data which includes the .wav audio files have been downloaded from various sources on the internet. These are available under free license of Creative Commons. .wav files are used because they have all the features present in the files and are not compresses
