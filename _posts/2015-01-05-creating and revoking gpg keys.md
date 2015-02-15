@@ -88,6 +88,8 @@ gpg --keyserver pgp.mit.edu --send-key $REVOKED_KEY
 </code>
 </p>
 
+## Removing revoked key from keyring
+
 Now that the key has been revoked it is advisable to remove it from your keyring. This is imperitive because if the key is kept in your keyring you will still be unknowingly using it. 
 
 The method to remove the revoked key from the keyring is as follows: 

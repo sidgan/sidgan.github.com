@@ -99,7 +99,7 @@ gpg --list-keys
 </code>
 </p>
 
-Then to delete the private and public key do‍: 
+Then, to delete both the private and public key do‍: 
 <p>
 <code>
  gpg --delete-secret-and-public-key NAME

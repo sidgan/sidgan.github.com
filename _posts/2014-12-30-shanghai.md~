@@ -3,7 +3,7 @@ layout: post
 title: "I'm at ShanghAI!!"
 description: " "
 category: technical
-tags: [robotics, ai]
+tags: [robotics, ai, shanghai]
 ---
 {% include JB/setup %}
 
@@ -27,6 +27,16 @@ Swiss Robots foremost are dependent on sensor morphology for performing a comple
 Swiss Robots are simple robots that demonstrate the sophisticated collective behaviour of heap formation through a technique called 'strategy of errors'. The robots cannot differentiate amongst obstacles, objects and walls, so, react to each in the same way. During its movement it tries to avoid contact with them. However, if any one stands in the way and the robot is unable to detect it, then the object and robot will face a collision and the robot will push the item. If it is an object, pushing will ultimately lead to heap formation whereas no effect is seen on the wall or obstacle. The behaviour of Swiss robots is achieved using Didabots. 
 
 The behaviour of the Swiss Robots is achieved through [this](https://github.com/sidgan/SwissRobots) code snippet on GitHub which is provided by ShanghAI. 
+
+This is what the bots look like. 
+
+<br/>
+<img src ="/images/Pop-bot.jpg" style="width:500px;height=400px">
+
+
+<br/>
+<img src ="/images/Pop-bot-top.jpg" style="width:300px;height=200px">
+
 
 ## Initial Solution 
 

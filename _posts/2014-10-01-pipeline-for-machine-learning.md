@@ -13,13 +13,14 @@ This project deals with aggregating methods for machine learning. Machine learni
 
 Initially I had to work on [Kaggle](http://www.kaggle.com/) problems trying to gain first hand experience at cleaning data and figuring out what are the most efficient algorithms on which kinds of problems. The first problem that I started on was the Titanic Trainer Challenge. My first prediction lay at a mere 50%, barely, just touching the last position.
 
-<p>
-<img src="/images/first_submission.png">
-<img src="/images/spot.png">
-<img src="/images/final_submission.png">
-</p>
 
-
+<br/>
+<img src ="/images/first_submission.png" style="width:600px;height=500px">
+<br/>
+<img src ="/images/spot.png" style="width:600px;height=500px" >
+<br/>
+<img src ="/images/final_submission.png" style="width:600px;height=500px">
+<br/>
 
 However, continually working on the predictions and using the scikit package provided by Python I was able to come up to the 182nd  position. Through this exercise I learnt the intricacies of data cleaning and that multiple imputation is extremely vital. This exercise was actually fun. I played around with the python scikit packages and learnt a lot. While working on the problem, I found myself devoting time to data cleaning more than expected. Afterwards, hours on experimental tuning. I came across a few articles and blogs on the net which shared these thoughts as well. Some even provided an outline of such an ‘automated pipeline’. I was intrigued and decided to get my hands dirty.
 

@@ -191,9 +191,8 @@ Run the following commands as the hadoop user, <code>hduser</code>:
 </code>
 </p>
 
-<p>
-<img src="starting_hadoop.png">
-</p>
+<br/>
+<img src ="/images/starting_hadoop.png" style="width:600px;height=500px">
 
 <h2> Stop Hadoop</h2>
 
@@ -205,6 +204,6 @@ Run the following commands as the hadoop user, <code>hduser</code>:
 </code>
 </p>
 
-<p>
-<img src="stopping_hadoop.png">
-</p>
+<br/>
+<img src ="/images/stopping_hadoop.png" style="width:600px;height=500px">
+
