@@ -3,7 +3,7 @@ layout: post
 title: "Creating and Revoking GPG keys"
 description: ""
 category: [technical]
-tags: [gpg, crypto]
+tags: [gpg, crypto, security]
 ---
 {% include JB/setup %}
 
