@@ -3,11 +3,12 @@ layout: post
 title: "Creating and Revoking GPG keys"
 description: ""
 category: [technical]
-tags: [gpg, crypto]
+tags: [gpg, crypto, security]
 ---
 {% include JB/setup %}
 
 ## GPG Keys 
+
 OpenGP standards define the semantics for secure information exchange. GPG is the software that follows OpenPG standards. GPG is an acronym for GNU Privacy Guard.
 
 Alice and Bob are the foo-bar, the spam-eggs of the world of computer security. Symmetric key cryptography takes place by two different methods. The first in which there are two keys, both same, and the second in which both keys are different. GPG helps in symmetric key cryptography. 
@@ -90,18 +91,18 @@ gpg --keyserver pgp.mit.edu --send-key $REVOKED_KEY
 
 ## Removing revoked key from keyring
 
-Now that the key has been revoked it is advisable to remove it from your keyring. This is imperitive because if the key is kept in your keyring you will still be unknowingly using it. 
+Now that the key has been revoked it is advisable to remove it from your keyring. This is imperative because if the key is kept in your keyring you will still be unknowingly using it.
 
-The method to remove the revoked key from the keyring is as follows: 
+The method to remove the revoked key from the keyring is as follows:
 
-First of all list all the keys to see how many keys are in your keyring. 
+First of all list all the keys to see how many keys are in your keyring.
 <p>
 <code>
 gpg --list-keys
 </code>
 </p>
 
-Then, to delete both the private and public key do‍: 
+Then, to delete both the private and public key do‍:
 <p>
 <code>
  gpg --delete-secret-and-public-key NAME
@@ -109,7 +110,7 @@ Then, to delete both the private and public key do‍:
 </p>
 
 
-To delete only the public key do: 
+To delete only the public key do:
 <p>
 <code>
  gpg --delete-key NAME

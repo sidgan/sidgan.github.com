@@ -18,6 +18,7 @@ All the experiments were done with my team mate Elena Okhapkina and primary teac
 <p align="justify" >
 The swiss robots behave as animals and they are out to hunt for the cubes. Providing vision to the robots enables them to see and interpret what it is that they are seeing. In the video below, whenever the swiss robot sees the cube, the console writes 'I see a red cube'. This is done by understanding the patch of colors that appear on the screen and then comparing them to the standard colors. 
 <br/>
+<br/>
 In order for the vision to work the walls and flooring of the system had to be redone so that it would not interfere with the vision system of the robots. The robots had a new color given to them and cameras mounted on them. 
 
 </p>

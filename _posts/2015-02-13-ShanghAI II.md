@@ -8,6 +8,7 @@ tags: [robotics, ai, shanghai]
 {% include JB/setup %}
 
 <p align="justify" >
+
 The initial ideas that we started out with were worked upon, implemented on WebBots and along the way got modified slightly. The end result, I believe is full of better ideas and implementations. Robotics derives a lot of inspiration from animal behaviour and this iteration of ShanghAI is all about how robotics is coupled with animal behaviour. The act of evolution has perfected almost every task and we just need to learn from it[1].
 </p>
 
@@ -109,19 +110,19 @@ Touch Sensors
 ### Locomotion
 
 + Using Wheels
-	- Wheels are driven by electrical motors.
-	- If both wheels turn at equal speed, the robot moves straight.
-	- If the right wheel is stopped and only the left wheel moves, the robot will turn to the right side.
-	- If both wheels move in opposite direction with equal speed, hence the left wheel moves forward and right moves backward or vice versa, the robot turns on spot.
+    - Wheels are driven by electrical motors.
+    - If both wheels turn at equal speed, the robot moves straight.
+    - If the right wheel is stopped and only the left wheel moves, the robot will turn to the right side.
+    - If both wheels move in opposite direction with equal speed, hence the left wheel moves forward and right moves backward or vice versa, the robot turns on spot.
  
 + Using Infrared Sensors
-	- The age of the cluster point is exchanged while communicating. After evaluation of this cluster point the robot with the older cluster point sends its current coordinates to the other bots which adopt the older ones coordinates. Finally, this procedure leads to one oldest and global cluster point.
+    - The age of the cluster point is exchanged while communicating. After evaluation of this cluster point the robot with the older cluster point sends its current coordinates to the other bots which adopt the older ones coordinates. Finally, this procedure leads to one oldest and global cluster point.
  
 
 ## Experiment
 
 <p align="justify" >
-All the experiments were done with my team mate Elena Okhapkina and primary teaching assistant Martin F. Stoelen along with secondary TA Yijiang Ren. 
+All the experiments were done with my team mate Elena Okhapkina and primary teaching assistant Martin F. Stoelen along with secondary TA Yijiang Ren.
 </p>
 
 ### Robots and animal behaviour[1]
@@ -129,7 +130,8 @@ All the experiments were done with my team mate Elena Okhapkina and primary teac
 + Evolution has perfected the task and we just need to learn from it
 + Cognition and behavior are a function of the environment, the body, and the brain.
 + We need to find how the swiss robots resemble an animal in some specific environment
-	- Swiss robots may be treated as ants and the cubes as the ants food.
+    - Swiss robots may be treated as ants and the cubes as the ants food.
 
-### References 
-[1] [Send in the Bots](http://www.the-scientist.com/?articles.view/articleNo/37635/title/Send-in-the-Bots/ ) by Jef Akst, The Scientist Magazine, October 1, 2013. 
+### References
+[1] [Send in the Bots](http://www.the-scientist.com/?articles.view/articleNo/37635/title/Send-in-the-Bots/ ) by Jef Akst, The Scientist Magazine, October 1, 2013.
+
