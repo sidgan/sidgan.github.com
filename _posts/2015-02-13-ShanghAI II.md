@@ -10,6 +10,7 @@ tags: [robotics, ai, shanghai]
 <p align="justify" >
 
 The initial ideas that we started out with were worked upon, implemented on WebBots and along the way got modified slightly. The end result, I believe is full of better ideas and implementations. Robotics derives a lot of inspiration from animal behaviour and this iteration of ShanghAI is all about how robotics is coupled with animal behaviour. The act of evolution has perfected almost every task and we just need to learn from it[1].
+
 </p>
 
 ## Initial Ideas
