@@ -17,7 +17,7 @@ SSH keys can have various types of secure algorithms on which they are based. Th
 
 `ssh-keygen -t rsa`
 
-The entire process of generation of the keys is highly interactive and the user will be prompted for a lot of questions. This interaction is similar to the process of [generating GPG keys](www.sidgan.github.io/technical/2015/01/05/creating and revoking gpg keys/). You can set the location where your SSH keys will be stored and set the passphrase. Then you will be provided with the key fingerprint and the key's randomart image.
+The entire process of generation of the keys is highly interactive and the user will be prompted for a lot of questions. This interaction is similar to the process of [generating GPG keys](http://sidgan.github.io/technical/2015/01/05/creating%20and%20revoking%20gpg%20keys/). You can set the location where your SSH keys will be stored and set the passphrase. Then you will be provided with the key fingerprint and the key's randomart image.
 
 Now, the key has been generated and the keys can be placed on the server. This is done with the `ssh-copy-id` command.
 

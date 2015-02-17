@@ -53,7 +53,7 @@ I breathed a sigh of relief and could see my splendid laptop back to its normal 
 <h3> SSH </h3> 
 
 In order to access the different nodes, Hadoop uses SSH. All this is done while being logged into the <code>hduser</code> account.
-Simply [generate SSH key](www.sidgan.github.io/technical/2014/09/23/generate ssh keys/) for <code>hduser</code>. 
+Simply [generate SSH key](http://sidgan.github.io/technical/2014/09/23/generate ssh keys/) for <code>hduser</code>. 
 
 One important thing to keep in mind is to not enter any password for the <code>hduser</code> because all the while Hadoop interacts with the nodes, the user will have to input the password each time. This is not possible, so, it is a better idea to not keep any password in the first place. 
 
