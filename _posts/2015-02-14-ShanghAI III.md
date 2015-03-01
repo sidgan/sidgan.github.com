@@ -20,31 +20,21 @@ The swiss robots behave as animals and they are out to hunt for the cubes. Provi
 <br/>
 <br/>
 In order for the vision to work the walls and flooring of the system had to be redone so that it would not interfere with the vision system of the robots. The robots had a new color given to them and cameras mounted on them. 
-
 </p>
-<video width="320" height="240" controls>
-<source src="/media/swissRobot_vision.mp4" type="video/mp4">
-</video>
+
+{% youtube 5rG9H2px5Yk %}
 
 The Swiss Robots were initially moving like in the video below. 
 
-<video width="320" height="240" controls>
-<source src="/media/swissRobot_initial.mp4" type="video/mp4">
-</video>
+{% youtube tk_meaPD8J4 %}
 
 Now, with vision attributed to them, there is a slight precision that is achieved.
- 
-<video width="320" height="240" controls>
-<source src="/media/swissRobot_last.mp4" type="video/mp4">
-</video>
+
+{% youtube ngDDwqaREi8 %}
 
 ### References 
 
-
-
 [1] [Send in the Bots](http://www.the-scientist.com/?articles.view/articleNo/37635/title/Send-in-the-Bots/ ) by Jef Akst, The Scientist Magazine, October 1, 2013. 
-
-
 
 [2] [What does robotics offer animal behaviour?](http://homepages.inf.ed.ac.uk/bwebb/publications/animal_behaviour.pdf) by Barbara Webb, Centre for Cognitive and Computational Neuroscience, Department of Psychology, University of Stirling. 
 

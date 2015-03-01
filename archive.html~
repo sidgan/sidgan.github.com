@@ -6,9 +6,7 @@ group : navigation
 ---
 {% include JB/setup %}
 
-
 <p align=right>
-<br/>
 <h4> Posts sorted by date of publishing. </h4>
 <h4> To change the post assortment, click below.</h4>
 <a href="categories.html">Sort Posts by categories</a>
