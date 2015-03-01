@@ -22,15 +22,10 @@ The swiss robots behave as animals and they are out to hunt for the cubes. Provi
 In order for the vision to work the walls and flooring of the system had to be redone so that it would not interfere with the vision system of the robots. The robots had a new color given to them and cameras mounted on them. 
 </p>
 
-{% youtube 5rG9H2px5Yk %}
 
-The Swiss Robots were initially moving like in the video below. 
+The Swiss Robots were initially moving like [this](http://youtu.be/tk_meaPD8J4?list=PL9qsrNYAPFKIgIFJoUDdhe6rV6IZSKum7). Now, with [vision](https://www.youtube.com/watch?v=ngDDwqaREi8&index=4&list=PL9qsrNYAPFKIgIFJoUDdhe6rV6IZSKum7) attributed to them, there is a slight precision that is achieved.
 
-{% youtube tk_meaPD8J4 %}
 
-Now, with vision attributed to them, there is a slight precision that is achieved.
-
-{% youtube ngDDwqaREi8 %}
 
 ### References 
 
