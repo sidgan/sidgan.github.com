@@ -27,7 +27,7 @@ You can contact me on :
 
 - IRC nick : sidgan 
 - Twitter Handle: [SiddhaGanju](http://www.twitter.com/SiddhaGanju) 
-- [LinkedIN](https://in.linkedin.com/in/sidgan)
+- [LinkedIN](https://www.linkedin.com/in/sidgan)
 - Gmail : siddhaganju AT Gmail DOT COM
 
 
