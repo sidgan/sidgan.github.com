@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="google-site-verification" content="9nJDFuShU7EqBA2jMmiyC4_4uYyHadxN5cnh2dITchY" />
+    <title>Deep Learning for Audio Recognition</title>
+    <meta name="description" content="">
+   <meta name="author" content="Siddha Ganju">
+<meta name="keywords" content="Machine Learning deep learning artificial intelligence computer science">
+	<meta name="description" content="Journey from technical frobs to tweaks">
+<meta property="og:url" content="http://www.sidgan.github.io/">
+<meta name="title" content="Journey from technical frobs to tweaks">
+
+   
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59744528-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Deep Learning for Audio Recognition </h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <h1> Deep Learning </h1>
+<p>Deep learning is also called deep structural learning or hierarchical learning. It is a set of algorithms in machine learning that attempts to model high-level abstractions in data by using model architectures composed of multiple non-linear transformations. It is the part of a broader family of machine learning methods based on learning representations of data. Various deep learning architectures such as deep neural networks, convolutional deep neural networks, and deep belief networks have been applied to fields like computer vision, automatic speech recognition, natural language processing, and music/audio signal recognition and these have produced state-of-the-art results on various tasks.</p>
+
+<p>Recently, I learnt about <a href='http://www.forbes.com/fdc/welcome_mjx.shtml'>Deep Speech</a> developed by <a href='http://www.baidu.com/'>Baidu</a>. They employed a much bigger data set on powerful algorithm and a recurrent neural network. They have used a massive GPU based deep learning infrastructure to train a data set of 100,000 hours of speech data especially for noisy situations.</p>
+
+<p>The main objective of this project is to make an automatic audio recognition system which can sense and interpret the appropriate sounds from the surrounding and show the text, displaying the kind of sound perceived. It is basically classification of sounds and displaying the spoken words on screen in case of speech using deep learning. The work in this project is divided into two parts: <ul>
+<li>
+Classification of sounds
+</li>
+<ul>
+<li>
+Classification based on human and non-human sounds
+</li>
+</ul>
+<li>
+Displaying the spoken words
+</li>
+<ul>
+<li>
+Display the words that can be interpreted, if they are of human origin
+</li>
+</ul>
+</ul></p>
+<h2>Data Collection </h2>
+<p>The data which includes the .wav audio files have been downloaded from various sources on the internet. These are available under free license of Creative Commons. .wav files are used because they have all the features present in the files and are not compresses unlike other file formats. Sites: <ul>
+<li>
+Soundjay.com
+</li>
+<li>
+Wavsource.com
+</li>
+<li>
+Freesound.org
+</li>
+</ul></p>
+<h2>Spectrograms</h2>
+<p>A spectrogram is a visual representation of the spectrum of frequencies in a sound or other signal as they vary with time or some other variable. Spectrograms are sometimes called spectral waterfalls, voiceprints, or voice grams. Spectrograms can be used to identify spoken words phonetically, and to analyses the various calls of animals. They are used extensively in the development of the fields of music, sonar, radar, and speech processing, seismology, etc. The instrument that generates a spectrogram is called a spectrograph.</p>
+<h2>Generation of Spectrograms</h2>
+<p>Using the a <a href='http://en.wikipedia.org/wiki/Fast_Fourier_transform'>Fast Fourier Transform</a> (FFT) algorithm to compute the <a href='http://en.wikipedia.org/wiki/Discrete_Fourier_transform'>Discrete Fourier Transform</a> (DFT) and its inverse. Fourier analysis converts time (or space) to frequency and vice versa; an FFT rapidly computes such transformations by factorizing the DFT matrix into a product of sparse (mostly zero) factors. As a result, fast Fourier transforms are widely used for many applications in engineering, science, and mathematics. The basic ideas were popularized in 1965, but some FFTs had been previously known as early as 1805. Fast Fourier transforms have been described as &#8220;the most important numerical algorithm of our lifetime&#8221;. The spectrograms generated in this module follow the normal convention of having frequency (in Hertz) on the vertical axis and time on the horizontal axis. Intensity is denoted by the darkness, saturation and hue of the colors. It is best to convert the audio files into spectrograms because they maintain all the properties such as bandwidth, frequency, pitch, resonance and the variation of frequency with bandwidth can be visualized. In this project we have utilized the pyaudio packages for producing the spectrograms.</p>
+<h3>Using Timeside for Spectrogram generation</h3>
+<p>TimeSide is a set of python components enabling low and high level audio analysis, imaging, and transcoding (conversion of one digital code to another) and streaming. Its high-level API is designed to enable complex processing on large datasets of audio and video assets of any format. Its simple plug-in architecture can be adapted to various use cases. TimeSide also includes a smart interactive HTML5 player which provides various streaming playback functions, formats selectors, fancy audio visualizations, segmentation and semantic labeling synchronized with audio events. It is embeddable in any web application. In the generated spectrogram which is a representation of the spectrum frequencies in a sound. <ul>
+<li>
+Horizontal axis represents time
+</li>
+<li>
+Vertical axis represents frequency
+</li>
+<li>
+Color represents amplitude
+</li>
+</ul></p>
+<h3>Using pylab and audiolab</h3><h3>Using pylab as an alternative method</h3>
+<p>Classification of sounds using Deep Learning involves spoken language understanding (SLU) which can be classified into the following majors: <ul>
+<li>
+Domain classification
+</li>
+<li>
+Intent detection
+</li>
+<li>
+Semantic slot filling
+</li>
+</ul></p>
+
+<p>A major hurdle in performing SLU is the huge variability of spoken language.</p>
+<h3>Domain and intent classification </h3>
+<p>This is included within semantic utterance classification (SUC) such that, C=argmax(c)P(C|X) Where, C=c1, &#8230;.cm belong to one of the M semantic categories (e.g., domain or intent) and X is the input utterance. SUC handles n-gram as raw features. N-grams are based on the phonetics and common occurrence of two alphabets together. As an example, a bi-gram set would include “th”, “at”, “in”, and several others. Similarly, a tri-gram set will include “ing”, “ion”, “eat” among others. These are necessary for POS tagging. The classifiers that are used in SUC are logistic regression, boosting and support vector machines (SVM).</p>
+<h3>Semantic slot filling</h3>
+<p>It is a sequential tagging problem. POS tagging is part-of-speech tagging and tags a word to its part of speech, hence creating a mapping of words with a set as {noun, verb, adverb, pronoun}.</p>
+<h2>Algorithms used</h2><ul>
+<li>
+AdaBoost
+</li>
+<li>
+Naïve Bayes Classification
+</li>
+<li>
+Random Forest Classifier
+</li>
+<li>
+Gradient Boosting
+</li>
+<li>
+SGD regression
+</li>
+<li>
+KN classification
+</li>
+<li>
+Decision tree classifier
+</li>
+<li>
+Logistic Regression
+</li>
+</ul>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/technical/2015/01/05/creating+and+revoking+gpg+keys" title="Creating and Revoking GPG keys">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/technical/2015/01/16/data+visualization" title="Data Visualization">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>10 January 2015</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#deep learning-ref">deep learning <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2015
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

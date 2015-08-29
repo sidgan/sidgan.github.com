@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="google-site-verification" content="9nJDFuShU7EqBA2jMmiyC4_4uYyHadxN5cnh2dITchY" />
+    <title>New York University Abu Dhabi Hackathon</title>
+    <meta name="description" content="">
+   <meta name="author" content="Siddha Ganju">
+<meta name="keywords" content="Machine Learning deep learning artificial intelligence computer science">
+	<meta name="description" content="Journey from technical frobs to tweaks">
+<meta property="og:url" content="http://www.sidgan.github.io/">
+<meta name="title" content="Journey from technical frobs to tweaks">
+
+   
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59744528-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>New York University Abu Dhabi Hackathon </h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <p>I was gratified to be selected to represent India at the <a href='http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html'>New York Abu Dhabi Hackathon</a>. Hackathons are always great and this was another great one. We developed a web app &#8216;Orphan Locator&#8217;. Before the hackathon, ideation had already begun on Google Groups and this forced us to put our thinking caps and suggest ideas. As more ideas came in, people started discussing their implementation and use cases and it felt like we were already part of the hackathon.</p>
+
+<h2 id='basic_idea_lost_person_application'>Basic Idea: Lost Person Application</h2>
+
+<p>An application for lost or missing people was answering the need of the hour because Gaza was grief stricken with the war. So, this app would come in handy for finding all missing people. The idea behind the application was that when a person went missing, there were two existing databases that contained information about the person. First the police station, where the person was reported missing and the second, where the person was living. Given the war zone, the person would be living in a refugee camp or would be admitted in a hospital, or another similar place. Now, the job was to compare these two databases for a match of the persons profile. This is exactly what our team at NYUAD did. Data from NGO&#8217;s was obtained by coordinating with <a href='http://www.barakabits.com/'>Baraka Bits</a> founder and Chief Optimist <a href='https://twitter.com/rchakaki'>Rama Chakaki</a> and a test person was employed for locating purposes. Face profiles and information about the person, both were compared to obtain a confidence value. These confidence values were then sorted and the profile with the highest confidence value were displayed as results on the <a href='https://github.com/sidgan/orphanlocator'>website</a> to the user. Viola Jones algorithm for face recognition and Levenshtein distance for textual information was used.</p>
+
+<h2 id='special_case_orphan_locator'>Special Case: Orphan Locator</h2>
+
+<p>Using fuzzy matching and face recognition algorithms, we are able to connect a orphan and his parents. When a child goes missing, his parents provide a photo, first name, last name, age, gender, last seen location, and other data on which we perform &#8220;fuzzy matching&#8221;, matching that takes into consideration the variations in data considering time lapses and errors in data entry. Our matching technology allows NGOs or orphanages to find missing kids. Certain identity cards are maintained with full logs of photo, name and other valid details about the missing child.</p>
+
+<p>Using these two sets of data, (from the parent&#8217;s side and from the orphanage) a match can be performed that gives approximate prediction value that helps us to understand what is the probability that the child could be the missing one. We use used open source OpenCV algorithms, the Viola-Jones method, Eigen Faces, with Local Binary Pattern Histogram to train the data set, perform face detection first and then face recognition. Apart from this, fuzzy matching is performed on the additional data so that even without the photo a suitable match can be found.</p>
+
+<p>Also for further development a SMS feature can be developed so that people without access to internet will be able to receive information about missing children that they reported to the system.</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/technical/hackathon/2013/08/20/nokia-do-good-hackathon" title="Nokia Do Good Hackathon">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/technical/2014/09/23/generate+ssh+keys" title="SSH Keys">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>01 March 2014</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2015
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

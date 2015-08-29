@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="google-site-verification" content="9nJDFuShU7EqBA2jMmiyC4_4uYyHadxN5cnh2dITchY" />
+    <title>Docker Installation</title>
+    <meta name="description" content="">
+   <meta name="author" content="Siddha Ganju">
+<meta name="keywords" content="Machine Learning deep learning artificial intelligence computer science">
+	<meta name="description" content="Journey from technical frobs to tweaks">
+<meta property="og:url" content="http://www.sidgan.github.io/">
+<meta name="title" content="Journey from technical frobs to tweaks">
+
+   
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59744528-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Docker Installation </h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <h2 id='docker'>Docker</h2>
+
+<p>Docker like its name lets a developer create a software and ship it easily. Docker quickly assembles applications from its components and tries to eliminate all problems when it comes to shipping a software. It is the ultimate hackers software because it conforms with the identity of fuck it, ship it. It helps in versioning, that means you can create several versions of the same software and use whichever one you want. Like on Github versioning is possible, imagine the same with Docker. You can even create versions of your operating system with Docker much like Windows has the restore points. Though in this regard Ubuntu offers the backup restore as well. Docker is offers a wide utility and is formed of two main components:</p>
+
+<ul>
+<li>Docker Engine - It is the container virtualization in which the application runs. It can be thought of as the container which contains all the environment variables along with all dependencies necessary to get the software running.</li>
+
+<li>Docker Hub - It is the shipping package. Its a SaaS or Software as a Service that helps in managing and sharing the application stack.</li>
+</ul>
+
+<h2 id='installation'>Installation</h2>
+
+<p>I use Ubuntu 12.04 Precise Pangolin and will be describing the installation on this distro.</p>
+
+<p>It is necessary to update the kernels for 12.04 because Docker does not support the old kernels. So, <code>sudo apt-get update</code> and then install the backported kernels by</p>
+
+<p><code>sudo apt-get install linux-image-generic-lts-trusty linux-headers-generic-lts-trusty</code></p>
+
+<p>Then, reboot the system, graphically or do, <code>sudo reboot</code></p>
+
+<p>Finally, install the <code>lxc-docker</code> package by adding it to the list of repositories in <code>apt</code>. Also add it&#8217;s key to your keyring.</p>
+
+<p>With this, Docker has been installed. You can verify by running any package in the Docker container and see that it actually executes.</p>
+
+<h2 id='chaos'>Chaos</h2>
+
+<p>While installing Docker I lost the networking ability of my computer, I am not sure exactly what triggered this. But I think it was because Ubuntu no longer provides support for the old kernels that are supported by Docker now. Though I did update my kernels before installing Docker there must have been something left.</p>
+
+<p>As I always say Terminal is king, the terminal again came to my rescue. The terminal <strong>ALWAYS</strong> comes to the rescue. Thats why I love Linux so much. No matter how badly you think you have screwed up and the only possible way out now is a fresh installation (which too comes free. :D) the terminal always provides a solution. I cannot stress on the utmost importance and utility of the terminal even if I were to talk about it every single day.</p>
+
+<p>So, here is what I did. I opened my Terminal using Ctrl+Alt+F7 and after hours of manipulation I noticed that something had triggered my iptables to lose their value. Iptables are necessary to configure the Linux kernel firewall. There are several modules that cater to different protocols. Like, iptables cater to IPv4 while ip6tables cater to IPv6, ebtables to Ethernet frames and arptables to ARP.</p>
+
+<p>If the IP tables had no value then they could not detect the system settings and hence my network would never be restored. So I manually changed them by <code>sudo iptables</code> I was using internet behind a mask of proxies so I had to set my college proxy in place. Thus I was able to regain control of my computer&#8217;s networking. After installing Docker, now whenever I boot my system it selects the network configuration while booting. This is one major difference that I noticed after installing Docker.</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/conference/hackathon/2014/11/25/ghc" title="Grace Hopper Conference & Hackathon">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/technical/2014/12/10/gender-identifier" title="Gender Identifier">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>30 November 2014</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#docker-ref">docker <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#installation-ref">installation <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#terminal-ref">terminal <span>2</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2015
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

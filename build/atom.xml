@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Frob Yard</title>
+ <link href="http://sidgan.github.io/" rel="self"/>
+ <link href="http://sidgan.github.io"/>
+ <updated>2015-08-29T13:01:03+02:00</updated>
+ <id>http://sidgan.github.io</id>
+ <author>
+   <name>Siddha Ganju</name>
+   <email>siddhaganju@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Open Cosmics</title>
+   <link href="http://sidgan.github.io/technical/hackathon/2015/08/03/CERN+Webfest"/>
+   <updated>2015-08-03T00:00:00+02:00</updated>
+   <id>http://sidgan.github.io/technical/hackathon/2015/08/03/CERN Webfest</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>GitHub custom domain</title>
+   <link href="http://sidgan.github.io/technical/2015/03/01/git-custom-domain"/>
+   <updated>2015-03-01T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2015/03/01/git-custom-domain</id>
+   <content type="html">&lt;p&gt;&lt;a href='https://www.npmjs.com/package/gitio-cli'&gt;This&lt;/a&gt; is a neat CLI package to get ones own cutom git.io domain. It is simple to use. Just do:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gitio &amp;#39;https://github.com/username_or_handle&amp;#39; &amp;#39;custom_domain&amp;#39;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gitio ‘https://github.com/sidgan’ ‘sg’&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To check if the domain has already been taken, just go to git.io/custom_domain and see if it is available or not. So, hurry!! before someone takes the custom git.io domain that youv&amp;#8217;e always wanted.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>My induction into the Mozilla Developers Network</title>
+   <link href="http://sidgan.github.io/article/2015/02/20/mdn"/>
+   <updated>2015-02-20T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/article/2015/02/20/mdn</id>
+   <content type="html">&lt;h2 id='mozilla_developers_network'&gt;Mozilla Developers Network&lt;/h2&gt;
+
+&lt;p&gt;I had been editing some of the docs regarding Firefox OS. It was great work. I have always loved open source and this was just another contribution. I had been lurking on the #mdn IRC channel for some time now. One fine day, there came the day of the meeting of all the people in the Mozilla Development Network and I was also present. I introduced myself, and no doubt the people welcomed me. I was all \o/ and happily doing the Irish jig about the great meeting going on. They gave a list of all the work that was going on along with their status and I asked a few questions. I really like transliteration, so, I asked them if a specific job in transliteration was free and not assigned to anyone, but apparently someone else had already got their hands on it before me. So, the people there suggested that I take up some other job and I agreed. &amp;#8216;I got selected&amp;#8217; or so goes the saying. My job was to create the pages about the &lt;code&gt;&amp;lt;input type=&amp;#39;XXXX&amp;#39;&amp;gt;&lt;/code&gt;. These had been put all in one place so it was a bit difficult to locate all their attributes. Also, the members said that they needed someone to do it, because it was pretty important, but had not got the time to get on with it for quite some time now. So I agreed, and started on with it. I made one page first and asked for comments on the IRC channel. They told me what they thought about it and made a few edits. I got some more time to add onto the existing work and got the basic outline for the rest of the job. I really liked it. The work was good and I in turn learnt a lot about documentation and the development standards that Mozilla abides by. I am proud of the fact that I decided to contribute to Mozilla and truly have loved being a part of it. :)&lt;/p&gt;
+
+&lt;p&gt;Now, I have finished my initial work that was assigned to me, but that does not mean that my job here is done. I learnt a lot along the way and this experience has enriched me completely. It has increased my love for open source and no doubt I will continue working for MDN. I will still be lurking on the IRC channels and will still be contributing both to the codebase and the documentation. I love IRC, and till date I have found so many interesting people there, including some of my college seniors. They reminiscence and seem nostalgic when they talk about how the college was in the past. It makes the happy balloon inside me even happier. I am truly gratified by the welcome into the community.&lt;/p&gt;
+
+&lt;p&gt;Thank you everyone!&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>ShanghAI III</title>
+   <link href="http://sidgan.github.io/technical/2015/02/14/ShanghAI+III"/>
+   <updated>2015-02-14T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2015/02/14/ShanghAI III</id>
+   <content type="html">&lt;h2 id='experiment'&gt;Experiment&lt;/h2&gt;
+&lt;p align='justify'&gt;
+All the experiments were done with my team mate Elena Okhapkina and primary teaching assistant Martin F. Stoelen along with secondary TA Yijiang Ren. 
+&lt;/p&gt;
+&lt;h3 id='robots_and_animal_behaviour1'&gt;Robots and animal behaviour&lt;span&gt;1&lt;/span&gt;&lt;/h3&gt;
+&lt;p align='justify'&gt;
+The swiss robots behave as animals and they are out to hunt for the cubes. Providing vision to the robots enables them to see and interpret what it is that they are seeing. In the video below, whenever the swiss robot sees the cube, the console writes 'I see a red cube'. This is done by understanding the patch of colors that appear on the screen and then comparing them to the standard colors. 
+&lt;br /&gt;
+&lt;br /&gt;
+In order for the vision to work the walls and flooring of the system had to be redone so that it would not interfere with the vision system of the robots. The robots had a new color given to them and cameras mounted on them. 
+&lt;/p&gt;
+&lt;p&gt;The Swiss Robots were initially moving like &lt;a href='http://youtu.be/tk_meaPD8J4?list=PL9qsrNYAPFKIgIFJoUDdhe6rV6IZSKum7'&gt;this&lt;/a&gt;. Now, with &lt;a href='https://www.youtube.com/watch?v=ngDDwqaREi8&amp;amp;index=4&amp;amp;list=PL9qsrNYAPFKIgIFJoUDdhe6rV6IZSKum7'&gt;vision&lt;/a&gt; attributed to them, there is a slight precision that is achieved.&lt;/p&gt;
+
+&lt;h3 id='references'&gt;References&lt;/h3&gt;
+
+&lt;p&gt;&lt;span&gt;1&lt;/span&gt;(http://www.the-scientist.com/?articles.view/articleNo/37635/title/Send-in-the-Bots/ ) by Jef Akst, The Scientist Magazine, October 1, 2013.&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;2&lt;/span&gt;(http://homepages.inf.ed.ac.uk/bwebb/publications/animal_behaviour.pdf) by Barbara Webb, Centre for Cognitive and Computational Neuroscience, Department of Psychology, University of Stirling.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>ShanghAI II</title>
+   <link href="http://sidgan.github.io/technical/2015/02/13/ShanghAI+II"/>
+   <updated>2015-02-13T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2015/02/13/ShanghAI II</id>
+   <content type="html">&lt;p align='justify'&gt;
+
+The initial ideas that we started out with were worked upon, implemented on WebBots and along the way got modified slightly. The end result, I believe is full of better ideas and implementations. Robotics derives a lot of inspiration from animal behaviour and this iteration of ShanghAI is all about how robotics is coupled with animal behaviour. The act of evolution has perfected almost every task and we just need to learn from it[1].
+
+&lt;/p&gt;
+&lt;h2 id='initial_ideas'&gt;Initial Ideas&lt;/h2&gt;
+&lt;p align='justify'&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Machine learning to calculate the optimum numerical values of all parameters viz. pitch, yaw.
+&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Adaptive boosting for finding the best values of the parameters and their appropriate weightage.
+&lt;/li&gt;
+&lt;li&gt;
+Grid Search CV for hyper parameter optimization.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;
+Neural networks
+&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Find and mark cubes and use neural networks to inform other robots to collect cubes.
+&lt;/li&gt;
+&lt;li&gt;
+Robots tell other robots if cubes have been collected or have already been marked by communication.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;
+Global Position System node to model a Global Positioning Sensor (GPS)
+&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Supervisor controller obtains information about robots' and cubes' absolute position from the controller program and transmits this information to the robot. Hence, it keeps track of several robots simultaneously.
+&lt;/li&gt;
+&lt;li&gt;
+This communication enables the robots to understand how they should manoeuvre their movement to get to the appropriate cube at the right location.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;h2 id='morphology'&gt;Morphology&lt;/h2&gt;
+
+&lt;h3 id='swiss_robots'&gt;Swiss Robots&lt;/h3&gt;
+&lt;p align='justify'&gt;
+Each robot has its own coordinate system where the origin is the position of the first cube found. The current position is relative to the cluster point and is calculated using a method called path integration. Swiss robots are extremely simple robots and no not rely heavily on communication. The robots develop themselves to understand how to move and in which direction to move. They need to distinguish between other robots, walls and cubes. The wall is distinguished from cubes and robots by its width. The walls have a greater width. Now, to differentiate between cubes and robots the ability of communication comes into place. Only the robots can communicate, so, if communication is carried out successfully then it is a robot, else a cube.
+&lt;/p&gt;
+&lt;h3 id='distance_sensors'&gt;Distance Sensors&lt;/h3&gt;
+&lt;p align='justify'&gt;
+These sensors are used for communication and help in determining the distance.
+
+&lt;ul&gt;
+&lt;li&gt;
+Proximity Sensors
+&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+These are distributed over the front half of the bot and each one is connected to a node in the neural network.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;
+Collision Sensors
+&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+These are based on binary threshold, so transmit only when the total signal is above some threshold limit. These transmit the signal when a collision takes place.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;
+Light Sensors
+&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+These direct the bot to move in the direction in which light falls.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;
+Infrared Sensors
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src='/images/Infrared-sensors.jpg' style='width:300px;height=200px' /&gt;
+&lt;br /&gt;
+&lt;/li&gt;
+&lt;br /&gt;
+&lt;li&gt;
+Touch Sensors
+&lt;p&gt;
+&lt;br /&gt;
+&lt;img src='/images/Touch-sensors.jpg' style='width:300px;height=200px' /&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;h3 id='locomotion'&gt;Locomotion&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Using Wheels - Wheels are driven by electrical motors. - If both wheels turn at equal speed, the robot moves straight. - If the right wheel is stopped and only the left wheel moves, the robot will turn to the right side. - If both wheels move in opposite direction with equal speed, hence the left wheel moves forward and right moves backward or vice versa, the robot turns on spot.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Using Infrared Sensors - The age of the cluster point is exchanged while communicating. After evaluation of this cluster point the robot with the older cluster point sends its current coordinates to the other bots which adopt the older ones coordinates. Finally, this procedure leads to one oldest and global cluster point.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='experiment'&gt;Experiment&lt;/h2&gt;
+&lt;p align='justify'&gt;
+All the experiments were done with my team mate Elena Okhapkina and primary teaching assistant Martin F. Stoelen along with secondary TA Yijiang Ren.
+&lt;/p&gt;
+&lt;h3 id='robots_and_animal_behaviour1'&gt;Robots and animal behaviour&lt;span&gt;1&lt;/span&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Evolution has perfected the task and we just need to learn from it&lt;/li&gt;
+
+&lt;li&gt;Cognition and behavior are a function of the environment, the body, and the brain.&lt;/li&gt;
+
+&lt;li&gt;We need to find how the swiss robots resemble an animal in some specific environment - Swiss robots may be treated as ants and the cubes as the ants food.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='references'&gt;References&lt;/h3&gt;
+
+&lt;p&gt;&lt;span&gt;1&lt;/span&gt;(http://www.the-scientist.com/?articles.view/articleNo/37635/title/Send-in-the-Bots/ ) by Jef Akst, The Scientist Magazine, October 1, 2013.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Signing GPG Keys</title>
+   <link href="http://sidgan.github.io/technical/2015/02/10/Signing+GPG-Keys"/>
+   <updated>2015-02-10T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2015/02/10/Signing GPG-Keys</id>
+   <content type="html">&lt;h2 id='signing_gpg_keys'&gt;Signing GPG Keys&lt;/h2&gt;
+
+&lt;p&gt;Signing another person&amp;#8217;s public keys means that you certifying and stating that you trust that person and their work. &lt;a href='http://biglumber.com/'&gt;BigLumber&lt;/a&gt; is a site that allows people to sign each others public keys. You just create your account and upload your ASCII armoured public key. The method of using ASCII armored version to import keys is often preferred because the key comes directly from the user. The keyserver may contain a corrupt key or may be unavailable so the ASCII armored version is given preference. To create the ASCII armoured public key simply do:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gpg --output key.asc --export -a $GPGKEY&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For authentication purposes &lt;a href='http://biglumber.com/'&gt;BigLumber&lt;/a&gt; will send you an encrypted email on your registered email id. You decrypt the mail and follow the instructions and finally you are a member of the &lt;a href='http://biglumber.com/'&gt;BigLumber&lt;/a&gt; fraternity. There are several sites that allow signing of public keys, &lt;a href='http://biglumber.com/'&gt;BigLumber&lt;/a&gt; is just on of them.&lt;/p&gt;
+
+&lt;p&gt;In order to sign someones key you should know their key id, say it is KEYID&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;export KEYID=XXXXXXXX&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then receive this key from the keyserver where it has been uploaded:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gpg --keyserver pgp.mit.edu --recv-keys $KEYID&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then sign the key using:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gpg --sign-key $KEYID&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And finally, upload it onto the server once again:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gpg --keyserver pgp.mit.edu --send-key $KEYID&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, you have successfully signed the key and have established a circle of trust.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Data Visualization</title>
+   <link href="http://sidgan.github.io/technical/2015/01/16/data+visualization"/>
+   <updated>2015-01-16T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2015/01/16/data visualization</id>
+   <content type="html">&lt;h2 id='data_visualization'&gt;Data Visualization&lt;/h2&gt;
+
+&lt;p&gt;When you have a lot of data at hand, often the best thing to do is to plot it on a graph. That way one can visualize it and see how sparse or dense the data points are. It gives a basic idea about the data that we have to analyze. Data visualization as the name suggests, lets one see the data. Seeing several tables or mounds of csv files does not tell us anything apart from the fact that we just have a lot of data. I have used data visualization extensively to understand what data implies. It helps to read inbetween the lines and data analysis is in essential terms that only.&lt;/p&gt;
+
+&lt;p&gt;Visualization also introduced me to the formula of my face. That is just plain amazing. &lt;a href='http://blog.wolfram.com/2013/05/17/making-formulas-for-everything-from-pi-to-the-pink-panther-to-sir-isaac-newton/'&gt;This&lt;/a&gt; post on the Wolfram Alpha blog describes the procedure to derive the formula for almost every object, item and even human that is present on the planet. This was the best thing that I have ever read. It encompasses the idea that maths is present everywhere. They are using Fourier Transforms too and this again proves the fact the Fourier Transforms are &amp;#8220;the most important numerical algorithm of our lifetime&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Data visualization helps in seeing the information that is present. Being able to visualize data makes it much easier to understand the data and make formulas that define its rules. By making graphs of data it is possible to understand where the outliers lie. If we see a graph of K means clustering then we can see what properties are within each cluster and how they merge into the other clusters. This helps us to understand exactly how to formulate the rules that define the clusters.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Deep Learning for Audio Recognition</title>
+   <link href="http://sidgan.github.io/technical/2015/01/10/deep-learning-for-audio-recognition"/>
+   <updated>2015-01-10T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2015/01/10/deep-learning-for-audio-recognition</id>
+   <content type="html">&lt;h1&gt; Deep Learning &lt;/h1&gt;
+&lt;p&gt;Deep learning is also called deep structural learning or hierarchical learning. It is a set of algorithms in machine learning that attempts to model high-level abstractions in data by using model architectures composed of multiple non-linear transformations. It is the part of a broader family of machine learning methods based on learning representations of data. Various deep learning architectures such as deep neural networks, convolutional deep neural networks, and deep belief networks have been applied to fields like computer vision, automatic speech recognition, natural language processing, and music/audio signal recognition and these have produced state-of-the-art results on various tasks.&lt;/p&gt;
+
+&lt;p&gt;Recently, I learnt about &lt;a href='http://www.forbes.com/fdc/welcome_mjx.shtml'&gt;Deep Speech&lt;/a&gt; developed by &lt;a href='http://www.baidu.com/'&gt;Baidu&lt;/a&gt;. They employed a much bigger data set on powerful algorithm and a recurrent neural network. They have used a massive GPU based deep learning infrastructure to train a data set of 100,000 hours of speech data especially for noisy situations.&lt;/p&gt;
+
+&lt;p&gt;The main objective of this project is to make an automatic audio recognition system which can sense and interpret the appropriate sounds from the surrounding and show the text, displaying the kind of sound perceived. It is basically classification of sounds and displaying the spoken words on screen in case of speech using deep learning. The work in this project is divided into two parts: &lt;ul&gt;
+&lt;li&gt;
+Classification of sounds
+&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Classification based on human and non-human sounds
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;
+Displaying the spoken words
+&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Display the words that can be interpreted, if they are of human origin
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;h2&gt;Data Collection &lt;/h2&gt;
+&lt;p&gt;The data which includes the .wav audio files have been downloaded from various sources on the internet. These are available under free license of Creative Commons. .wav files are used because they have all the features present in the files and are not compresses unlike other file formats. Sites: &lt;ul&gt;
+&lt;li&gt;
+Soundjay.com
+&lt;/li&gt;
+&lt;li&gt;
+Wavsource.com
+&lt;/li&gt;
+&lt;li&gt;
+Freesound.org
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;h2&gt;Spectrograms&lt;/h2&gt;
+&lt;p&gt;A spectrogram is a visual representation of the spectrum of frequencies in a sound or other signal as they vary with time or some other variable. Spectrograms are sometimes called spectral waterfalls, voiceprints, or voice grams. Spectrograms can be used to identify spoken words phonetically, and to analyses the various calls of animals. They are used extensively in the development of the fields of music, sonar, radar, and speech processing, seismology, etc. The instrument that generates a spectrogram is called a spectrograph.&lt;/p&gt;
+&lt;h2&gt;Generation of Spectrograms&lt;/h2&gt;
+&lt;p&gt;Using the a &lt;a href='http://en.wikipedia.org/wiki/Fast_Fourier_transform'&gt;Fast Fourier Transform&lt;/a&gt; (FFT) algorithm to compute the &lt;a href='http://en.wikipedia.org/wiki/Discrete_Fourier_transform'&gt;Discrete Fourier Transform&lt;/a&gt; (DFT) and its inverse. Fourier analysis converts time (or space) to frequency and vice versa; an FFT rapidly computes such transformations by factorizing the DFT matrix into a product of sparse (mostly zero) factors. As a result, fast Fourier transforms are widely used for many applications in engineering, science, and mathematics. The basic ideas were popularized in 1965, but some FFTs had been previously known as early as 1805. Fast Fourier transforms have been described as &amp;#8220;the most important numerical algorithm of our lifetime&amp;#8221;. The spectrograms generated in this module follow the normal convention of having frequency (in Hertz) on the vertical axis and time on the horizontal axis. Intensity is denoted by the darkness, saturation and hue of the colors. It is best to convert the audio files into spectrograms because they maintain all the properties such as bandwidth, frequency, pitch, resonance and the variation of frequency with bandwidth can be visualized. In this project we have utilized the pyaudio packages for producing the spectrograms.&lt;/p&gt;
+&lt;h3&gt;Using Timeside for Spectrogram generation&lt;/h3&gt;
+&lt;p&gt;TimeSide is a set of python components enabling low and high level audio analysis, imaging, and transcoding (conversion of one digital code to another) and streaming. Its high-level API is designed to enable complex processing on large datasets of audio and video assets of any format. Its simple plug-in architecture can be adapted to various use cases. TimeSide also includes a smart interactive HTML5 player which provides various streaming playback functions, formats selectors, fancy audio visualizations, segmentation and semantic labeling synchronized with audio events. It is embeddable in any web application. In the generated spectrogram which is a representation of the spectrum frequencies in a sound. &lt;ul&gt;
+&lt;li&gt;
+Horizontal axis represents time
+&lt;/li&gt;
+&lt;li&gt;
+Vertical axis represents frequency
+&lt;/li&gt;
+&lt;li&gt;
+Color represents amplitude
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;h3&gt;Using pylab and audiolab&lt;/h3&gt;&lt;h3&gt;Using pylab as an alternative method&lt;/h3&gt;
+&lt;p&gt;Classification of sounds using Deep Learning involves spoken language understanding (SLU) which can be classified into the following majors: &lt;ul&gt;
+&lt;li&gt;
+Domain classification
+&lt;/li&gt;
+&lt;li&gt;
+Intent detection
+&lt;/li&gt;
+&lt;li&gt;
+Semantic slot filling
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;A major hurdle in performing SLU is the huge variability of spoken language.&lt;/p&gt;
+&lt;h3&gt;Domain and intent classification &lt;/h3&gt;
+&lt;p&gt;This is included within semantic utterance classification (SUC) such that, C=argmax(c)P(C|X) Where, C=c1, &amp;#8230;.cm belong to one of the M semantic categories (e.g., domain or intent) and X is the input utterance. SUC handles n-gram as raw features. N-grams are based on the phonetics and common occurrence of two alphabets together. As an example, a bi-gram set would include “th”, “at”, “in”, and several others. Similarly, a tri-gram set will include “ing”, “ion”, “eat” among others. These are necessary for POS tagging. The classifiers that are used in SUC are logistic regression, boosting and support vector machines (SVM).&lt;/p&gt;
+&lt;h3&gt;Semantic slot filling&lt;/h3&gt;
+&lt;p&gt;It is a sequential tagging problem. POS tagging is part-of-speech tagging and tags a word to its part of speech, hence creating a mapping of words with a set as {noun, verb, adverb, pronoun}.&lt;/p&gt;
+&lt;h2&gt;Algorithms used&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+AdaBoost
+&lt;/li&gt;
+&lt;li&gt;
+Naïve Bayes Classification
+&lt;/li&gt;
+&lt;li&gt;
+Random Forest Classifier
+&lt;/li&gt;
+&lt;li&gt;
+Gradient Boosting
+&lt;/li&gt;
+&lt;li&gt;
+SGD regression
+&lt;/li&gt;
+&lt;li&gt;
+KN classification
+&lt;/li&gt;
+&lt;li&gt;
+Decision tree classifier
+&lt;/li&gt;
+&lt;li&gt;
+Logistic Regression
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Creating and Revoking GPG keys</title>
+   <link href="http://sidgan.github.io/technical/2015/01/05/creating+and+revoking+gpg+keys"/>
+   <updated>2015-01-05T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2015/01/05/creating and revoking gpg keys</id>
+   <content type="html">&lt;h2 id='gpg_keys'&gt;GPG Keys&lt;/h2&gt;
+
+&lt;p&gt;OpenGP standards define the semantics for secure information exchange. GPG is the software that follows OpenPG standards. GPG is an acronym for GNU Privacy Guard.&lt;/p&gt;
+
+&lt;p&gt;Alice and Bob are the foo-bar, the spam-eggs of the world of computer security. Symmetric key cryptography takes place by two different methods. The first in which there are two keys, both same, and the second in which both keys are different. GPG helps in symmetric key cryptography.&lt;/p&gt;
+
+&lt;p&gt;Assuming Alice and Bob to be two people who want to communicate and send messages to each other. Both will possess their own private and public keys. The public keys are known to all, hence their name public keys. The private keys are known only to the user and under all circumstances must be kept secured. For communication, Alice will sign a message with Bob&amp;#8217;s public key and send the complete packet to Bob. Now the only key that can decipher Alice&amp;#8217;s message is Bob&amp;#8217;s private key, which he possesses, so Bob will easily decipher it.&lt;/p&gt;
+
+&lt;p&gt;For digitally signing messages, Alice will sign using her own private key and send the message, to check the authenticity of the user, the receiving party can use Alice&amp;#8217;s public key to make sure that it is indeed her.&lt;/p&gt;
+
+&lt;h2 id='creating_keys'&gt;Creating keys&lt;/h2&gt;
+
+&lt;p&gt;Ubuntu comes pre-installed with GPG, but it can be installed via the apt-get command as: &lt;p&gt;
+&lt;code&gt;
+sudo apt-get install gpg
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;After the software is installed, generate the keys using: &lt;p&gt;
+&lt;code&gt;
+gpg --gen-key
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Now a series of questions are presented on the terminal, the software is extremely interactive and easy to use. It asks for options regarding the number of bits for the keys, the real name, email-address and finally the passphrase. The passphrase is a security shield that is used to unlock the private key. Everytime the private key is needed, the terminal will prompt for the passphrase and only then can the private key be unlocked for use.&lt;/p&gt;
+
+&lt;p&gt;After generating the key, export it and set its key-id as the default in the &lt;code&gt;.bashrc&lt;/code&gt; file. Now anytime you need to use the key, you do not need to input its key-id. &lt;p&gt;
+&lt;code&gt;
+export GPGKEY=XXXXXXXX
+&lt;/code&gt;
+&lt;/p&gt; &lt;p&gt;
+&lt;code&gt;
+sudo emacs ~/.bashrc
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;h2 id='uploading_to_server'&gt;Uploading to Server&lt;/h2&gt;
+
+&lt;p&gt;Communication is possible when the public keys can be found and used by other developers. To facilitate this public keys are uploaded to the keyserver. MIT provides a keyserver amongst many others. &lt;p&gt;
+&lt;code&gt;
+gpg --output mykey.asc --export -a $GPGKEY
+&lt;/code&gt;
+&lt;/p&gt; &lt;p&gt;
+&lt;code&gt;
+gpg --send-keys --keyserver keyserver.ubuntu.com XXXXXXXX
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;h2 id='revoking_keys'&gt;Revoking keys&lt;/h2&gt;
+
+&lt;p&gt;Several conditions may occur which lead to the requirement of a new secret key. These include the key getting compromised, the private key becoming known to another party, the passphrase becoming known to another party or the user forgetting the passphrase.&lt;/p&gt;
+
+&lt;p&gt;In any condition, when the key or the passphrase gets compromised it is necessary to revoke the key. This is so that no one uses the compromised key to send messages because now these can be deciphered by the intruder party.&lt;/p&gt;
+
+&lt;p&gt;After revoking it is preferred that the new key is signed by another developer. The revocation certificate must be kept safe, if an intruder gets hold of this revocation certificate, they may revoke all the keys of that developer.&lt;/p&gt;
+&lt;code&gt;
+gpg --output revoke.asc --gen-revoke $GPGKEY
+&lt;/code&gt;
+&lt;p&gt;Now the revocation certificate has to be uploaded on the server so that other developers can be informed about this change. As soon as someone refreshes their key database, your key will be updated and they will know that the old key has been revoked.&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+gpg --import revoke.asc
+
+&lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;
+gpg --keyserver pgp.mit.edu --send-key $REVOKED_KEY
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;h2 id='removing_revoked_key_from_keyring'&gt;Removing revoked key from keyring&lt;/h2&gt;
+
+&lt;p&gt;Now that the key has been revoked it is advisable to remove it from your keyring. This is imperative because if the key is kept in your keyring you will still be unknowingly using it.&lt;/p&gt;
+
+&lt;p&gt;The method to remove the revoked key from the keyring is as follows:&lt;/p&gt;
+
+&lt;p&gt;First of all list all the keys to see how many keys are in your keyring. &lt;p&gt;
+&lt;code&gt;
+gpg --list-keys
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, to delete both the private and public key do‍: &lt;p&gt;
+&lt;code&gt;
+ gpg --delete-secret-and-public-key NAME
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;To delete only the public key do: &lt;p&gt;
+&lt;code&gt;
+ gpg --delete-key NAME
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;The user is then prompted with questions making sure that the user deletes the correct key.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Who Said it?</title>
+   <link href="http://sidgan.github.io/technical/2015/01/01/who-said-it"/>
+   <updated>2015-01-01T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2015/01/01/who-said-it</id>
+   <content type="html">&lt;p&gt;“I love reading Jeffrey Archer.” It is possible to guess which of your friends said it. The computer can also guess who! In a group of people, who is more likely to have said something can be predicted if the computer has heard them talk before. The computer can analyze their thought process while interacting with them and, in due course of time, predict the most probable speaker, given a statement.&lt;/p&gt;
+
+&lt;h2 id='introduction'&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;‘Who Said It?’ aims at mirroring the analytical power of the human brain. Just as the human brain can process a given amount of data to deduce something, we can train our computer to analyse a training data set, learn from it, and answer from what it has learnt when queried upon.&lt;/p&gt;
+
+&lt;p&gt;A dataset comprising of statements made by three Indian politicians, Narendra Modi, Arvind Kejriwal and Rahul Gandhi is analysed by the computer. When a statement is given to it, it will use this analysis to name the politician who is most likely to have said it.&lt;/p&gt;
+
+&lt;h2 id='training_dataset'&gt;Training Dataset&lt;/h2&gt;
+
+&lt;p&gt;The training dataset is a collection of statements that is stored in csv (comma separated values) format. An approximately equal number of statements made by the three politicians Arvind Kejriwal from Aam Aadmi Party, Rahul Gandhi from Congress and Narendra Modi from BJP are present in the dataset. These statements are derived from their speeches obtained from various sources on the Internet.&lt;/p&gt;
+
+&lt;h3 id='removing_redundant_data'&gt;Removing redundant data&lt;/h3&gt;
+
+&lt;p&gt;To create the feature vector we need to get rid of redundant data. These include additional white spaces and neutral words that do not contribute towards identification of the speaker. We call the latter &lt;a href='https://github.com/sidgan/Who-Said-it-/blob/master/stopwords.txt'&gt;stop words&lt;/a&gt; (e.g. a, and, party, the, election etc.)&lt;/p&gt;
+
+&lt;h3 id='creating_the_feature_vector'&gt;Creating the feature vector&lt;/h3&gt;
+
+&lt;p&gt;The statements in the training dataset are processed word by word producing a string of important words binary values which is later used for prediction of the model. The feature vector is also devoid of redundant data such as repeats, punctuation, numerical values and stop words. Hence, these are ignored while prediction.&lt;/p&gt;
+
+&lt;h3 id='extracting_features'&gt;Extracting Features&lt;/h3&gt;
+
+&lt;p&gt;Now from the feature vector generated, binary values indicating confidence value of that feature is appended to each feature.&lt;/p&gt;
+
+&lt;h3 id='working'&gt;Working&lt;/h3&gt;
+
+&lt;p&gt;The model is based on extracting the feature vector of the problem statement and comparing it against the training dataset using a classifier.&lt;/p&gt;
+
+&lt;h3 id='extracting_features_of_problem_statement'&gt;Extracting features of problem statement&lt;/h3&gt;
+
+&lt;p&gt;The data redundancy is removed just like it is done for the training dataset. A feature vector is created and extraction is performed.&lt;/p&gt;
+
+&lt;h3 id='classification_of_the_problem_statement'&gt;Classification of the problem statement&lt;/h3&gt;
+
+&lt;p&gt;The problem statement is classified using the Naive Bayes classifier on the extracted feature vector. Thus, the machine is able to predict the most probable speaker of the problem statement.&lt;/p&gt;
+
+&lt;h2 id='conclusions'&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;The machine was successfully able to predict known statements of the speakers. To improve the prediction more precise classifiers can be utilized.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>I'm at ShanghAI!!</title>
+   <link href="http://sidgan.github.io/technical/2014/12/30/shanghai"/>
+   <updated>2014-12-30T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2014/12/30/shanghai</id>
+   <content type="html">&lt;p&gt;These are my beginner steps in robotics. I have always been fascinated by robotics, and given my interest in artificial intelligence, this area has always been a region of wanderlust for me. However, my interest in robotics was limited to being dazed by the advancements in its field, reading about various types of bots and shaking hands with them. I have never built one, but now, after attending classes in the Global Virtual Lecture Hall of &lt;a href='http://shanghailectures.org/'&gt;ShanghAI&lt;/a&gt;, I definately am capable enough to give it a try. ShanghAI has helped me to delve deeper into exactly how they work, it turns out that they are much more complicated than just a simple input-output scheme.&lt;/p&gt;
+
+&lt;p&gt;The first intersection between artificial intelligence and robotics was the Sheky robot that I had read about in the book &lt;a href='http://www.amazon.in/Artificial-Intelligence-Elaine-Rich/dp/0070522634'&gt;Artificial Intelligence, by Elaine Rich and Kevin Knight&lt;/a&gt;. This is a great book. If anyone is interested in Artificial Intelligence, this book is a must read. It provides in-depth information and tactical ideas that help in understanding elegantly how the machine brain works. Another robot is the dock worker robot that helped me understand knowledge representation and automated planning in artificial intelligence.&lt;/p&gt;
+
+&lt;h2 id='assignment'&gt;Assignment&lt;/h2&gt;
+
+&lt;p&gt;As a part of the ShanghAI lectures, we were assigned into groups, called &lt;a href='http://en.wikipedia.org/wiki/K%C5%8Dan'&gt;Koan&lt;/a&gt; based on our choice of robots and assignments. The word Koan means to invoke greater doubt. I was in the first Koan. I tried to make my own robots and this was possible using Webbots.&lt;/p&gt;
+
+&lt;p&gt;The assignment problem was to deal with Swiss Robots and their adaptive morphology and understand how they interact with one another.&lt;/p&gt;
+
+&lt;p&gt;Swiss Robots foremost are dependent on sensor morphology for performing a complex collective behavior (collecting boxes in piles) with extremely simple controllers and no explicit inter-robot communication. We were free to adapt the sensor morphology using the robot’s controller, e.g. changing the pitch/yaw of the proximity sensors. We also had to prepare a hypothesis taking into account the condition of introduction of a slope.&lt;/p&gt;
+
+&lt;h3 id='swiss_robots'&gt;Swiss Robots&lt;/h3&gt;
+
+&lt;p&gt;Swiss Robots are simple robots that demonstrate the sophisticated collective behaviour of heap formation through a technique called &amp;#8216;strategy of errors&amp;#8217;. The robots cannot differentiate amongst obstacles, objects and walls, so, react to each in the same way. During its movement it tries to avoid contact with them. However, if any one stands in the way and the robot is unable to detect it, then the object and robot will face a collision and the robot will push the item. If it is an object, pushing will ultimately lead to heap formation whereas no effect is seen on the wall or obstacle. The behaviour of Swiss robots is achieved using Didabots.&lt;/p&gt;
+
+&lt;p&gt;The behaviour of the Swiss Robots is achieved through &lt;a href='https://github.com/sidgan/SwissRobots'&gt;this&lt;/a&gt; code snippet on GitHub which is provided by ShanghAI.&lt;/p&gt;
+
+&lt;p&gt;This is what the bots look like.&lt;/p&gt;
+&lt;br /&gt;&lt;img src='/images/Pop-bot.jpg' style='width:500px;height=400px' /&gt;&lt;br /&gt;&lt;img src='/images/Pop-bot-top.jpg' style='width:500px;height=400px' /&gt;
+&lt;h2 id='initial_solution'&gt;Initial Solution&lt;/h2&gt;
+
+&lt;h3 id='ideas'&gt;Ideas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Use machine learning to calculate the optimum numerical values of all parameters viz. pitch, yaw. 
+&lt;/li&gt;
+&lt;li&gt;
+Adaptive boosting, Grid Search CV for finding the best values of the parameters and their appropriate weightage.
+&lt;/li&gt;
+&lt;li&gt;
+Find and mark cubes and use neural network to inform other robots to collect cubes. The robots should tell other robots if cubes have been collected or have already been marked.
+&lt;/li&gt;
+&lt;li&gt;
+Use the GPS node to model a Global Positioning Sensor (GPS) which can obtain information about its absolute position from the controller program. 
+&lt;/li&gt;
+&lt;li&gt;
+Use a Supervisor controller that reads and transmits the position information to the robot. Then, keep track of several robots simultaneously. 
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id='plans'&gt;Plans&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Change morphology of sensors and robots by adding distance sensors, collision sensors and GPS. 
+&lt;/li&gt;
+&lt;li&gt;
+Use simple rotational joints to control from controller (Hinge Joint).
+&lt;/li&gt;
+&lt;li&gt;
+Change the type of the field.
+&lt;/li&gt;
+&lt;li&gt;
+Make a neural network for robots controlling.
+&lt;/li&gt;
+&lt;li&gt;
+Realize the Swiss robots behavior on a real robot.
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Spider</title>
+   <link href="http://sidgan.github.io/technical/2014/12/29/spider"/>
+   <updated>2014-12-29T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2014/12/29/spider</id>
+   <content type="html">&lt;h2 id='spider_or_ant'&gt;Spider or Ant&lt;/h2&gt;
+
+&lt;p&gt;According to the philosophies of computer science a spider is the same as a ant. Yes! that, in fact is true because this almost jargon is talking about web crawling or web scuttering which is further used for automatic indexing and web scraping. I used the spider algorithm to get data from a few sites. The first hack was using lynx and &lt;a href='http://www.crummy.com/software/BeautifulSoup/bs4/doc/'&gt;Beautiful Soup&lt;/a&gt; and, later, a better and elegant solution using Python’s urlparse and urllib instead of lynx. Beautiful Soup is indeed beautiful, as beautiful as the morning Sun shining on the dew covered grass. Excuse the poetess in me! So, coming back, I have used Beautiful Soup extensively till now and it makes getting data into an accessible format much, much easier. I cannot imagine a more elegant way to get and process data. Through this project I learnt the intricacies that the Google Search Bot must have done through and solved using their googliness. Also the research paper &lt;a href='http://infolab.stanford.edu/~backrub/google.html'&gt;‘The Anatomy of a Large-Scale Hypertextual Web Search Engine&amp;#8217;&lt;/a&gt; by Sergey Brin and Lawrence Page is a good read.&lt;/p&gt;
+
+&lt;h2 id='spiders'&gt;Spiders&lt;/h2&gt;
+
+&lt;p&gt;A spider algorithm or a web crawler is an internet bot that crawls a site for information usually in the form of text. A spider works by first going to the seminal link and then parsing the text on that web page to find more links that direct it to other web pages. These freshly found links are added to a stack or queue. All the links or urls in this stack or queue are traversed by the spider one by one.&lt;/p&gt;
+
+&lt;p&gt;So, from the initial web page the spider lands to another web page and continues its journey forth, recursively. In this way it crawls throughout the web. This means that from one page the spider should be able to access all the pages that are present on the World Wide Web, but my spider does not do that because I have limited it to access only the links present on the initial web page.&lt;/p&gt;
+
+&lt;p&gt;Spiders are usually used for web indexing. Other uses are to update web content or indexes. Spiders have the ability to copy all the content of a web page (if the page permits). All this data will be processed by a search engine at a later stage for indexing so that searching and information retrieval is rendered faster and easier.&lt;/p&gt;
+
+&lt;p&gt;In order to get data from a site I usually use one of the following four methods:&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+curl command - Tool to transfer data from or to a server using http/https/ftp
+&lt;/li&gt;
+&lt;li&gt;
+lynx command - World Wide Web (WWW) client/browser for users running terminals.
+&lt;/li&gt;
+&lt;li&gt;
+wget command - Enables non-interactive download of files from the Web. It supports HTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.
+&lt;/li&gt;
+&lt;li&gt;
+w3m command - It is a text based Web browser and pager.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;These are not the only way to get links or urls from a site. An easier and direct way is to use Python&amp;#8217;s parsing libraries namely urlparse, urllib along with Beautiful Soup. Another alternate way is to use HTTP get and post requests.&lt;/p&gt;
+
+&lt;h3 id='privacy_policy'&gt;Privacy Policy&lt;/h3&gt;
+
+&lt;p&gt;The file robots.txt provides permission to the crawler to get the data from the page. It is essential that scraping be done only for those web pages that allow it. In order to read this file we can employ robotparser of Python. Then if the permission is granted the spider will create a separate thread and go to this site to parse it.&lt;/p&gt;
+
+&lt;h3 id='tags'&gt;Tags&lt;/h3&gt;
+
+&lt;p&gt;The biggest advantage of using Beautiful Soup is its soup objects. These soup objects are flexible enough to be used capriciously. I have used them by sorting according to tags. This enables me to differentiate between the various HTML tags which is very important because this entails the basis of all web pages. I have used ‘href’ tags to find the url of the next page that will be appended to the list of the urls. If instead I had used the ‘a’ tag, then the url would turn out to be only a page and no hyperlink would exist, so a better option was to use the ‘href’ tags.&lt;/p&gt;
+
+&lt;h3 id='implementation'&gt;Implementation&lt;/h3&gt;
+
+&lt;p&gt;The implementation of the spider algorithm can be found on &lt;a href='https://github.com/sidgan/Spider'&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Gender Identifier</title>
+   <link href="http://sidgan.github.io/technical/2014/12/10/gender-identifier"/>
+   <updated>2014-12-10T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2014/12/10/gender-identifier</id>
+   <content type="html">&lt;h2 id='name_based_gender_identification_using_nltk'&gt;Name based gender identification using NLTK&lt;/h2&gt;
+
+&lt;p&gt;This project is based on a simple idea that usually the female names end in vowels like &amp;#8216;a&amp;#8217;, &amp;#8216;e&amp;#8217; and &amp;#8216;i&amp;#8217;, whereas male names usually end in &amp;#8216;k&amp;#8217;, &amp;#8216;o&amp;#8217;, &amp;#8216;r&amp;#8217;, &amp;#8216;s&amp;#8217; and &amp;#8216;t&amp;#8217;. Using this feature, we can generate a confidence value if the input name belongs to a male or a female. So far, I have not found any such study on Indian names and so decided to do one. The study on English names can be found &lt;a href='http://www.nltk.org/book/ch06.html'&gt;here&lt;/a&gt;. The English name corpus has been included in the &amp;#8216;names&amp;#8217; package of NLTK. It can be used by:&lt;/p&gt;
+&lt;code&gt;
+from nltk.corpus import names
+&lt;/code&gt;
+&lt;p&gt;Indian names entail a much bigger challenge because sometimes same names are given to both girls and boys. My very name, &amp;#8216;Siddha&amp;#8217; is both a girls and a boys name. Similar names include &amp;#8216;Harpreet&amp;#8217;. The only way to gauge the gender for these cases is to rely on better training.&lt;/p&gt;
+
+&lt;h3 id='nltk'&gt;NLTK&lt;/h3&gt;
+
+&lt;p&gt;Natural Language Processing though quite intense and arduous becomes manageable with the &lt;a href='http://www.nltk.org/'&gt;Natural Language Tool Kit&lt;/a&gt;, originally authored by Steven Bird, Edward Loper and Ewan Klein.&lt;/p&gt;
+
+&lt;h2 id='procedure'&gt;Procedure&lt;/h2&gt;
+
+&lt;h3 id='data_collection'&gt;Data Collection&lt;/h3&gt;
+
+&lt;p&gt;I started by scraping a few websites that provided names of boys and girls and formatted the data into a csv file. Two separate data corpuses were made, one for the male and the second for female.&lt;/p&gt;
+
+&lt;h3 id='feature_extraction'&gt;Feature Extraction&lt;/h3&gt;
+
+&lt;p&gt;The last alphabet of the word is the major distinguishing factor, hence, only that alphabet is extracted and used by the classifier.&lt;/p&gt;
+
+&lt;h3 id='technique'&gt;Technique&lt;/h3&gt;
+
+&lt;p&gt;It&amp;#8217;s a supervised classification technique. In the training data set labels are provided that help to learn the classification. Naive Bayes Classifier has been used.&lt;/p&gt;
+
+&lt;h3 id='cross_validation'&gt;Cross Validation&lt;/h3&gt;
+
+&lt;p&gt;When provided with a data set, it is advisable to reserve part of it as a test data set so that the generated hypothesis can be tested. Usually a 70/30 or 60/40 division is used. So, 70/60 of the data is used in training and 30/40 in testing. Based on a similar analogy cross validation is implemented which enables the hypothesis generated from the training data set to be validated and worked upon to create a better and efficient hypothesis. For this a division of 60/20/20 is used. Training data constitutes 60%, cross validation set 20% and the testing data set another 20%. Cross validation is much in use because it provides a chance to fine tune the feature vector.&lt;/p&gt;
+
+&lt;h3 id='accuracy'&gt;Accuracy&lt;/h3&gt;
+
+&lt;p&gt;Based on the test set we can measure the precision of the classifier using:&lt;/p&gt;
+&lt;code&gt; print nltk.classify.accuracy(classifier, test_set) &lt;/code&gt;
+&lt;p&gt;Initially we had a hypothesis stating that female names usually end in vowels like &amp;#8216;a&amp;#8217;, &amp;#8216;e&amp;#8217; and &amp;#8216;i&amp;#8217;. Whereas male names usually end in &amp;#8216;k&amp;#8217;, &amp;#8216;o&amp;#8217;, &amp;#8216;r&amp;#8217;, &amp;#8216;s&amp;#8217; and &amp;#8216;t&amp;#8217;. This was based on prior experience. Now let&amp;#8217;s see if this is actually true or not. Based on the corpus of data provided to the classifier it has generated its own hypothesis. It tells us based on which letters is it performing the classification.&lt;/p&gt;
+&lt;code&gt; print classifier.show_most_informative_features(5) &lt;/code&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Docker Installation</title>
+   <link href="http://sidgan.github.io/technical/2014/11/30/docker"/>
+   <updated>2014-11-30T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2014/11/30/docker</id>
+   <content type="html">&lt;h2 id='docker'&gt;Docker&lt;/h2&gt;
+
+&lt;p&gt;Docker like its name lets a developer create a software and ship it easily. Docker quickly assembles applications from its components and tries to eliminate all problems when it comes to shipping a software. It is the ultimate hackers software because it conforms with the identity of fuck it, ship it. It helps in versioning, that means you can create several versions of the same software and use whichever one you want. Like on Github versioning is possible, imagine the same with Docker. You can even create versions of your operating system with Docker much like Windows has the restore points. Though in this regard Ubuntu offers the backup restore as well. Docker is offers a wide utility and is formed of two main components:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Engine - It is the container virtualization in which the application runs. It can be thought of as the container which contains all the environment variables along with all dependencies necessary to get the software running.&lt;/li&gt;
+
+&lt;li&gt;Docker Hub - It is the shipping package. Its a SaaS or Software as a Service that helps in managing and sharing the application stack.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='installation'&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;I use Ubuntu 12.04 Precise Pangolin and will be describing the installation on this distro.&lt;/p&gt;
+
+&lt;p&gt;It is necessary to update the kernels for 12.04 because Docker does not support the old kernels. So, &lt;code&gt;sudo apt-get update&lt;/code&gt; and then install the backported kernels by&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get install linux-image-generic-lts-trusty linux-headers-generic-lts-trusty&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, reboot the system, graphically or do, &lt;code&gt;sudo reboot&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, install the &lt;code&gt;lxc-docker&lt;/code&gt; package by adding it to the list of repositories in &lt;code&gt;apt&lt;/code&gt;. Also add it&amp;#8217;s key to your keyring.&lt;/p&gt;
+
+&lt;p&gt;With this, Docker has been installed. You can verify by running any package in the Docker container and see that it actually executes.&lt;/p&gt;
+
+&lt;h2 id='chaos'&gt;Chaos&lt;/h2&gt;
+
+&lt;p&gt;While installing Docker I lost the networking ability of my computer, I am not sure exactly what triggered this. But I think it was because Ubuntu no longer provides support for the old kernels that are supported by Docker now. Though I did update my kernels before installing Docker there must have been something left.&lt;/p&gt;
+
+&lt;p&gt;As I always say Terminal is king, the terminal again came to my rescue. The terminal &lt;strong&gt;ALWAYS&lt;/strong&gt; comes to the rescue. Thats why I love Linux so much. No matter how badly you think you have screwed up and the only possible way out now is a fresh installation (which too comes free. :D) the terminal always provides a solution. I cannot stress on the utmost importance and utility of the terminal even if I were to talk about it every single day.&lt;/p&gt;
+
+&lt;p&gt;So, here is what I did. I opened my Terminal using Ctrl+Alt+F7 and after hours of manipulation I noticed that something had triggered my iptables to lose their value. Iptables are necessary to configure the Linux kernel firewall. There are several modules that cater to different protocols. Like, iptables cater to IPv4 while ip6tables cater to IPv6, ebtables to Ethernet frames and arptables to ARP.&lt;/p&gt;
+
+&lt;p&gt;If the IP tables had no value then they could not detect the system settings and hence my network would never be restored. So I manually changed them by &lt;code&gt;sudo iptables&lt;/code&gt; I was using internet behind a mask of proxies so I had to set my college proxy in place. Thus I was able to regain control of my computer&amp;#8217;s networking. After installing Docker, now whenever I boot my system it selects the network configuration while booting. This is one major difference that I noticed after installing Docker.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Grace Hopper Conference & Hackathon</title>
+   <link href="http://sidgan.github.io/conference/hackathon/2014/11/25/ghc"/>
+   <updated>2014-11-25T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/conference/hackathon/2014/11/25/ghc</id>
+   <content type="html">&lt;h3 id='bangalore_india_2014'&gt;Bangalore, India, 2014&lt;/h3&gt;
+
+&lt;p&gt;Grace Hopper was a computer scientist and a US Navy Admiral who is credited to several laurels in the field of computers alone that she was nicknamed &amp;#8216;Amazing Grace&amp;#8217;. Amongst her computer genius, is her invention of the first compiler and the idea of a machine independent, high-level, programming language which ultimately led to the development of COBOL.&lt;/p&gt;
+
+&lt;p&gt;To celebrate Grace Hopper and her achievements, the Anita Borg Institute holds the Grace Hopper Celebration of Women in Computing partnering with ACM India. It is India&amp;#8217;s largest gathering of Women Technologists. This year, I got the opportunity of attending the Grace Hopper Celebration Hackathon at Bangalore.&lt;/p&gt;
+
+&lt;p&gt;A women’s hackathon provides ample opportunities that allow women to escape boundaries, that, have in the past constrained their activities and their individuality. One such women&amp;#8217;s hackathon was the Grace Hopper Conference Hackathon at Bangalore, India, which was a great opportunity to meet like minded women from all around India.&lt;/p&gt;
+
+&lt;p&gt;It was a mecca of ignited minds where women, students and young leaders in computer science came together, explored computing and become producers of future innovations. Along with fun, it provided a safe and encouraging environment where I was able to put my thoughts together. My team mates and I contributed our unique perspectives towards solving challenges that the world faces today.&lt;/p&gt;
+
+&lt;p&gt;Two main issues raised at the hackathon were of security and health. A general consensus stated these as the major challenges faced by Indian women. At the hackathon I was able to exchange ideas with other inspiring technosavy women. All this and being away from the hackneyed routine of college, increased my creativity and enhanced my performance. I am quite sure that all the knowledge gained from this congregation will enable me to produce paradigm-shifting results one day.&lt;/p&gt;
+
+&lt;p&gt;This was my first hackathon that continued for over a month and had people simultaneously committing code from different geographical locations. Being in constant communication and up-to-date with the latest code commits was in itself a challenge. Soon after classes, every day, I would find myself peering over new email threads, modifying the code base, optimizing algorithms and deploying the existing code.&lt;/p&gt;
+
+&lt;h3 id='kaam_hai_hackathon_entry'&gt;Kaam Hai?, Hackathon entry&lt;/h3&gt;
+
+&lt;p&gt;Our team developed the winning hackathon entry, &amp;#8216;Kaam Hai?&amp;#8217;, a web based app that connects low skilled job seekers with potential employers. This app can also be used by Non Governmental Organizations to extend their services in finding a job for other people.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Hadoop Installation</title>
+   <link href="http://sidgan.github.io/technical/2014/10/31/hadoop-installation"/>
+   <updated>2014-10-31T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/technical/2014/10/31/hadoop-installation</id>
+   <content type="html">&lt;h2&gt;Requirements:&lt;/h2&gt;&lt;h3&gt;Java&lt;/h3&gt;
+&lt;p&gt;See installation of the latest version &lt;a href='http://openjdk.java.net/install/'&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt; A dedicated Hadoop user&lt;/h3&gt;
+&lt;p&gt;Add a new Hadoop user and group that will access all the Hadoop files. This is the user in whose directory Hadoop will be installed and will communicate via SSH to the local user.&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+sudo addgroup hadoop
+&lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;
+sudo adduser --ingroup hadoop hduser
+&lt;/code&gt;
+&lt;/p&gt;&lt;h4&gt; Chaos &lt;/h4&gt;
+&lt;p&gt;In my first Hadoop installation, I did not create a separate Hadoop user and only then could I understand why the existence of a separate user was necessary. Creating a separate user helps tremendously in terms of file permissions, security and backups.&lt;/p&gt;
+
+&lt;p&gt;I did not have a separate user and so with my first execution run on Hadoop, my normal user suffered. All my file permissions changed and on booting I was only able to log into my normal account and thereafter I could not do anything. The only screen I could see was my desktop, but it was barren. All the files, disks, profile settings, directories were no where to be seen. I could not even access the terminal. The on-screen buttons like unity, network, battery, time and date settings appeared disabled.&lt;/p&gt;
+
+&lt;p&gt;My, just a moment ago, perfectly configured laptop (or so I thought) was rendered unusable. I do not know the exact cause of this, but the only place where I deviated from the &lt;a href='http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html'&gt;Installation Manual&lt;/a&gt; was not creating a serparate user and that is why I emphasise on creating one.&lt;/p&gt;
+&lt;h4&gt; Terminal is king &lt;/h4&gt;
+&lt;p&gt;The terminal &lt;strong&gt;ALWAYS&lt;/strong&gt; comes to the rescue. Thats why I love Linux so much. No matter how badly you think you have screwed up and the only possible way out now is a fresh installation (which too comes free. :D) the terminal always provides a solution. I cannot stress on the utmost importance and utility of the terminal even if I were to talk about it every single day.&lt;/p&gt;
+
+&lt;p&gt;So, here is what I did. I opened my Terminal using Ctrl+Alt+F7. I checked my profile setting, and using &lt;code&gt;ls&lt;/code&gt; I could see that sure enough my files were still present in my computer, but I could not view them. I figured out the problem. All the files and settings that were of my normal user had been shifted from my home directory into &lt;code&gt;/&lt;/code&gt;, hence one up the directory hierarchy. I do not know why this happened. I could see the &lt;code&gt;sidgan&lt;/code&gt; folder, which is my normal user within my &lt;code&gt;home&lt;/code&gt; and sure enough it was completely empty. From here on, the solution seemed trivial, all I had to do was to move the entire directory structure one level down. This, I did by one simple command:&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+mv source dest
+&lt;/code&gt; 
+&lt;/p&gt;
+&lt;p&gt;I breathed a sigh of relief and could see my splendid laptop back to its normal state with all its configuration files intact.&lt;/p&gt;
+&lt;h3&gt; SSH &lt;/h3&gt;
+&lt;p&gt;In order to access the different nodes, Hadoop uses SSH. All this is done while being logged into the &lt;code&gt;hduser&lt;/code&gt; account. Simply generate SSH keysh keys/) for &lt;code&gt;hduser&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;One important thing to keep in mind is to not enter any password for the &lt;code&gt;hduser&lt;/code&gt; because all the while Hadoop interacts with the nodes, the user will have to input the password each time. This is not possible, so, it is a better idea to not keep any password in the first place.&lt;/p&gt;
+
+&lt;p&gt;After generating SSH key for &lt;code&gt;hduser&lt;/code&gt; the next step is to enable access to the machine, ie the normal user, in my case &lt;code&gt;sidgan&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Test the SSH setup once by establishing a connection between the normal user and &lt;code&gt;hduser&lt;/code&gt; by:&lt;/p&gt;
+&lt;code&gt;
+ssh localhost
+&lt;/code&gt;&lt;h3&gt; IPv6 and IPv4 &lt;/h3&gt;
+&lt;p&gt;Disable IPv6 only for Hadoop by adding the given line to &lt;code&gt; conf/hadoop-env.sh &lt;/code&gt;: &lt;p&gt;
+&lt;code&gt;
+export HADOOP_OPTS=-Djava.net.preferIPv4Stack=true
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt; Installation &lt;/h2&gt;
+&lt;p&gt;&lt;a href='http://www.apache.org/dyn/closer.cgi/hadoop/core'&gt;Download Hadoop&lt;/a&gt; and extract its contents. &lt;p&gt;
+&lt;code&gt;
+tar -xzf hadoop-1.0.3.tar.gz
+&lt;/code&gt;
+&lt;p&gt;
+It should be placed in the &lt;code&gt;hduser&lt;/code&gt; directory. 
+&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Change the owner of all files to &lt;code&gt;hduser&lt;/code&gt; user and &lt;code&gt;hadoop&lt;/code&gt; group. &lt;p&gt;
+&lt;code&gt;
+sudo chown -R hduser:hadoop hadoop-1.0.3
+&lt;/code&gt;
+&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt; Configuration &lt;/h2&gt;&lt;h3&gt; Step 1: Update &lt;code&gt;.bashrc&lt;/code&gt; file &lt;/h3&gt;
+&lt;p&gt;Since the &lt;code&gt;hduser&lt;/code&gt; user will be accessing the Hadoop installation, it makes sense to update the &lt;code&gt;.bashrc&lt;/code&gt; file of &lt;code&gt;hduser&lt;/code&gt;. The following lines as suggested in the &lt;a href='http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html'&gt;Installation Manual&lt;/a&gt; have to be appended at the end of the &lt;code&gt;.bashrc&lt;/code&gt; file.&lt;/p&gt;
+&lt;h3&gt; Step 2: Update environment variables &lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;JAVA_HOME&lt;/code&gt; path must be changed to the Sun JDK or JRE directory&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+export JAVA_HOME=/usr/lib/jvm/java-7-sun
+&lt;/code&gt;
+&lt;p&gt;
+This is done for the &lt;code&gt;hduser&lt;/code&gt;.
+&lt;/p&gt;
+&lt;/p&gt;&lt;h3&gt; Step 3: HDFS &lt;/h3&gt;
+&lt;p&gt;Hadoop Dedicated File System (HDFS) is the directory where Hadoop stores all the data.&lt;/p&gt;
+&lt;h3&gt; Step 4: Update &lt;code&gt; hadoop-env.sh &lt;/code&gt; &lt;/h3&gt;
+&lt;p&gt;Uncomment the line &lt;code&gt; export JAVA_HOME=/usr/lib/jvm/java-X-sun &lt;/code&gt;, where &lt;code&gt; X &lt;/code&gt; is the version number.&lt;/p&gt;
+&lt;h3&gt; Step 4: Update &lt;code&gt; conf/core-site.xml &lt;/code&gt; &lt;/h3&gt;
+&lt;p&gt;Add the following lines within the &lt;code&gt; configuration &lt;/code&gt; tags.&lt;/p&gt;
+&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;div class=&amp;quot;bogus-wrapper&amp;quot;&amp;gt;&amp;lt;notextile&amp;gt;&amp;lt;figure class=&amp;quot;code&amp;quot;&amp;gt;
+&amp;lt;/pre&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;h3&gt; Step 4: Update &lt;code&gt; conf/mapred-site.xml &lt;/code&gt; &lt;/h3&gt;
+&lt;p&gt;Add the following lines within the &lt;code&gt; configuration &lt;/code&gt; tags.&lt;/p&gt;
+&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;div class=&amp;quot;bogus-wrapper&amp;quot;&amp;gt;&amp;lt;notextile&amp;gt;&amp;lt;figure class=&amp;quot;code&amp;quot;&amp;gt;
+&amp;lt;/pre&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;h3&gt; Step 4: Update &lt;code&gt; conf/hdfs-site.xml &lt;/code&gt; &lt;/h3&gt;
+&lt;p&gt;Add the following lines within the &lt;code&gt; configuration &lt;/code&gt; tags.&lt;/p&gt;
+&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;div class=&amp;quot;bogus-wrapper&amp;quot;&amp;gt;&amp;lt;notextile&amp;gt;&amp;lt;figure class=&amp;quot;code&amp;quot;&amp;gt;
+&amp;lt;/pre&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;/span&amp;gt;&lt;/pre&gt;&lt;h2&gt; Start Hadoop&lt;/h2&gt;
+&lt;p&gt;Run the following commands as the hadoop user, &lt;code&gt;hduser&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+/usr/local/hadoop/bin/hadoop namenode -format
+&lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;
+/usr/local/hadoop/bin/start-all.sh
+&lt;/code&gt;
+&lt;/p&gt;&lt;br /&gt;&lt;img src='/images/starting_hadoop.png' style='width:600px;height=500px' /&gt;&lt;h2&gt; Stop Hadoop&lt;/h2&gt;
+&lt;p&gt;Run the following commands as the hadoop user, &lt;code&gt;hduser&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+ /usr/local/hadoop/bin/stop-all.sh
+&lt;/code&gt;
+&lt;/p&gt;&lt;br /&gt;&lt;img src='/images/stopping_hadoop.png' style='width:600px;height=500px' /&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Data Scientists: Who, What, How?</title>
+   <link href="http://sidgan.github.io/article/2014/10/10/data-scientists-who-what-how"/>
+   <updated>2014-10-10T00:00:00+02:00</updated>
+   <id>http://sidgan.github.io/article/2014/10/10/data-scientists-who-what-how</id>
+   <content type="html">&lt;p&gt;The newspaper reads “Data Scientist: The Sexiest Job of the 21st Century”. For a minute you are like “I thought medical and engineering were the only two domains”. Then you smirk “Does it even pay?”. Then somehow you start to read the article. “Best paid job of the century”. Ahem Ahem! You close the newspaper, and realize you know nothing.&lt;/p&gt;
+&lt;p&gt;
+&lt;img src='/images/Data_Science_VD.png' /&gt;
+&lt;/p&gt;
+&lt;p&gt;Who’s a data scientist you ask? The &lt;a href='http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram'&gt;data scientist venn diagram&lt;/a&gt; by Drew Conway explains it quite well. A data scientist is a blend of maths and statistics, hacking skills and substantive expertise. So what does a data scientist do? He sees zetta bytes of data and goes “Zetta, play no vendetta”. But wait, where did you get zetta bytes of data? Let’s see, how many photos have you uploaded to Facebook till date? How many answers have you submitted to Quora? How many code patches have you contributed? Online shopping: how much or what items do you buy? Do you know what all that is, primarily? Its all data. Bytes making up photos, which is basically an array of RGB values. &lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;Data?&amp;gt; Text in the ASCII format.&lt;/pre&gt;&lt;/p&gt;
+&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;Data, again!&amp;gt; Online shopping records your preference for items. &amp;lt;So much data&amp;gt; So, data and a lot of data. Quote, “As for Facebook proper, it gets 208,300 photos uploaded every minute. Facebook has always been a bit vague about exactly how many photos they get over a period of time, but they’ve gone on record to say that it’s over six billion photos per month. It’s likely even more than that now.”, enquote, from sources on the Internet. I am sure we all agree that a picture speaks a thousand words and consumes a thousand times more memory. Quora till date has approximately 8.6 millions questions. Yahoo! Answers has 300 million. Just imagine how much data we have out there. Now, what does the data scientist do with all that data. He tries to find structure in it, process it, learn from it and so many more things.
+
+Take online shopping for example. Recommendation systems are a huge YES for this industry. As Steve Jobs says “People don’t know what they want until you show it to them.”
+
+They provide you with diverse options based on your selection and recommend what you might like. Based on the items bought in the past, they find the similarity between you and other people. Now, if that other person has bought something and liked it/rated it, you might get a recommendation to try it out as well.
+
+Remember Google’s Page Ranking algorithm. Its based on similar stuff. Why is it that the moment you type “F” on your keyboard Facebook is the first link that appears. Because millions of people typed “F”, and then clicked on Facebook, certifying the fact that they were actually searching for Facebook. Hence, its rank increases. Another connotation is, while searching for an error, you get StackOverflow, Cross Validated, Ubuntu Forums and other such sites, because people who searched for the same error before you clicked these sites thus increasing ranks. This is just the basic idea, in reality its a lot more complicated that than.
+
+Coming back to the question at hand, processing the data. Since the data is titanic, it will take time, enormous amount of time. You might want to try to process the data one by one, or parallely. You will probably agree that the parallel task is much, much faster. Thats why they use Hadoop. It is a framework for storage and large-scale processing petabytes of data. Pretty name, eh? Doug Cutting named it after his son’s toy elephant. Doug Cutting and Mike Cafarella created Hadoop. Its implementation is based on Google File System and Google Map Reduce. Since it is Java-based, Hadoop runs on all the platforms. Hadoop entails the Hadoop Distributed File System and MapReduce. There are many new alternatives to Hadoop like Spark and Cassandra. The documentation provided by Yahoo! is great for understanding the architecture and working of Hadoop.
+
+This has been published in the [YUGMA BridgeNIT](http://yugma.bridgenit.com/) magazine, you can also view the published version [here](http://yugma.bridgenit.com/data-scientist/).&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Pipeline for Machine Learning</title>
+   <link href="http://sidgan.github.io/technical/2014/10/01/pipeline-for-machine-learning"/>
+   <updated>2014-10-01T00:00:00+02:00</updated>
+   <id>http://sidgan.github.io/technical/2014/10/01/pipeline-for-machine-learning</id>
+   <content type="html">&lt;h2 id='automated_pipeline_for_machine_learning_problems'&gt;Automated Pipeline for Machine Learning Problems&lt;/h2&gt;
+
+&lt;p&gt;This project deals with aggregating methods for machine learning. Machine learning is a broad spectrum term. It involves churn prediction, recommendation systems and time series analysis just to name a few.&lt;/p&gt;
+
+&lt;p&gt;Initially I had to work on &lt;a href='http://www.kaggle.com/'&gt;Kaggle&lt;/a&gt; problems trying to gain first hand experience at cleaning data and figuring out what are the most efficient algorithms on which kinds of problems. The first problem that I started on was the Titanic Trainer Challenge. My first prediction lay at a mere 50%, barely, just touching the last position.&lt;/p&gt;
+&lt;br /&gt;&lt;img src='/images/first_submission.png' style='width:600px;height=500px' /&gt;&lt;br /&gt;&lt;img src='/images/spot.png' style='width:600px;height=500px' /&gt;&lt;br /&gt;&lt;img src='/images/final_submission.png' style='width:600px;height=500px' /&gt;&lt;br /&gt;
+&lt;p&gt;However, continually working on the predictions and using the scikit package provided by Python I was able to come up to the 182nd position. Through this exercise I learnt the intricacies of data cleaning and that multiple imputation is extremely vital. This exercise was actually fun. I played around with the python scikit packages and learnt a lot. While working on the problem, I found myself devoting time to data cleaning more than expected. Afterwards, hours on experimental tuning. I came across a few articles and blogs on the net which shared these thoughts as well. Some even provided an outline of such an ‘automated pipeline’. I was intrigued and decided to get my hands dirty.&lt;/p&gt;
+
+&lt;p&gt;I started by building a simple command line application. Initially, I used the optparse package with Python. Python is a fun language to work with. It has numerous packages thanks to the great open source community and ample help is provided on several forums. The work seemed good. I had to take in the options using the command line and process each of them to see what kind of a problem the user had specified. The user could say ‘clustering’, ‘classification’, ‘dimensionality reduction’, ‘regression’ and accordingly I would pass the input data into the pipeline. Other options included imputation method, by mean or by median.&lt;/p&gt;
+
+&lt;p&gt;It worked out pretty well because in machine learning output of one stage serves as the input of the next. Also, the main steps in any machine learning problem are pretty much the same. Elucidating, first is the training of the algorithm, then testing and finally cross validation. Now, with minimum configuration changes, it will be possible to run almost any problem. This gets as good as the data that is being provided to it. If data is clean and devoid of nan values then definitely better prediction will take place. By doing this project I even learnt the various methods of detecting the sources of nan values. These can be random, independent. This was by far the most daunting task. Once, I ended by experimenting so wickedly that all I had in the end was nan values. Columns full of just nan values. I somehow (due to an error in the code) managed to turn the originally non-nan values into nan. What a nightmare that was!&lt;/p&gt;
+
+&lt;p&gt;It seemed a good idea to produce a report from each phase and based on the data produced manually add/remove any parameter. I listened to talks from PyCon, KDD, Texata and a lot of them emphasised the importance of giving clean data. The algorithm gives the best results when you provide it with the best data. I don’t think that I have been able to achieve that level of efficacy in data cleaning that I would be able to make a machine do the cleaning automatically. But, its the algorithm tuning part that the computer can do efficiently, so let the machine do what it’s best at and the rest, a person can handle.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>SSH Keys</title>
+   <link href="http://sidgan.github.io/technical/2014/09/23/generate+ssh+keys"/>
+   <updated>2014-09-23T00:00:00+02:00</updated>
+   <id>http://sidgan.github.io/technical/2014/09/23/generate ssh keys</id>
+   <content type="html">&lt;h2 id='ssh'&gt;SSH&lt;/h2&gt;
+
+&lt;p&gt;SSH stands for Secure Shell. The SSH keys are nearly impossible to crack because they consist of a private and public key both of which are a long string of random characters. For extra protection one can also add a passphrase which means that anytime these keys are used, the user will be prompted for a passphrase. SSH keys enable one user on a machine to log onto another users account on the same machine. Alternatively, they also allow one user to remotely log onto a remote machine.&lt;/p&gt;
+
+&lt;h2 id='generating_ssh_keys'&gt;Generating SSH keys&lt;/h2&gt;
+
+&lt;p&gt;SSH keys can have various types of secure algorithms on which they are based. The algorithm being used these days is the RSA or Rivest Shamir Adleman algorithm. To generate the key pair, do:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ssh-keygen -t rsa&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The entire process of generation of the keys is highly interactive and the user will be prompted for a lot of questions. This interaction is similar to the process of &lt;a href='http://sidgan.github.io/technical/2015/01/05/creating%20and%20revoking%20gpg%20keys/'&gt;generating GPG keys&lt;/a&gt;. You can set the location where your SSH keys will be stored and set the passphrase. Then you will be provided with the key fingerprint and the key&amp;#8217;s randomart image.&lt;/p&gt;
+
+&lt;p&gt;Now, the key has been generated and the keys can be placed on the server. This is done with the &lt;code&gt;ssh-copy-id&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ssh-copy-id user@ipaddr&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then the system will authenticate the host and add the IP address permanently into its system.&lt;/p&gt;
+
+&lt;h2 id='remote_login'&gt;Remote Login&lt;/h2&gt;
+
+&lt;p&gt;SSH keys can be used to remotely login to a system as well. The secure shell protocol is most commonly used to securely log onto remote Linux and Unix-like systems as:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ssh user@ip_addr&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It is the IP address to which you are trying to connect to. &lt;code&gt;user&lt;/code&gt; indicates the username on the remote host, if the username on your current system and remote system is the same then the command gets modified slightly. There is no need to indicate the username then, so:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ssh ip_addr&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you will be prompted for a password, this is necessary in order to authenticate the user. Then finally you have entered the remote location and can access all the files that your user is allowed.&lt;/p&gt;
+
+&lt;p&gt;To exit the session, type &lt;code&gt;exit&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The remote location where you are trying to login should have its ssh server running. This is done on the remote location by &lt;code&gt;sudo service ssh start&lt;/code&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>New York University Abu Dhabi Hackathon</title>
+   <link href="http://sidgan.github.io/hackathon/2014/03/01/nyuad"/>
+   <updated>2014-03-01T00:00:00+01:00</updated>
+   <id>http://sidgan.github.io/hackathon/2014/03/01/nyuad</id>
+   <content type="html">&lt;p&gt;I was gratified to be selected to represent India at the &lt;a href='http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html'&gt;New York Abu Dhabi Hackathon&lt;/a&gt;. Hackathons are always great and this was another great one. We developed a web app &amp;#8216;Orphan Locator&amp;#8217;. Before the hackathon, ideation had already begun on Google Groups and this forced us to put our thinking caps and suggest ideas. As more ideas came in, people started discussing their implementation and use cases and it felt like we were already part of the hackathon.&lt;/p&gt;
+
+&lt;h2 id='basic_idea_lost_person_application'&gt;Basic Idea: Lost Person Application&lt;/h2&gt;
+
+&lt;p&gt;An application for lost or missing people was answering the need of the hour because Gaza was grief stricken with the war. So, this app would come in handy for finding all missing people. The idea behind the application was that when a person went missing, there were two existing databases that contained information about the person. First the police station, where the person was reported missing and the second, where the person was living. Given the war zone, the person would be living in a refugee camp or would be admitted in a hospital, or another similar place. Now, the job was to compare these two databases for a match of the persons profile. This is exactly what our team at NYUAD did. Data from NGO&amp;#8217;s was obtained by coordinating with &lt;a href='http://www.barakabits.com/'&gt;Baraka Bits&lt;/a&gt; founder and Chief Optimist &lt;a href='https://twitter.com/rchakaki'&gt;Rama Chakaki&lt;/a&gt; and a test person was employed for locating purposes. Face profiles and information about the person, both were compared to obtain a confidence value. These confidence values were then sorted and the profile with the highest confidence value were displayed as results on the &lt;a href='https://github.com/sidgan/orphanlocator'&gt;website&lt;/a&gt; to the user. Viola Jones algorithm for face recognition and Levenshtein distance for textual information was used.&lt;/p&gt;
+
+&lt;h2 id='special_case_orphan_locator'&gt;Special Case: Orphan Locator&lt;/h2&gt;
+
+&lt;p&gt;Using fuzzy matching and face recognition algorithms, we are able to connect a orphan and his parents. When a child goes missing, his parents provide a photo, first name, last name, age, gender, last seen location, and other data on which we perform &amp;#8220;fuzzy matching&amp;#8221;, matching that takes into consideration the variations in data considering time lapses and errors in data entry. Our matching technology allows NGOs or orphanages to find missing kids. Certain identity cards are maintained with full logs of photo, name and other valid details about the missing child.&lt;/p&gt;
+
+&lt;p&gt;Using these two sets of data, (from the parent&amp;#8217;s side and from the orphanage) a match can be performed that gives approximate prediction value that helps us to understand what is the probability that the child could be the missing one. We use used open source OpenCV algorithms, the Viola-Jones method, Eigen Faces, with Local Binary Pattern Histogram to train the data set, perform face detection first and then face recognition. Apart from this, fuzzy matching is performed on the additional data so that even without the photo a suitable match can be found.&lt;/p&gt;
+
+&lt;p&gt;Also for further development a SMS feature can be developed so that people without access to internet will be able to receive information about missing children that they reported to the system.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Nokia Do Good Hackathon</title>
+   <link href="http://sidgan.github.io/technical/hackathon/2013/08/20/nokia-do-good-hackathon"/>
+   <updated>2013-08-20T00:00:00+02:00</updated>
+   <id>http://sidgan.github.io/technical/hackathon/2013/08/20/nokia-do-good-hackathon</id>
+   <content type="html">&lt;h2 id='nokia_do_good_hackathon'&gt;&lt;a href='http://dogoodhackathon.devworx.in/'&gt;Nokia Do Good Hackathon&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;This was my first ever hackathon. It was a such a great experience that I just love hackathoning now. The exhilarating experience that teaches you so much and makes one rack their brains is simply awesome. Though I loved to keep my nose in a good book, now I love to participate in hackathons too. Eclectic minds from all over Delhi had come and their lighting talks inspired me. I met &lt;a href='http://www.quora.com/Nalin-Savara'&gt;Nalin Savara&lt;/a&gt; at this hackathon. He motivated me to go forth and leave no stone unturned while putting my best effort into all the work that I do.&lt;/p&gt;
+
+&lt;p&gt;I also learnt to develop Windows phone applications here. I developed &amp;#8216;EducateAll&amp;#8217; at this hackathon. It is an app based on live streaming, ment for virtually connecting students and teachers. It is especially applicable to remote locations and places where schools have not yet been built. This is the app that I presented as a solution to inclusive growth using technology at the &lt;a href='http://scholarships.theiet.in/'&gt;India Scholarship Awards&lt;/a&gt;, presented by the Institution of Engineering and Technology.&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>

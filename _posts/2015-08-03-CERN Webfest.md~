@@ -1,0 +1,78 @@
+---
+layout: post
+title: "Open Cosmics"
+description: ""
+category: [technical, hackathon]
+tags: [CERN, open cosmics, crowd crafting, citizen science, cosmic pi, cloud chamber ]
+---
+{% include JB/setup %}
+
+Did you know that there are high energy particles from far edges of the universe passing through your body as you read this? Ever wondered what actually goes on inside the detectors of the Large Hadron Collider (LHC) at CERN?
+
+High energy cosmic beams hit the Earth’s outer atmosphere, which in turn scatters these rays into a shower of particle decays. Simple devices like Cloud Chambers, Bubble Chambers, and the CosmicPi allow us to detect particle decays which are not otherwise visible to the naked eye. Think of them as  small scale detectors that mirror the science happening inside the really big machines at CERN, and other detectors around the world. In fact, cloud chambers and bubble chambers were used to do research in particle physics at CERN before the LHC.
+
+We plan to build a distributed network of these devices which will be able to capture these cosmic events around us. This may then be used to analyse the data, examine the results and disseminate it to the public, making it accessible for non-physicists, students, and hobbyists to play with this data and learn about the fascinating cosmos around them. Information about the cosmics around us will help us find answers to a broad spectrum of questions related to cloud formation,  global warming, renewable energy and the universe.
+
+A part of the project will be to make the platform capable of filtering the raw data and storing the information after enhancing it using image processing techniques. Applying pattern recognition to ascertain the track of particle movement will enable us to determine what type of particle it is. Even simple information about the arc of a track can tell us the speed and mass of the particle. We want to make this a citizen science project that encourages and empowers people to open their inquisitive nature towards science.
+
+Use cases and future scope:
+
+    If the data has potential, it is visualized in histograms.
+    Visualize particle decays taking place in real life around us.
+    Pattern recognition on images from small detectors.
+    Use GPS information on the cloud chamber to discover geographic regions that have biasing towards specific particles and decays.
+    Change in electromagnetic waves (light) will affect the way cosmic waves react with particles close by. If there is a meteor shower, what effect will it have on these particles?
+    Why are the fluctuations in cosmic rays relevant and why do they happen?
+    Analyze and reach conclusions, like physicists.
+
+ 
+
+ 
+
+ 
+Category: 
+Education
+Contacts: 
+
+Anirudha Bose - anirudha.bose@cern.ch (link sends e-mail)
+Siddha Ganju - siddha.ganju@cern.ch (link sends e-mail)
+Gabriella Azzopardi - gabriella.azzopardi@cern.ch (link sends e-mail)
+Harun Urhan - harun.urhan@cern.ch (link sends e-mail)
+Shubham Gupta - shubham.gupta@cern.ch (link sends e-mail)
+Manos Katsomallos - emmanouil.katsomallos@cern.ch (link sends e-mail)
+
+ 
+
+ 
+
+ 
+Skills Being Sought: 
+
+Our technology stack will consist of Node.js, Python, MongoDB, sklearn, Mllib for Apache Spark, and AngularJS.
+
+ 
+
+ 
+
+ 
+Weekend Goals: 
+
+    Setup the cloud chamber station at CERN S’Cool Lab.
+    Get our hands dirty with data from cloud chamber station at CERN S’Cool Lab and turn-key cloud chamber stations from New York!
+    Draft a common standard for storing the events recorded by the various stations that would be connected to the Open Cosmics network. The Flexible Image Transport System (FITS) standard developed by NASA is a possible lead, which needs to be evaluated.
+    Use pattern recognition algorithms on the raw data to detect particle tracks and rare cosmic events.
+    Data analysis
+    Build a distributed citizen science platform to host the open data, and expose it to the public using a REST interface.
+    Live demo of the Open Cosmics global network of cloud chamber stations.
+
+ 
+
+ 
+
+ 
+References and Background Material: 
+
+TEDx Geneva talk on CosmicPi: https://www.youtube.com/watch?v=8Ya1JdxyZTE (link is external)
+HiSPARC: http://www.hisparc.nl/en/ (link is external)
+NASA FITS: http://fits.gsfc.nasa.gov/ (link is external)
+International Muon Week (IMW), 2015: https://quarknet.i2u2.org/group/international-muon-week (link is external)

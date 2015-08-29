@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="google-site-verification" content="9nJDFuShU7EqBA2jMmiyC4_4uYyHadxN5cnh2dITchY" />
+    <title>Creating and Revoking GPG keys</title>
+    <meta name="description" content="">
+   <meta name="author" content="Siddha Ganju">
+<meta name="keywords" content="Machine Learning deep learning artificial intelligence computer science">
+	<meta name="description" content="Journey from technical frobs to tweaks">
+<meta property="og:url" content="http://www.sidgan.github.io/">
+<meta name="title" content="Journey from technical frobs to tweaks">
+
+   
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59744528-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Creating and Revoking GPG keys </h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <h2 id='gpg_keys'>GPG Keys</h2>
+
+<p>OpenGP standards define the semantics for secure information exchange. GPG is the software that follows OpenPG standards. GPG is an acronym for GNU Privacy Guard.</p>
+
+<p>Alice and Bob are the foo-bar, the spam-eggs of the world of computer security. Symmetric key cryptography takes place by two different methods. The first in which there are two keys, both same, and the second in which both keys are different. GPG helps in symmetric key cryptography.</p>
+
+<p>Assuming Alice and Bob to be two people who want to communicate and send messages to each other. Both will possess their own private and public keys. The public keys are known to all, hence their name public keys. The private keys are known only to the user and under all circumstances must be kept secured. For communication, Alice will sign a message with Bob&#8217;s public key and send the complete packet to Bob. Now the only key that can decipher Alice&#8217;s message is Bob&#8217;s private key, which he possesses, so Bob will easily decipher it.</p>
+
+<p>For digitally signing messages, Alice will sign using her own private key and send the message, to check the authenticity of the user, the receiving party can use Alice&#8217;s public key to make sure that it is indeed her.</p>
+
+<h2 id='creating_keys'>Creating keys</h2>
+
+<p>Ubuntu comes pre-installed with GPG, but it can be installed via the apt-get command as: <p>
+<code>
+sudo apt-get install gpg
+</code>
+</p></p>
+
+<p>After the software is installed, generate the keys using: <p>
+<code>
+gpg --gen-key
+</code>
+</p></p>
+
+<p>Now a series of questions are presented on the terminal, the software is extremely interactive and easy to use. It asks for options regarding the number of bits for the keys, the real name, email-address and finally the passphrase. The passphrase is a security shield that is used to unlock the private key. Everytime the private key is needed, the terminal will prompt for the passphrase and only then can the private key be unlocked for use.</p>
+
+<p>After generating the key, export it and set its key-id as the default in the <code>.bashrc</code> file. Now anytime you need to use the key, you do not need to input its key-id. <p>
+<code>
+export GPGKEY=XXXXXXXX
+</code>
+</p> <p>
+<code>
+sudo emacs ~/.bashrc
+</code>
+</p></p>
+
+<h2 id='uploading_to_server'>Uploading to Server</h2>
+
+<p>Communication is possible when the public keys can be found and used by other developers. To facilitate this public keys are uploaded to the keyserver. MIT provides a keyserver amongst many others. <p>
+<code>
+gpg --output mykey.asc --export -a $GPGKEY
+</code>
+</p> <p>
+<code>
+gpg --send-keys --keyserver keyserver.ubuntu.com XXXXXXXX
+</code>
+</p></p>
+
+<h2 id='revoking_keys'>Revoking keys</h2>
+
+<p>Several conditions may occur which lead to the requirement of a new secret key. These include the key getting compromised, the private key becoming known to another party, the passphrase becoming known to another party or the user forgetting the passphrase.</p>
+
+<p>In any condition, when the key or the passphrase gets compromised it is necessary to revoke the key. This is so that no one uses the compromised key to send messages because now these can be deciphered by the intruder party.</p>
+
+<p>After revoking it is preferred that the new key is signed by another developer. The revocation certificate must be kept safe, if an intruder gets hold of this revocation certificate, they may revoke all the keys of that developer.</p>
+<code>
+gpg --output revoke.asc --gen-revoke $GPGKEY
+</code>
+<p>Now the revocation certificate has to be uploaded on the server so that other developers can be informed about this change. As soon as someone refreshes their key database, your key will be updated and they will know that the old key has been revoked.</p>
+<p>
+<code>
+gpg --import revoke.asc
+
+</code>
+</p><p>
+<code>
+gpg --keyserver pgp.mit.edu --send-key $REVOKED_KEY
+</code>
+</p>
+<h2 id='removing_revoked_key_from_keyring'>Removing revoked key from keyring</h2>
+
+<p>Now that the key has been revoked it is advisable to remove it from your keyring. This is imperative because if the key is kept in your keyring you will still be unknowingly using it.</p>
+
+<p>The method to remove the revoked key from the keyring is as follows:</p>
+
+<p>First of all list all the keys to see how many keys are in your keyring. <p>
+<code>
+gpg --list-keys
+</code>
+</p></p>
+
+<p>Then, to delete both the private and public key do‍: <p>
+<code>
+ gpg --delete-secret-and-public-key NAME
+</code>
+</p></p>
+
+<p>To delete only the public key do: <p>
+<code>
+ gpg --delete-key NAME
+</code>
+</p></p>
+
+<p>The user is then prompted with questions making sure that the user deletes the correct key.</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/technical/2015/01/01/who-said-it" title="Who Said it?">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/technical/2015/01/10/deep-learning-for-audio-recognition" title="Deep Learning for Audio Recognition">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>05 January 2015</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#gpg-ref">gpg <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#crypto-ref">crypto <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#security-ref">security <span>2</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2015
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

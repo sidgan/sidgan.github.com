@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="google-site-verification" content="9nJDFuShU7EqBA2jMmiyC4_4uYyHadxN5cnh2dITchY" />
+    <title>ShanghAI II</title>
+    <meta name="description" content="">
+   <meta name="author" content="Siddha Ganju">
+<meta name="keywords" content="Machine Learning deep learning artificial intelligence computer science">
+	<meta name="description" content="Journey from technical frobs to tweaks">
+<meta property="og:url" content="http://www.sidgan.github.io/">
+<meta name="title" content="Journey from technical frobs to tweaks">
+
+   
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59744528-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Frob Yard</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/aboutme.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archives</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>ShanghAI II </h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <p align='justify'>
+
+The initial ideas that we started out with were worked upon, implemented on WebBots and along the way got modified slightly. The end result, I believe is full of better ideas and implementations. Robotics derives a lot of inspiration from animal behaviour and this iteration of ShanghAI is all about how robotics is coupled with animal behaviour. The act of evolution has perfected almost every task and we just need to learn from it[1].
+
+</p>
+<h2 id='initial_ideas'>Initial Ideas</h2>
+<p align='justify'>
+<ul>
+<li>
+Machine learning to calculate the optimum numerical values of all parameters viz. pitch, yaw.
+</li>
+<ul>
+<li>
+Adaptive boosting for finding the best values of the parameters and their appropriate weightage.
+</li>
+<li>
+Grid Search CV for hyper parameter optimization.
+</li>
+</ul>
+<li>
+Neural networks
+</li>
+<ul>
+<li>
+Find and mark cubes and use neural networks to inform other robots to collect cubes.
+</li>
+<li>
+Robots tell other robots if cubes have been collected or have already been marked by communication.
+</li>
+</ul>
+<li>
+Global Position System node to model a Global Positioning Sensor (GPS)
+</li>
+<ul>
+<li>
+Supervisor controller obtains information about robots' and cubes' absolute position from the controller program and transmits this information to the robot. Hence, it keeps track of several robots simultaneously.
+</li>
+<li>
+This communication enables the robots to understand how they should manoeuvre their movement to get to the appropriate cube at the right location.
+</li>
+</ul>
+</ul>
+</p>
+<h2 id='morphology'>Morphology</h2>
+
+<h3 id='swiss_robots'>Swiss Robots</h3>
+<p align='justify'>
+Each robot has its own coordinate system where the origin is the position of the first cube found. The current position is relative to the cluster point and is calculated using a method called path integration. Swiss robots are extremely simple robots and no not rely heavily on communication. The robots develop themselves to understand how to move and in which direction to move. They need to distinguish between other robots, walls and cubes. The wall is distinguished from cubes and robots by its width. The walls have a greater width. Now, to differentiate between cubes and robots the ability of communication comes into place. Only the robots can communicate, so, if communication is carried out successfully then it is a robot, else a cube.
+</p>
+<h3 id='distance_sensors'>Distance Sensors</h3>
+<p align='justify'>
+These sensors are used for communication and help in determining the distance.
+
+<ul>
+<li>
+Proximity Sensors
+</li>
+<ul>
+<li>
+These are distributed over the front half of the bot and each one is connected to a node in the neural network.
+</li>
+</ul>
+<li>
+Collision Sensors
+</li>
+<ul>
+<li>
+These are based on binary threshold, so transmit only when the total signal is above some threshold limit. These transmit the signal when a collision takes place.
+</li>
+</ul>
+<li>
+Light Sensors
+</li>
+<ul>
+<li>
+These direct the bot to move in the direction in which light falls.
+</li>
+</ul>
+<li>
+Infrared Sensors
+<br />
+<br />
+<img src='/images/Infrared-sensors.jpg' style='width:300px;height=200px' />
+<br />
+</li>
+<br />
+<li>
+Touch Sensors
+<p>
+<br />
+<img src='/images/Touch-sensors.jpg' style='width:300px;height=200px' />
+</p>
+</li>
+</ul>
+</p>
+<h3 id='locomotion'>Locomotion</h3>
+
+<ul>
+<li>
+<p>Using Wheels - Wheels are driven by electrical motors. - If both wheels turn at equal speed, the robot moves straight. - If the right wheel is stopped and only the left wheel moves, the robot will turn to the right side. - If both wheels move in opposite direction with equal speed, hence the left wheel moves forward and right moves backward or vice versa, the robot turns on spot.</p>
+</li>
+
+<li>
+<p>Using Infrared Sensors - The age of the cluster point is exchanged while communicating. After evaluation of this cluster point the robot with the older cluster point sends its current coordinates to the other bots which adopt the older ones coordinates. Finally, this procedure leads to one oldest and global cluster point.</p>
+</li>
+</ul>
+
+<h2 id='experiment'>Experiment</h2>
+<p align='justify'>
+All the experiments were done with my team mate Elena Okhapkina and primary teaching assistant Martin F. Stoelen along with secondary TA Yijiang Ren.
+</p>
+<h3 id='robots_and_animal_behaviour1'>Robots and animal behaviour<span>1</span></h3>
+
+<ul>
+<li>Evolution has perfected the task and we just need to learn from it</li>
+
+<li>Cognition and behavior are a function of the environment, the body, and the brain.</li>
+
+<li>We need to find how the swiss robots resemble an animal in some specific environment - Swiss robots may be treated as ants and the cubes as the ants food.</li>
+</ul>
+
+<h3 id='references'>References</h3>
+
+<p><span>1</span>(http://www.the-scientist.com/?articles.view/articleNo/37635/title/Send-in-the-Bots/ ) by Jef Akst, The Scientist Magazine, October 1, 2013.</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/technical/2015/02/10/Signing+GPG-Keys" title="Signing GPG Keys">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/technical/2015/02/14/ShanghAI+III" title="ShanghAI III">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zeusidkz'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>13 February 2015</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#robotics-ref">robotics <span>3</span></a></li>
+     
+    	<li><a href="/tags.html#ai-ref">ai <span>3</span></a></li>
+     
+    	<li><a href="/tags.html#shanghai-ref">shanghai <span>3</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Siddha Ganju 2015
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
