@@ -21,7 +21,7 @@ I am a avid movie-watcher and book lover. I am also a [Quoran](http://www.quora.
 
 Blog discussing my works leading from frobnications to tweaking and what I learnt from them.
 
-Previously, I have used [Tumblr](http://sidgan.tumblr.com/) for blogging, however sometimes their servers overload leading to no access to the sites, so I decided to switch over to Github. 
+I still use [Tumblr](http://sidgan.tumblr.com/) for blogging.
 
 
 ## Contact
