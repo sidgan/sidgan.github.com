@@ -9,7 +9,7 @@ tags: [CERN, ml, data science ]
 
 ## CERN Openlab Project
 
-This summer I was humbled to have been chosen as an intern at the European Council for Nuclear Research, CERN Canton of Geneva, Switzerland. I was in the Information technology – Databases, which is usually called IT-DB. My project was to evaluate Apache Spark as an analytics framework for CERN’s Big Data Analytics infrastructure. I had never used Apache Spark before. There was an EDx course which was teaching Apache Spark and I enrolled myself for it. I also read some books on Apache Spark, mainly, [Learning Spark](http://shop.oreilly.com/product/0636920028512.do) and [Advanced Analytics with Spark](http://shop.oreilly.com/product/0636920035091.do). 
+This summer I was humbled to have been chosen as an intern at the European Council for Nuclear Research, CERN, Canton of Geneva, Switzerland. I was in the Information technology – Databases, which is usually called IT-DB. My project was to evaluate Apache Spark as an analytics framework for CERN as Big Data Analytics infrastructure. I had never used Apache Spark before. There was an EDx course which was teaching Apache Spark and I enrolled myself for it. I also read some books on Apache Spark, mainly, [Learning Spark](http://shop.oreilly.com/product/0636920028512.do) and [Advanced Analytics with Spark](http://shop.oreilly.com/product/0636920035091.do). 
 
 The goal of this openlab summer student project was to analyse Apache Spark as a framework for
 the big data analytics framework of CERN. It utilizes MLlib and Spark Streaming along with
