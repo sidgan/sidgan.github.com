@@ -16,6 +16,7 @@ I did my bachelors from [National Institute of Technology, Hamirpur](http://nith
 
 I am a avid movie-watcher and book lover. I am also a [Quoran](http://www.quora.com/). It has boosted my knowledge tremendously and greatly enhanced my appreciation for life. I like to travel too. 
 
+CV [here](http://sidgan.me/images/SiddhaGanju-CV.pdf)
 
 ## About blog 
 
