@@ -7,6 +7,7 @@ tags: [ai , ml, deep learning, frameworks]
 ---
 {% include JB/setup %}
 
+These are the deep learning frameworks that I have used or am using: 
 
 ## Tensor Flow 
 
@@ -25,11 +26,15 @@ Some important and beneficiary features of Theano are:
 + The package contains a number of utility modules that are helpful with machine learning tasks.
 + Keras, Pylearn2 are some other libraries which are build on Theano. 
 + Have a state of the art model for RNN and LSTM
++ Supports automatic gradient differentiation which is considered one of the most important points about it. 
++ Lower level abstraction offered by working with symbolic functions mean that more freedom with what we want is possible
++ This might be one of the reasons why it may seem complicated, there are no ready to run models, everything must be done on our own. 
++ I think the underlying architecture of Theano converts everything to a computational graph which makes fast calculations and calculations that can be shared easily among different parts of a process. 
 
 ## Caffe
 
 + Berkeley Vision and Learning Center developed it
-+ Pretrained models are available for MNIST and other datasets which makes their use easy. 
++ Pretrained models are available for MNIST and other datasets which makes their use easy and highly newbie friendly
 + Extremely portable 
 + Fast, Caffe is said to have the fastest implementation of CNN. 
 
@@ -46,9 +51,11 @@ Some important and beneficiary features of Theano are:
 
 ##Torch
 
-+ Written in Lua
++ I am a newbie at it because of not much knowledge about Lua. Torch is written in Lua. 
++ Written in Lua which is lightweight and easy to write wrappers of ultra fast C and C++ for Lua. 
 + State of the art convolutional network models 
 
 ## Cuda 
+
 + Support by GPU acceleration
 + CuDNN supports other frameworks and libraries
