@@ -7,7 +7,7 @@ tags: [ai , ml, deep learning, frameworks]
 ---
 {% include JB/setup %}
 
-These are the deep learning frameworks that I have used or am using: 
+The purpose of this post is to write down what I know about these frameworks, as I learn more, I will keep on updating with more information. These are the deep learning frameworks that I have used or am using: 
 
 ## Tensor Flow 
 
@@ -36,18 +36,23 @@ Some important and beneficiary features of Theano are:
 + Berkeley Vision and Learning Center developed it
 + Pretrained models are available for MNIST and other datasets which makes their use easy and highly newbie friendly
 + Extremely portable 
-+ Fast, Caffe is said to have the fastest implementation of CNN. 
++ Fast, Caffe is said to have the fastest implementation of CNN
++ Caffe installation on OS X is slightly difficult. It was so much more easier on Ubuntu 14.04
++ Can be easily configured to use GPU's using flags
 
 ## Gensim 
 
-+ Python library. 
-+ Implementation of Word2Vec and Doc2Vec which is widely used. 
++ Python library
++ Implementation of Word2Vec and Doc2Vec which is widely used
++ Easy installation
+
 
 ## Deeplearning4j
 
 + A Java and Scala library. 
 + Mainly a business framework
 + Brings a scala-like thinking
++ Easy installation
 
 ##Torch
 
@@ -59,3 +64,4 @@ Some important and beneficiary features of Theano are:
 
 + Support by GPU acceleration
 + CuDNN supports other frameworks and libraries
++ NVIDIA GPU's only
