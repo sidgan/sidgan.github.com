@@ -15,7 +15,8 @@ author :
   email : siddhaganju@gmail.com
   github : sidgan
   twitter : SiddhaGanju
-  feedburner : 
+  feedburner :
+  markdown: kramdown
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -89,8 +90,8 @@ JB :
       account : 123abc
     facebook :
       appid : 123
-      num_posts: 10
-      width: 580
+      num_posts: 15
+      width: 680
       colorscheme: light
    
   # Settings for analytics helper
