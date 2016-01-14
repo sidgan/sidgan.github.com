@@ -50,7 +50,7 @@ You can contact me on :
 
 - IRC nick : sidgan 
 - Twitter Handle: [SiddhaGanju](http://www.twitter.com/SiddhaGanju) 
-- [LinkedIN](https://www.linkedin.com/pub/sidgan)
+- [LinkedIN](https://www.linkedin.com/in/sidgan)
 - Email: Its great having a unique name! You can email me on firstnamelastname[at]emailclient, gmail or yahoo. Or, use my andrew id, sganju1 for andrew.cmu.edu OR cs.cmu.edu.
 
 ## Curriculum Vitae
