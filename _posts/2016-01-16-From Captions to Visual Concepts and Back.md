@@ -3,7 +3,7 @@ layout: post
 title: "From Visual Concepts and Back"
 description: "From Visual Concepts and Back"
 category: [technical]
-tags: [ai , ml, rnn]
+tags: [ai , ml, rnn, image captions]
 ---
 {% include JB/setup %}
 

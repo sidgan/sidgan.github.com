@@ -3,7 +3,7 @@ layout: post
 title: "AI Hard Tasks"
 description: ""
 category: [technical]
-tags: [ai , ml, ai-hard]
+tags: [ai , ml, ai-hard, image captions]
 ---
 {% include JB/setup %}
 
