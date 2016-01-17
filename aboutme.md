@@ -51,7 +51,8 @@ You can contact me on :
 - IRC nick : sidgan 
 - Twitter Handle: [SiddhaGanju](http://www.twitter.com/SiddhaGanju) 
 - [LinkedIN](https://www.linkedin.com/in/sidgan)
-- Email: Its great having a unique name! You can email me on firstnamelastname[at]emailclient, gmail or yahoo. Or, use my andrew id, sganju1 for andrew.cmu.edu OR cs.cmu.edu.
+- Email: Its great having a unique name! You can email me on firstnamelastname[at]emailserviceprovider, gmail or yahoo. Or, use my andrew id, sganju1 for andrew.cmu.edu OR cs.cmu.edu.
+- GPG Fingerprint: FCFC EF8E 95DE 42EC DE83 FA8C 6D18 0E5A DD42 E8B4
 
 ## Curriculum Vitae
 

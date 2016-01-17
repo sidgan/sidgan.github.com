@@ -15,3 +15,6 @@ Image captioning is a AI hard task as it involves:
 + Semantically understanding content of images
 + Multi-modal knowledge from several sub-domains is required to solve AI Hard tasks
 + Well defined evaluation metric (currently it is the number of questions that are correctly answered by a VQA system.)
+
+
+An image is understood when it is possible to generate a caption which encompasses the salient features in the image. 
