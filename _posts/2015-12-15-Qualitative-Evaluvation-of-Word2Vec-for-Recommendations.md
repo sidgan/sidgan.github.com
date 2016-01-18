@@ -3,7 +3,7 @@ layout: post
 title: "Qualitative Evalvations of Word2Vec for Recommendations"
 description: ""
 category: [technical]
-tags: [ai , ml]
+tags: [ai , ml, word2vec]
 ---
 {% include JB/setup %}
 

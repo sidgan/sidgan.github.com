@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exploring Datasets"
+title: "Exploring Image Captioning Datasets"
 description: ""
 category: [technical]
 tags: [ai , ml, datasets, image captions]

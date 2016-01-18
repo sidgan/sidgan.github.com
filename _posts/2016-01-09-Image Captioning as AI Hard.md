@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI Hard Tasks"
+title: "AI Hard and AI Complete Tasks"
 description: ""
 category: [technical]
 tags: [ai , ml, ai-hard, image captions]

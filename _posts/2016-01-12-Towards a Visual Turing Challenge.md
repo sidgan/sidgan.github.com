@@ -3,7 +3,7 @@ layout: post
 title: "Towards a Visual Turing Challenge"
 description: ""
 category: [technical]
-tags: [ai , ml, datasets , image captions]
+tags: [ai , ml, datasets , image captions, paper review]
 ---
 {% include JB/setup %}
 

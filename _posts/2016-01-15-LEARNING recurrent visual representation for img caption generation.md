@@ -3,7 +3,7 @@ layout: post
 title: "Learning a Recurrent Visual Representation for Image Caption Generation"
 description: "Learning a Recurrent Visual Representation for Image Caption Generation"
 category: [technical]
-tags: [ai , ml, rnn, image captions]
+tags: [ai , ml, rnn, image captions, paper review]
 ---
 {% include JB/setup %}
 
