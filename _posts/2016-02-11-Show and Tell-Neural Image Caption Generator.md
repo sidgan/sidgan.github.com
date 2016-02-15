@@ -18,16 +18,17 @@ In this paper, the RNNs are replaced by A CNN, which produce a representation of
 A sequence model is thus generated which maximizes the probability of correct translation given an input sentence which is used both for training and inference. Hence, the job is to take an input image and translate it to its description. 
 
 The design patterns followed are: 
-- The function which models how the images and words are fed as inputs 
-- The exact form of this function
+
+	- The function which models how the images and words are fed as inputs 
+	- The exact form of this function
  
 The images are represented using CNNs with batch normalization and can be generalized to scene classification using transfer learning. The function choice is governed by its ability to deal with vanishing and exploding gradients, which are a common challenge in designing and training RNNs. To counter this, LSTMs are used which contains a memory cell which encodes all the knowledge that it possesses at every time step of what inputs have been observed up to this step. This LSTM model is trained for prediction of each next word in a sentence after being conditioned on the image and all the previous words.  Both the image and the the words are mapped to the same space, meaning the image by using the CNN and the words using the word embeddings. The word embeddings contain only the words minus the stop words in a one hot vector representation. The image is input only once and this gives better results than giving the image as input every time step. 
 
 This yields two approaches that can be used to generate a sentence when given an image. These include: 
-- Sampling 
-    - Sample the first word according to the probabilities and the corresponding embedding as inputs and sample probabilities until the end of sent token or the maximum length of the sentence is reached.    
-- Beam Search
-    - Iteratively consider each of the best sentences to a certain time as the potential candidates to generates sentence of size one greater than the time stamp. This uses the arg max approach.    
+	- Sampling 
+    		- Sample the first word according to the probabilities and the corresponding embedding as inputs and sample probabilities until the end of sent token or the maximum length of the sentence is reached.    
+	- Beam Search
+    		- Iteratively consider each of the best sentences to a certain time as the potential candidates to generates sentence of size one greater than the time stamp. This uses the arg max approach.    
 
 
  
