@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Strata+Hadoop Conference, San Jose"
+title: "Amazing AI"
 description: ""
 category: [technical]
-tags: [ai , ml, cern, conference, big data]
+tags: [ai , ml, big data]
 ---
 {% include JB/setup %}
 
