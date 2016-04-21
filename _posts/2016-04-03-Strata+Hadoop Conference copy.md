@@ -13,3 +13,4 @@ Links:
 
 - [O'Reilly Blog post about my talk](https://www.oreilly.com/ideas/cern-seeks-to-predict-new-and-popular-data-sets), also featured on their data newsletter. 
 - [O'Reilly Conference details](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/detail/47052)
+- Social Media (Twitter)
