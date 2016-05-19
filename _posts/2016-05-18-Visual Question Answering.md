@@ -36,12 +36,20 @@ Image followed by its three questions-answers pairs.
 
 #### Observations
 
-- If the questions are independent then they dont help each other but maybe they can help in image understanding.
+- If the questions are independent then they dont help each other but maybe they can help in image understanding
 - Make a BOW model with the questions and then derive inferences to make one single description. This description can be appended to the image features.
 - Use Stanford CoreNLP to convert question to description, this description might give some more information about image
 - Use a captioning system to generate some assumed truth about the system and compare this with the questions. This will generate a different feature set. 
 - If we use a BOW model, then we will need a vocabulary consisting of all possible words. Maybe a word embedding approach will work here. 
 - How to use the given question categories (64)
+
+
+#### TODO
+
+##### 2/26
+
+- [ ] Run NLP baseline using Word2Vec
+- [ ] CV baseline
 
 
 
