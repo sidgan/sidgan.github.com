@@ -3,7 +3,7 @@ layout: post
 title: "Visual Question Answering"
 description: ""
 category: [technical]
-tags: [vqa, qa, deep learning]
+tags: [vqa, qa, deep learning, summer2016, ml, ai,nlp, word2vec]
 ---
 {% include JB/setup %}
 
@@ -44,12 +44,21 @@ Image followed by its three questions-answers pairs.
 - How to use the given question categories (64)
 
 
+#### Help Score 
+
+Dataset is shuffled while maintaining order of image id with its respective question and label. The labels are obtained by manual annotation following rules described. All questions are provided to the user. If presence of any question helps in answring other questions, then this set is not independent, so is given a help score of 1. The help score is defined as one, if reading all the questions can help in answering at least one of the questions. Manually checking all the image-question sets we get a help score of 122 out of 200 images. So, out of 200 images there were 122 images whose questions provided some information useful for other questions. A help score of 0 was given to ambigous images. It is true that images with help score of one may be giving a wrong hint for other question, however we are only checking if any kind of help is provided. 
+
+Help Score = 122 / 200
+
 #### TODO
 
-##### 2/26
+##### 5/23
 
 - [ ] Run NLP baseline using Word2Vec
 - [ ] CV baseline
 
 
+##### 5/18
+
+- [x] Image-Questions Help Score Annotations
 
