@@ -8,7 +8,7 @@ tags: [deep learning,ml,ai,nlp, brain]
 {% include JB/setup %}
 
 
-###[Oriol Vinyals and Quoc V.Le](http://arxiv.org/abs/1506.05869v3)
+### [Oriol Vinyals and Quoc V.Le](http://arxiv.org/abs/1506.05869v3)
 
 
 
