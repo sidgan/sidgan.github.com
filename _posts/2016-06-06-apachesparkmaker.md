@@ -3,7 +3,7 @@ layout: post
 title: "Apache Spark Maker"
 description: "Apache Spark Maker"
 category: [conference]
-tags: [deep learning, ml, ai, nlp, ibm, spark, cern]
+tags: [deep learning, ml, ai, nlp, ibm, spark, CERN]
 ---
 {% include JB/setup %}
 
