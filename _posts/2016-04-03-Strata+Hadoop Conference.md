@@ -9,7 +9,8 @@ tags: [ai , ml, CERN, conference, big data]
 
 Links: 
 
-- [O'Reilly Blog post about my talk](https://www.oreilly.com/ideas/cern-seeks-to-predict-new-and-popular-data-sets), also featured on their data newsletter. 
+- [O'Reilly Blog post I about my talk](https://www.oreilly.com/ideas/cern-seeks-to-predict-new-and-popular-data-sets), also featured on their data newsletter. 
+- [O'Reilly Blog post II](https://www.oreilly.com/learning/apache-spark-for-atom-smashing-experiments), also featured on their data newsletter. 
 - [O'Reilly Conference details](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/detail/47052)
 - Twitter
 

@@ -16,12 +16,6 @@ I did my bachelors from [National Institute of Technology, Hamirpur, India](http
 
 I am a avid movie-watcher and book lover. I am also a Quoran. It has boosted my knowledge tremendously and greatly enhanced my appreciation for life. I like to travel too.
 
-## About blog 
-
-Blog discussing my works leading from frobnications to tweaking and what I learnt from them.
-
-I still use [Tumblr](http://sidgan.tumblr.com/) for blogging.
-
 
 ## Projects
 
@@ -38,7 +32,14 @@ I still use [Tumblr](http://sidgan.tumblr.com/) for blogging.
 
 ## Conferences
 
-- At [Strata + Hadoop World, San Jose, 2016](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765), I will be talking about my [summer project](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I/) at CERN
+- Panelist at the [IBM+Apache Spark Maker Community Event](https://www.eventbrite.com/e/livestream-apache-sparktm-maker-community-event-registration-24790223225?cm_mc_uid=44542765505314598055897&cm_mc_sid_50200000=1464965597), San Francisco, USA, 2016
+- At [Strata + Hadoop World, San Jose, 2016](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765), I gave a talk about my [summer project](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I/) at [CERN](http://home.cern/), the European Organization for Nuclear Research, 2016
+<p align="middle" >
+<a href="http://conferences.oreilly.com/strata/hadoop-big-data-ca/">
+	<img src="http://cdn.oreillystatic.com/en/assets/1/event/144/stratasj2016_speaking_125x125.gif" width="125" height="125"  border="0"  alt="Strata + Hadoop World in San Jose 2016"  />
+</a>
+</p>
+
 - [Open Leadership Cohort](https://www.mozillascience.org/wow-introducing-working-open-workshops-and-the-open-leaders-cohort), Working Open Workshop, Mozilla Science Lab, Berlin, Germany, 2016
 - At [Grace Hopper Conference, Texas, 2015](http://sidgan.me/technical/hackathon/2015/10/19/ghc-texas/) I gave a poster presentation on my project, [Command Line Pipeline for Machine Learning Problems](http://sidgan.me/technical/2014/12/14/pipeline-for-ml/)
 - Mozfest, London, 2015, Team [OpenCosmics](http://sidgan.me/technical/hackathon/2015/08/25/CERN-Webfest/) gave a talk
@@ -50,10 +51,15 @@ You can contact me on :
 
 - IRC nick : sidgan 
 - Twitter Handle: [SiddhaGanju](http://www.twitter.com/SiddhaGanju) 
-- [LinkedIN](https://www.linkedin.com/in/sidgan)
 - Email: Its great having a unique name! You can email me on firstnamelastname[at]emailserviceprovider, gmail or yahoo. Or, use my andrew id, sganju1 for andrew.cmu.edu OR cs.cmu.edu.
 - GPG Fingerprint: FCFC EF8E 95DE 42EC DE83 FA8C 6D18 0E5A DD42 E8B4
 
 ## Curriculum Vitae
 
-My CV is available [here](http://sidgan.me/images/SiddhaGanju-CV.pdf).
+My CV is available [here](http://sidgan.me/images/SiddhaGanju-CV.pdf) or <a href="https://www.linkedin.com/pub/siddha-ganju/67/23/322"> <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Siddha Ganju's profile on LinkedIn"> </a>
+
+## About blog 
+
+Blog discussing my works leading from frobnications to tweaking and what I learnt from them.
+
+I still use [Tumblr](http://sidgan.tumblr.com/) for blogging.

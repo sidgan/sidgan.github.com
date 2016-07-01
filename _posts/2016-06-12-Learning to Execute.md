@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Learning to Execute"
+description: "Learning to Execute"
+category: [conference]
+tags: [deep learning, ml, ai, nlp, paper review]
+---
+{% include JB/setup %}
+
+### [Wojciech Zaremba, Ilya Sutskever](https://arxiv.org/abs/1410.4615)
+
+This paper uses RNNs (also called Tree Neural Networks) variant LSTMs to execute small programs by evaluating symbolic mathematical expressions and logical formulas. 
+### Addition task These programs are easy to solve by a human however the computer needs to understand what `print`, `+`, `12` and other such characters mean, when not in a programming environment. The system has not been taught the operators or anything about their combination beforehand. The above task is addition. Another task is the memorization task in which the order of numbers presented has to be remembered. These programs are limited by length and the complexity of the operation. The only output produced is numerical. The execution must be linear in time and use constant memory as this makes the task solvable by the constraints of an LSTM. The difficulty is measured by the length of the inputs. All programs have both numbers of the same length such that the length is chosen uniformly from [1,10^length]. It was noticed that adding number of the same length is simpler than adding numbers of different lengths as the model does not need to align the numbers. ### Memorization task
+Given an input of one long sequence of numbers, replicate this number in the output. The memorization task uses the following tricks: 
+1. Reverse the input sequence
+	+ The distance between the input digits and their targets does not change but this introduces short term dependencies that make it easier for the LSTM to learn. 2. Replicate the input sequence or input doubling		+ The input sequence is presented twice. The output remains unchanged. It does not affect the probabilistic perspective of an RNN but it gives the LSTM the opportunity to correct any mistake it had made while learning the first sequence. 
+### [Curriculum learning](http://ronan.collobert.com/pub/matos/2009_curriculum_icml.pdf)
+This was introduced by Yoshua Bengio, Jerome Louradour, Ronan Collobert, Jason Weston. 
+The generation and complexity of the programs is governed by two parameters: 
+1. length	+ This describes the number of digits in the integers that appears in the program. The integers are chosen uniformly from [1,10^length]	+ The range of `for` loops is uniformly chosen within the range [1,4*length]2. nesting	+ This describes the number of times it is allowed to combine the operations with each other. Higher values of nesting will give deeper parse trees. 	+ Larger value of nesting means a more difficult program which the LSTM might not be able to solve. The program becomes intractable when these are large (enough). To learn to solve programs of given length = a and nesting = b, it is first necessary to be able to solve programs with length << a and nesting << b. The idea is of gradual learning, derived from the fact that humans and animals learn more when examples are presented in a meaningful order which illustrates gradually more concepts and then gradually more complex ones. 
+1. The baseline is with no curriculum learning. All training samples have length = a and nesting = b. This maintains the training and test same. 2. The naive curriculum strategy increases length by increments of 1 while keeping nesting constant. When progress stops, then length = 1 and nesting is increased by 1. Sometimes training like this performs worse than the baseline. 3. The mixed strategy is to pick a random length form [1, a] and random nesting from [1, b] for each sample. This gives a balanced mixture of easy and difficult examples so each training point has some amount of difficult or learning for the LSTM. 4. Then, the mixed and naive strategy can be mixed. The training points are either from the naive or the mixed strategy ensuring that this combined strategy has at least some difficult examples. Intuitively, I think this should always work better than the naive and sometimes work better than the mixed strategy and this is what is empirically observed. 
+### Bias from Benford's law
+The [Benford's law](https://www.wikiwand.com/en/Benford's_law) describes the distribution of first digits/leading digits in real life numerical datasets. 
+To ensure there is no bias from Benford's law, there are several experiments which describe the distribution of different digits at different positions. They use a standard LSTM. 

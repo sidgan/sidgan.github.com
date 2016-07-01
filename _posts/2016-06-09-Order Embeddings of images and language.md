@@ -18,6 +18,9 @@ Distributed representations or embeddings are used to model the image-caption re
 
 This paper uses an explicit constraint to impose the transitivity and antisymmetry of the partial order unlike other methods which learn a binary relation. Instead of distance preserving, an order preserving visual semantic hierarchy with a partial order over the embedding space is learnt. Hence, this is called order embeddings. Just by replacing the comparison operator, the Euclidian distance by the order comparison an improvement over the state of the art for hypernymy prediction, caption-image retrieval and natural language inference is seen. 
 
-How is hierarchy represented by mapping to high dimensional points? -- visual semantic hierarchy is antisymmetric - how does the representation ensure this.
+Somethings I didnt understand: 
+
+- How is hierarchy represented by mapping to high dimensional points?
+- How does the representation ensure that the visual semantic hierarchy is antisymmetric ?
 
 
