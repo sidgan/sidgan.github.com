@@ -33,7 +33,7 @@ I am a avid movie-watcher and book lover. I am also a Quoran. It has boosted my 
 ## Conferences
 
 - Panelist at the [IBM+Apache Spark Maker Community Event](https://www.eventbrite.com/e/livestream-apache-sparktm-maker-community-event-registration-24790223225?cm_mc_uid=44542765505314598055897&cm_mc_sid_50200000=1464965597), San Francisco, USA, 2016
-- At [Strata + Hadoop World, San Jose, 2016](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765), I gave a talk about my [summer project](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I/) at [CERN](http://home.cern/), the European Organization for Nuclear Research, 2016
+- At [Strata + Hadoop World, San Jose, 2016](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765), I gave a talk about my [summer project](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) at [CERN](http://home.cern/), the European Organization for Nuclear Research, 2016
 <p align="middle" >
 <a href="http://conferences.oreilly.com/strata/hadoop-big-data-ca/">
 	<img src="http://cdn.oreillystatic.com/en/assets/1/event/144/stratasj2016_speaking_125x125.gif" width="125" height="125"  border="0"  alt="Strata + Hadoop World in San Jose 2016"  />
