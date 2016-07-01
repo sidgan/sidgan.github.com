@@ -25,8 +25,8 @@ I am a avid movie-watcher and book lover. I am also a Quoran. It has boosted my 
 - [Qualitative Evalvations of Word2Vec for Recommendations](http://sidgan.me/technical/2015/12/15/Qualitative-Evaluvation-of-Word2Vec-for-Recommendations)
 - [CERN Openlab project](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I)
 - [Deep Learning for Audio Recognition](http://sidgan.me/technical/2015/01/10/deep-learning-for-audio-recognition)
-- [Command Line Pipeline for Machine Learning Problems](http://sidgan.me/technical/2014/12/14/pipeline-for-ml/)
-- [ShanghAI](http://sidgan.me/technical/2014/12/30/shanghai/)
+- [Command Line Pipeline for Machine Learning Problems](http://sidgan.me/technical/2014/12/14/pipeline-for-ml)
+- [ShanghAI](http://sidgan.me/technical/2014/12/30/shanghai)
 - [Kaam Hai?](http://sidgan.me/conference/hackathon/2014/11/25/ghc)
 - [Orphan Locator](http://sidgan.me/hackathon/2014/03/01/nyuad)
 
@@ -41,8 +41,8 @@ I am a avid movie-watcher and book lover. I am also a Quoran. It has boosted my 
 </p>
 
 - [Open Leadership Cohort](https://www.mozillascience.org/wow-introducing-working-open-workshops-and-the-open-leaders-cohort), Working Open Workshop, Mozilla Science Lab, Berlin, Germany, 2016
-- At [Grace Hopper Conference, Texas, 2015](http://sidgan.me/technical/hackathon/2015/10/19/ghc-texas/) I gave a poster presentation on my project, [Command Line Pipeline for Machine Learning Problems](http://sidgan.me/technical/2014/12/14/pipeline-for-ml/)
-- Mozfest, London, 2015, Team [OpenCosmics](http://sidgan.me/technical/hackathon/2015/08/25/CERN-Webfest/) gave a talk
+- At [Grace Hopper Conference, Texas, 2015](http://sidgan.me/technical/hackathon/2015/10/19/ghc-texas) I gave a poster presentation on my project, [Command Line Pipeline for Machine Learning Problems](http://sidgan.me/technical/2014/12/14/pipeline-for-ml)
+- Mozfest, London, 2015, Team [OpenCosmics](http://sidgan.me/technical/hackathon/2015/08/25/CERN-Webfest) gave a talk
 
 
 ## Contact
