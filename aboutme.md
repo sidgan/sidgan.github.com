@@ -16,7 +16,8 @@ I did my bachelors from [National Institute of Technology](http://www.nith.ac.in
 
 ## Select Projects
 
-###[Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab project)
+
+### [Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab project)
 Used Apache Spark to streamline different predictive prototypes by gathering information from CMS, ran predictive models and proposed datasets which will become popular over time. Evaluated quality of individual models, performed component analysis and selected best predictive model for new set of data. 
 	
 - **Publication**: **Siddha Ganju**, Valentin Kuznetsov, Tony Wildish, Manuel Martin Marquez, Antonio Romero Marin (2015). Evaluation of Apache Spark as an Analytics framework for CERN's Big Data Analytics. [Zenodo](https://zenodo.org/record/31861?ln=en#.V7Spu47LNGR)
@@ -79,11 +80,11 @@ You can contact me on :
 - GPG Fingerprint: FCFC EF8E 95DE 42EC DE83 FA8C 6D18 0E5A DD42 E8B4
 - Send me a postcard!
 	
-Carnegie Mellon University |
-Language Technologies Institute |
-5000 Forbes Avenue |
-Gates Hillman Center –  5404 |
-Pittsburgh, PA  15213 |
+Carnegie Mellon University
+Language Technologies Institute
+5000 Forbes Avenue
+Gates Hillman Center –  5404
+Pittsburgh, PA  15213
 	
 
 ## Curriculum Vitae
