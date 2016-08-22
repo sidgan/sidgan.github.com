@@ -10,7 +10,7 @@ group: navigation
 
 ## [whoami](http://about.me/siddha.ganju) 
 
-I am a Master's of **Computational Data Science** student at **Carnegie Mellon University**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Computer Vision, Artificial Intelligence, Multi-modal learning and Data Science (including Statistics).
+I am a Master of **Computational Data Science** student at **Carnegie Mellon University**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Computer Vision, Artificial Intelligence, Multi-modal learning and Data Science (including Statistics).
 
 I did my bachelors from [National Institute of Technology](http://www.nith.ac.in/), Hamirpur, India.
 
