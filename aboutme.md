@@ -10,7 +10,7 @@ group: navigation
 
 ## [whoami](http://about.me/siddha.ganju) 
 
-I am a Master of **Computational Data Science** student at **Carnegie Mellon University**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Computer Vision, Artificial Intelligence, Multi-modal learning and Data Science (including Statistics).
+I am a Master of **Computational Data Science** student at **CARNEGIE MELLON UNIVERSITY**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Computer Vision, Artificial Intelligence, Multi-modal learning and Data Science (including Statistics).
 
 I did my bachelors from [National Institute of Technology](http://www.nith.ac.in/), Hamirpur, India.
 
@@ -35,7 +35,7 @@ Created a Python command line toolkit using scikit-learn, numpy, pandas and matp
 
 ### In progress
 - Visual Question Answering
-- Open Advancement of Question Answering (OAQA) Consortium
+- Open Advancement of Question Answering Consortium
 	- Pursuing active research on Multi-modal QA systems based on an ensemble of Deep Learning and Rule-based systems.
 	
 ## Conferences
@@ -57,7 +57,7 @@ Created a Python command line toolkit using scikit-learn, numpy, pandas and matp
 
 
 
-## Some cool stuff
+## Achievements
 
 - [Scholar](http://ghc.anitaborg.org/scholars/2015-scholars/ganju-siddha-app267s1), **Grace Hopper Conference**, Texas, USA, 2015
 - [Winner](https://webfest.web.cern.ch/content/winners-2015), **Best Innovative Outreach, CERN WebFest**, Geneva, Switzerland, 2015
@@ -65,6 +65,8 @@ Created a Python command line toolkit using scikit-learn, numpy, pandas and matp
 - [Finalist](http://sites.nyuad.nyu.edu/hackathon/index.php/previous-hackathons/the-annual-nyuad-international-hackathon-for-social-good-in-the-arab-world-2014/2014-project-teams/), **New York University International Hackathon**, Abu Dhabi, 2014
 - [Winner](http://theiet.in/iet-scholarship-award-winners), **India Scholarship Award, Institution of Engineering and Technology (IET)**, Delhi, India, 2013 
 	- News Coverage [here](http://sidgan.me/technical/2013/10/27/iet)
+	
+## Honors	
 - **Student Women Representative**, Community Volunteers Conference, IET, Sri Lanka, 2013
 
  
