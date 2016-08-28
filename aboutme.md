@@ -102,4 +102,9 @@ Pittsburgh, PA  15213
 
 ## Curriculum Vitae
 
-My CV is available [here](http://sidgan.me/images/SiddhaGanju-CV.pdf) or <a href="https://www.linkedin.com/pub/siddha-ganju/67/23/322"> <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Siddha Ganju's profile on LinkedIn"> </a>
+Check out my [CV](http://sidgan.me/images/SiddhaGanju-CV.pdf).
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="sidgan"><a class="LI-simple-link" href='https://www.linkedin.com/in/sidgan?trk=profile-badge'>Siddha Ganju</a></div>
