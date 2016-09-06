@@ -42,15 +42,15 @@ G wants to fool D into thinking that the samples it is producing are of extremel
 
 Prior of G : p(z)
 
-Likelihood of G : p(x|z)
+Likelihood of G : p(x\|z)
 
 Minimax objective between D and G : min<sub>G</sub> max<sub>D</sub> E<sub>p<sub>data</sub>(x)</sub> [log D(x)] + E<sub>p<sub>g</sub>(x)</sub> [log(1-D(x))]
 
 This alternates between D and G. 
 
-First, find the optimal p<sub>g</sub>(x) among all possible G by minimizing the Jensen Shannon Divergence which is : JSD(p<sub>data</sub>(x) || p<sub>g</sub>(x)) = 1/2 (KL ( p<sub>data</sub>(x) || (p<sub>data</sub>(x) + p<sub>g</sub>(x))/2)) +  1/2 (KL ( p<sub>g</sub>(x) || (p<sub>data</sub>(x) + p<sub>g</sub>(x))/2))
+First, find the optimal p<sub>g</sub>(x) among all possible G by minimizing the Jensen Shannon Divergence which is : JSD(p<sub>data</sub>(x) \|\| p<sub>g</sub>(x)) = 1/2 (KL ( p<sub>data</sub>(x) \|\| (p<sub>data</sub>(x) + p<sub>g</sub>(x))/2)) +  1/2 (KL ( p<sub>g</sub>(x) \|\| (p<sub>data</sub>(x) + p<sub>g</sub>(x))/2))
 
-This is like MLE because it minimizes : KL(p<sub>data</sub>(x) || p<sub>g</sub>(x))
+This is like MLE because it minimizes : KL(p<sub>data</sub>(x) \|\| p<sub>g</sub>(x))
 
 Advantages of JSD:
 
@@ -61,18 +61,18 @@ Advantages of JSD:
 	
 All this was used in GAN (Generative Adversarial Network), now, in Adversarial Autoencoders the divergence is minimized on latent variables (z). 
 
-Reconstruction Error : E<sub>q(z|x)</sub> [-log p(x|z)]
+Reconstruction Error : E<sub>q(z\|x)</sub> [-log p(x\|z)]
 
-Regularizer :  KL (q(z|x) || p(z))
+Regularizer :  KL (q(z\|x) \|\| p(z))
 
-Having the reconstruction error and regulizer gives : min<sub>q</sub> E<sub>q(z|x)</sub> [-log p(x|z)] + KL (q(z|x) || p(z))
+Having the reconstruction error and regulizer gives : min<sub>q</sub> E<sub>q(z\|x)</sub> [-log p(x\|z)] + KL (q(z\|x) \|\| p(z))
 
-Using this, the minimax becomes : min<sub>G</sub> max<sub>D</sub> E<sub>p(z)</sub> [log D(z)] + E<sub>q(z|x)</sub> [log(1-D(z))]
+Using this, the minimax becomes : min<sub>G</sub> max<sub>D</sub> E<sub>p(z)</sub> [log D(z)] + E<sub>q(z\|x)</sub> [log(1-D(z))]
 
 	Note: Everything is in terms of z or the latent distribution now. 
 
 This alternates between the reconstruction error and the training error. 
 
-Adversarial Autoencoders show visually better results than variational autoencoders. They map the encoders output distribution which is q(z|x) to an arbitrary prior distribution p(z). 
+Adversarial Autoencoders show visually better results than variational autoencoders. They map the encoders output distribution which is q(z\|x) to an arbitrary prior distribution p(z). 
 
 	Note: E denotes Expectation
