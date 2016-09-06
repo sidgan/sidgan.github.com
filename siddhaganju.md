@@ -20,7 +20,9 @@ I did my bachelors from [National Institute of Technology](http://www.nith.ac.in
 ### [Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab project)
 Used Apache Spark to streamline different predictive prototypes by gathering information from CMS, ran predictive models and proposed datasets which will become popular over time. Evaluated quality of individual models, performed component analysis and selected best predictive model for new set of data. 
 	
-**Publication**: **Siddha Ganju**, Valentin Kuznetsov, Tony Wildish, Manuel Martin Marquez, Antonio Romero Marin (2015). Evaluation of Apache Spark as an Analytics framework for CERN's Big Data Analytics. [Zenodo](https://zenodo.org/record/31861?ln=en#.V7Spu47LNGR)
+**Publication**: **Siddha Ganju**, Valentin Kuznetsov, Tony Wildish, Manuel Martin Marquez, Antonio Romero Marin (2015). Evaluation of Apache Spark as an Analytics framework for CERN's Big Data Analytics. 
+
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.31861.svg)](http://dx.doi.org/10.5281/zenodo.31861)
 
 **Presented** at [Strata+Hadoop World 2016, San Jose, USA](http://conferences.oreilly.com/strata/strata-ca-2016/public/schedule/detail/47052)
 
