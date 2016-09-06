@@ -8,7 +8,7 @@ tags: [deep learning, ml, ai, nlp, paper review]
 {% include JB/setup %}
 
 
-[Alireza Makhzani, Jonathon Shlens, Navdeep Jaitly, Ian Goodfellow, Brendan Frey](http://arxiv.org/pdf/1511.05644v2.pdf)
+[Alireza Makhzani, Jonathon Shlens, Navdeep Jaitly, Ian Goodfellow, Brendan Frey](http://arxiv.org/abs/1511.05644)
 
 	
 ## Autoencoder
