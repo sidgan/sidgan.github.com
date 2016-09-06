@@ -76,3 +76,4 @@ This alternates between the reconstruction error and the training error.
 Adversarial Autoencoders show visually better results than variational autoencoders. They map the encoders output distribution which is q(z\|x) to an arbitrary prior distribution p(z). 
 
 	Note: E denotes Expectation
+	When the fake image becomes very real looking, D starts focusing on features that are not important. 
