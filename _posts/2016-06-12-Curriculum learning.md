@@ -2,7 +2,7 @@
 layout: post
 title: "Curriculum learning"
 description: "Curriculum learning"
-category: [conference]
+category: [technical]
 tags: [deep learning, ml, ai, nlp, paper review]
 ---
 {% include JB/setup %}

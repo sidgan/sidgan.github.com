@@ -2,7 +2,7 @@
 layout: post
 title: "Order Embeddings of images and language"
 description: "Order Embeddings of images and language"
-category: [conference]
+category: [technical]
 tags: [deep learning, ml, ai, nlp, paper review, image captioning]
 ---
 {% include JB/setup %}

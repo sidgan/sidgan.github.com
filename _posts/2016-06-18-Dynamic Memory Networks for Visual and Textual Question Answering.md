@@ -2,7 +2,7 @@
 layout: post
 title: "Dynamic Memory Networks for Visual and Textual Question Answering"
 description: "Dynamic Memory Networks for Visual and Textual Question Answering"
-category: [conference]
+category: [technical]
 tags: [deep learning, ml, ai, nlp, paper review]
 ---
 {% include JB/setup %}

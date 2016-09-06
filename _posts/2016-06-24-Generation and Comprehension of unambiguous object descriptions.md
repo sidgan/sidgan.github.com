@@ -2,7 +2,7 @@
 layout: post
 title: "Generation and Comprehension of unambiguous object descriptions"
 description: "Generation and Comprehension of unambiguous object descriptions"
-category: [conference]
+category: [technical]
 tags: [deep learning, ml, ai, nlp, paper review]
 ---
 {% include JB/setup %}

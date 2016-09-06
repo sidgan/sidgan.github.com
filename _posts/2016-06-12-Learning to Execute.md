@@ -2,7 +2,7 @@
 layout: post
 title: "Learning to Execute"
 description: "Learning to Execute"
-category: [conference]
+category: [technical]
 tags: [deep learning, ml, ai, nlp, paper review]
 ---
 {% include JB/setup %}

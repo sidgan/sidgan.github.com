@@ -2,7 +2,7 @@
 layout: post
 title: "DenseCap: Fully Convolutional Localization Networks for Dense Captioning"
 description: "DenseCap: Fully Convolutional Localization Networks for Dense Captioning"
-category: [conference]
+category: [technical]
 tags: [deep learning, ml, ai, nlp, paper review]
 ---
 {% include JB/setup %}
