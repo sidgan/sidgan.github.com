@@ -38,8 +38,7 @@ If we give input features as below, give abundant hidden units in one hidden lay
 | o1 | -h21 + h22 |
 
 
-
- <img src="../images/12.png" height="300" width="600"> 
+![Image here](../images/12.png =550x)
 
 Making the test samples more visible. The test samples have a solid outline of the same color. 
 
