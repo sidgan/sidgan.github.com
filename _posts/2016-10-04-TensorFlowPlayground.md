@@ -38,12 +38,12 @@ If we give input features as below, give abundant hidden units in one hidden lay
 | o1 | -h21 + h22 |
 
 
-![Image here](../images/12.png =550x)
+![Image here](/images/12.png =550x)
 
 Making the test samples more visible. The test samples have a solid outline of the same color. 
 
 
- <img src="../images/11.png" height="300" width="600"> 
+ <img src="/images/11.png" height="300" width="600"> 
 
 Changing the regularization to L1 we notice that 
 
