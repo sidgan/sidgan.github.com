@@ -96,13 +96,19 @@ You can contact me on :
 - Send me a postcard!
 	
 Carnegie Mellon University
+
 Language Technologies Institute
+
 5000 Forbes Avenue
+
 Gates Hillman Center –  5404
+
 Pittsburgh, PA  15213
 	
 
 ## Curriculum Vitae
+
+[Github](https://github.com/sidgan)
 
 Check out my [CV](http://sidgan.me/images/SiddhaGanju-CV.pdf).
 
