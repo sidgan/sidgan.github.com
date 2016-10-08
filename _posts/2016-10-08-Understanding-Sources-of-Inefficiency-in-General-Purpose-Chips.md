@@ -1,11 +1,11 @@
-
 ---
 layout: post
 title: "CMP: Chip Multiprocessors"
 description: ""
 category: [technical]
-tags: []
+tags: [cmp, aisc]
 ---
+
 {% include JB/setup %}
 
 Understanding Sources of Inefficiency in General-Purpose Chips
