@@ -8,7 +8,7 @@ tags: [cmp, aisc]
 
 {% include JB/setup %}
 
-Understanding Sources of Inefficiency in General-Purpose Chips
+## Understanding Sources of Inefficiency in General-Purpose Chips
 
 By: Rehan Hameed, Wajahat Qadeer, Megan Wachs, Omid Azizi, Alex Solomatnikov, Benjamin C. Lee, Stephen Richardson, Christos Kozyrakis, and Mark Horowitz
 
@@ -22,7 +22,7 @@ By: Rehan Hameed, Wajahat Qadeer, Megan Wachs, Omid Azizi, Alex Solomatnikov, Be
 	- [6](http://ece751.ece.wisc.edu/presentations/paper_08_david_schlais.pptx)
 	
 	
-Convolution Engine: Balancing Efficiency and Flexibility in Specialized Computing
+## Convolution Engine: Balancing Efficiency and Flexibility in Specialized Computing
 
 By:  Wajahat Qadeer, Rehan Hameed, Ofer Shacham, Preethi Venkatesan, Christos Kozyrakis, and Mark Horowitz
 	
