@@ -1,3 +1,13 @@
+
+---
+layout: post
+title: "CMP: Chip Multiprocessors"
+description: ""
+category: [technical]
+tags: []
+---
+{% include JB/setup %}
+
 Understanding Sources of Inefficiency in General-Purpose Chips
 
 By: Rehan Hameed, Wajahat Qadeer, Megan Wachs, Omid Azizi, Alex Solomatnikov, Benjamin C. Lee, Stephen Richardson, Christos Kozyrakis, and Mark Horowitz
