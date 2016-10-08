@@ -47,7 +47,7 @@ Created a Python command line toolkit using scikit-learn, numpy, pandas and matp
 	
 ## Conferences
 
-**Panelist**, [IBM+Apache Spark Maker Community Event](https://www.eventbrite.com/e/livestream-apache-sparktm-maker-community-event-registration-24790223225?cm_mc_uid=44542765505314598055897&cm_mc_sid_50200000=1464965597), San Francisco, USA, 2016. [News coverage and Twitter feed](http://sidgan.me/conference/2016/06/06/apachesparkmaker)  
+**Panelist**, [IBM+Apache Spark Maker Community Event](http://www.eventbrite.com/e/apache-sparktm-maker-community-event-registration-24742595770#), San Francisco, USA, 2016. [News coverage and Twitter feed](http://sidgan.me/conference/2016/06/06/apachesparkmaker)  
 
 **Speaker**, [Strata + Hadoop World, San Jose, 2016](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765), I gave a talk about my [research](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) at [CERN](http://home.cern/), the European Organization for Nuclear Research. 
 <p align="middle" >
