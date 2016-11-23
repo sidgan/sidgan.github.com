@@ -16,6 +16,15 @@ I did my bachelors from [National Institute of Technology](http://www.nith.ac.in
 
 ## Select Projects
 
+### Visual Question Answering
+
+Our research focuses on an unexplored theme in weak supervision for annotating large scale image datasets: utilizing visual questions asked about images. We base our work on the key observation that the question itself provides useful information about the image (even without the answer being available). For instance, the question 'what is the breed of the dog?' informs the computer that the animal in the scene is a dog and that there is only one dog present. 
+
+Mentor: [Olga Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [Abhinav Gupta](http://www.cs.cmu.edu/~abhinavg/)
+
+Arxiv (Coming Soon!)
+
+Code (Coming Soon!)
 
 ### [Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab project)
 Used Apache Spark to streamline different predictive prototypes by gathering information from CMS, ran predictive models and proposed datasets which will become popular over time. Evaluated quality of individual models, performed component analysis and selected best predictive model for new set of data. 
@@ -41,9 +50,8 @@ Created a Python command line toolkit using scikit-learn, numpy, pandas and matp
 **Presented** at [Grace Hopper 2015](http://schedule.gracehopper.org/speaker/siddha-ganju/)
 
 ### In progress
-- Visual Question Answering
 - Open Advancement of Question Answering Consortium
-	- Pursuing active research on Multi-modal QA systems based on an ensemble of Deep Learning and Rule-based systems.
+	- Pursuing active research on QA systems based on an ensemble of Deep Learning and Rule-based systems.
 	
 ## Conferences
 
