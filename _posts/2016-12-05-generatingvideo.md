@@ -11,14 +11,16 @@ tags: [ai , ml, cv, gan, cgan]
 
 ### Timelapse videos using different optical flow for the same image
 
-<img src="/images/gan/dog_input_pred.gif" width="400px">
+![Snowboard](https://github.com/sidgan/sidgan.github.com/blob/master/images/gan/gifs_pred/snowboard_input_pred.gif)
 
-<img src="/images/gan/clock_input_pred.gif" width="400px">
+![Cats](https://github.com/sidgan/sidgan.github.com/blob/master/images/gan/gifs_pred/cats_input_pred.gif)
 
-<img src="../images/gan/snowboard_input_pred.gif" width="400px">
+![Clocks](https://github.com/sidgan/sidgan.github.com/blob/master/images/gan/gifs_pred/clock_input_pred.gif)
 
-<img src="../images/gan/cats_input_pred.gif" width="400px">
+![Dogs](https://github.com/sidgan/sidgan.github.com/blob/master/images/gan/gifs_pred/dog_input_pred.gif)
 
-<img src="../images/gan/skateboard_input_pred.gif" width="400px">
+![Pottery](https://github.com/sidgan/sidgan.github.com/blob/master/images/gan/gifs_pred/pottery_input_pred.gif)
 
-<img src="../images/gan/pottery_input_pred.gif" width="400px">
+![Skateboard](https://github.com/sidgan/sidgan.github.com/blob/master/images/gan/gifs_pred/skateboard_input_pred.gif)
+
+Please see the gif's [here](https://github.com/sidgan/sidgan.github.com/blob/master/images/gan/gifs_pred/) if they don't load above. 
