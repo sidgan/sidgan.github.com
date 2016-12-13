@@ -10,13 +10,19 @@ group: navigation
 
 ## [whoami](http://about.me/siddha.ganju) 
 
-I am a Master of **Computational Data Science** student at **Carnegie Mellon University**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Computer Vision, Artificial Intelligence, Multi-modal learning and Data Science (including Statistics).
-
-I did my bachelors from [National Institute of Technology](http://www.nith.ac.in/), Hamirpur, India.
+I am a Master of **Computational Data Science** student at **Carnegie Mellon University**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Artificial Intelligence, Multi-modal learning Computer Vision, and Data Science (including Statistics). I want to solve problems that connect natural languages and computer vision using deep learning. I did my bachelors from [National Institute of Technology](http://www.nith.ac.in/), Hamirpur, India.
 
 ## Select Projects
 
-### Visual Question Answering
+### What's in the Future: Generating Videos with Motion Sensitive Adversarial Networks 
+
+This was our project for the [Deep Learning course at CMU](http://www.cs.cmu.edu/~rsalakhu/10807_2016/). My goal was to gain a better mathematical understanding of how and why generative adversarial networks work. I worked with [Xiaolong Wang](http://www.cs.cmu.edu/~xiaolonw/) and [Hongyu Zhu]() to gain a deeper sense of how we can use optical motion to generate future frames, trained and tested our models on the UCF101 dataset. We transfer the learned representations to the HMDB51 dataset for action recognition and experimented with Static Image Editing on the MS COCO dataset. We release our models as FlowGAN. 
+
+Arxiv (Coming Soon!)
+
+[Github](https://github.com/OMGitsHongyu/Frame_prediction_cGAN)
+
+### What's in a Question: Using Visual Questions as a Form of Supervision (Visual Question Answering)
 
 Our research focuses on an unexplored theme in weak supervision for annotating large scale image datasets: utilizing visual questions asked about images. We base our work on the key observation that the question itself provides useful information about the image (even without the answer being available). For instance, the question 'what is the breed of the dog?' informs the computer that the animal in the scene is a dog and that there is only one dog present. 
 
