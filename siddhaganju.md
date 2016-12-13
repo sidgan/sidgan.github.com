@@ -14,13 +14,6 @@ I am a Master of **Computational Data Science** student at **Carnegie Mellon Uni
 
 ## Select Projects
 
-### What's in the Future: Generating Videos with Motion Sensitive Adversarial Networks 
-
-This was our project for the [Deep Learning course at CMU](http://www.cs.cmu.edu/~rsalakhu/10807_2016/). My goal was to gain a better mathematical understanding of how and why generative adversarial networks work. I worked with [Xiaolong Wang](http://www.cs.cmu.edu/~xiaolonw/) and [Hongyu Zhu]() to gain a deeper sense of how we can use optical motion to generate future frames, trained and tested our models on the UCF101 dataset. We transfer the learned representations to the HMDB51 dataset for action recognition and experimented with Static Image Editing on the MS COCO dataset. We release our models as FlowGAN. 
-
-Arxiv (Coming Soon!)
-
-[Github](https://github.com/OMGitsHongyu/Frame_prediction_cGAN)
 
 ### What's in a Question: Using Visual Questions as a Form of Supervision (Visual Question Answering)
 
@@ -31,6 +24,21 @@ Mentor: [Olga Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [Abhinav
 Arxiv (Coming Soon!)
 
 Code (Coming Soon!)
+
+### What's in the Future: Generating Videos with Motion Sensitive Adversarial Networks 
+
+This was our project for the [Deep Learning course at CMU](http://www.cs.cmu.edu/~rsalakhu/10807_2016/). My goal was to gain a better mathematical understanding of how and why generative adversarial networks work. I worked with [Xiaolong Wang](http://www.cs.cmu.edu/~xiaolonw/) and [Hongyu Zhu]() to gain a deeper sense of how we can use optical flow to generate future frames, trained and tested our models on the UCF101 dataset. We transfer the learned representations to the HMDB51 dataset for action recognition and experimented with Static Image Editing on the MS COCO dataset. We release our models as FlowGAN. 
+
+Arxiv (Coming Soon!)
+
+[Github](https://github.com/OMGitsHongyu/Frame_prediction_cGAN)
+
+### Open Advancement of Question Answering Consortium
+
+Pursuing active research on QA systems based on an ensemble of Deep Learning and Rule-based systems.
+
+Mentor: [Eric Nyberg](http://www.cs.cmu.edu/~ehn/), [Matthias Grabmair](http://www.andrew.cmu.edu/user/mgrabmai/)
+
 
 ### [Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab project)
 Used Apache Spark to streamline different predictive prototypes by gathering information from CMS, ran predictive models and proposed datasets which will become popular over time. Evaluated quality of individual models, performed component analysis and selected best predictive model for new set of data. 
@@ -55,9 +63,7 @@ Created a Python command line toolkit using scikit-learn, numpy, pandas and matp
 
 **Presented** at [Grace Hopper 2015](http://schedule.gracehopper.org/speaker/siddha-ganju/)
 
-### In progress
-- Open Advancement of Question Answering Consortium
-	- Pursuing active research on QA systems based on an ensemble of Deep Learning and Rule-based systems.
+
 	
 ## Conferences
 
