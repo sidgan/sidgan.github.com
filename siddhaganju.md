@@ -10,7 +10,7 @@ group: navigation
 
 ## [whoami](http://about.me/siddha.ganju) 
 
-Currently, I am employed as a **Data Scientist** at [**Deep Vision**](http://deepvision.io/). I graduated from [**Carnegie Mellon University**](http://www.cmu.edu/) with a **Master's in Computational Data Science**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Artificial Intelligence, Multi-modal learning Computer Vision, and Data Science (including Statistics). I want to solve problems that connect natural languages and computer vision using deep learning. I did my bachelors from [National Institute of Technology](http://www.nith.ac.in/) (NIT), Hamirpur, India.
+Currently, I am employed as a **Data Scientist** at [**Deep Vision**](http://deepvision.io/). I graduated from [**Carnegie Mellon University**](http://www.cmu.edu/) with a **Master's in Computational Data Science**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Artificial Intelligence, Multi-modal learning Computer Vision, and Data Science (including Statistics). I want to solve problems that connect natural languages and computer vision using deep learning. I did my bachelors from [**National Institute of Technology**](http://www.nith.ac.in/) (NIT), Hamirpur, India.
 
 ## Speaker
 
@@ -62,10 +62,14 @@ Finalist, **Nokia Do Good Hackathon**, New Delhi, India, 2013
 
 [CERN seeks to predict new and popular data sets,](https://www.oreilly.com/ideas/cern-seeks-to-predict-new-and-popular-data-sets), March 22, 2016.
  
-## Publications###Peer-reviewed conference articlesWhat’s in a Question: Using Visual Questions as a Form of Supervision, **S Ganju**, [O Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [A Gupta](http://www.cs.cmu.edu/~abhinavg/), Computer Vision and Pattern Recognition, 2017.
+## Publications###   Peer-reviewed conference articlesWhat’s in a Question: Using Visual Questions as a Form of Supervision, **S Ganju**, [O Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [A Gupta](http://www.cs.cmu.edu/~abhinavg/), Computer Vision and Pattern Recognition, 2017.
 [[Arxiv coming soon!]()] [[bib](http://sidgan.me/images/GanjuCVPR17.bib)] [[Github coming soon]()]### CERN ResearchZenodo 2015 Evaluation of Apache Spark as an Analytics framework for CERN’s Big DataAnalytics, **S Ganju**, [V Kuznetsov](https://www.classe.cornell.edu/~vk/), [T Wildish](http://www.nersc.gov/about/nersc-staff/data-science-engagement-group/tony-wildish/), [M Martin Marquez](http://openlab.cern/about/people/manuel-martin-marquez), [A Romero Marin](http://openlab.cern/about/people/antonio-romero-marin),10.5281/zenodo.3186 2015.
 
-[[Zenodo](https://zenodo.org/record/31861?ln=en#%23.V7Spu47LNGR)] [[bib](https://zenodo.org/record/31861/export/hx#.WLx2_RIrJE4)] [[Github](https://github.com/sidgan/LHCDataAnalysis)]
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.31861.svg)](http://dx.doi.org/10.5281/zenodo.31861) [[bib](https://zenodo.org/record/31861/export/hx#.WLx2_RIrJE4)] [[Github](https://github.com/sidgan/LHCDataAnalysis)]
+
+
+
+
 
 ## Select Projects
 
@@ -91,10 +95,6 @@ Arxiv (Coming Soon!)
 
 ### [Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab research project)
 Used Apache Spark to streamline different predictive prototypes by gathering information from CMS, ran predictive models and proposed datasets which will become popular over time. Evaluated quality of individual models, performed component analysis and selected best predictive model for new set of data. 
-	
-**Publication**: **Siddha Ganju**, Valentin Kuznetsov, Tony Wildish, Manuel Martin Marquez, Antonio Romero Marin (2015). Evaluation of Apache Spark as an Analytics framework for CERN's Big Data Analytics. 
-
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.31861.svg)](http://dx.doi.org/10.5281/zenodo.31861)
 
 **Presented** at [Strata+Hadoop World 2016, San Jose, USA](http://conferences.oreilly.com/strata/strata-ca-2016/public/schedule/detail/47052)
 
