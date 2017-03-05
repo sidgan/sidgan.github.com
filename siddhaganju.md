@@ -10,37 +10,86 @@ group: navigation
 
 ## [whoami](http://about.me/siddha.ganju) 
 
-I am a Master of **Computational Data Science** student at **Carnegie Mellon University**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Artificial Intelligence, Multi-modal learning Computer Vision, and Data Science (including Statistics). I want to solve problems that connect natural languages and computer vision using deep learning. I did my bachelors from [National Institute of Technology](http://www.nith.ac.in/), Hamirpur, India.
+Currently, I am employed as a Data Scientist at [Deep Vision](http://deepvision.io/). I graduated from [**Carnegie Mellon University**](http://www.cmu.edu/) with a **Master's in Computational Data Science**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Artificial Intelligence, Multi-modal learning Computer Vision, and Data Science (including Statistics). I want to solve problems that connect natural languages and computer vision using deep learning. I did my bachelors from [National Institute of Technology](http://www.nith.ac.in/) (NIT), Hamirpur, India.
+
+## Speaker
+
+**Speaker**, [Strata + Hadoop World, San Jose, 2016](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765), I gave a talk about my [research](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) at [CERN](http://home.cern/), the European Organization for Nuclear Research. 
+<p align="middle" >
+<a href="http://conferences.oreilly.com/strata/hadoop-big-data-ca/">
+	<img src="http://cdn.oreillystatic.com/en/assets/1/event/144/stratasj2016_speaking_125x125.gif" width="125" height="125"  border="0"  alt="Strata + Hadoop World in San Jose 2016"  />
+</a>
+</p>
+
+
+**Panelist**, [IBM+Apache Spark Maker Community Event](http://www.eventbrite.com/e/apache-sparktm-maker-community-event-registration-24742595770#), San Francisco, USA, 2016. [News coverage and Twitter feed](http://sidgan.me/conference/2016/06/06/apachesparkmaker)  
+
+	
+**Talk**, Mozfest, London, 2015, by Team [OpenCosmics](http://sidgan.me/technical/hackathon/2015/08/25/CERN-Webfest). 
+	- [Git announcement by Mozilla](https://github.com/mozilla/mozfest-program/issues/260) 
+
+
+
+## Achievements
+
+Invited to the [Open Leadership Cohort](https://www.mozillascience.org/wow-introducing-working-open-workshops-and-the-open-leaders-cohort), Working Open Workshop, Mozilla Science Lab, Berlin, Germany, 2016
+
+[Scholar](http://ghc.anitaborg.org/scholars/2015-scholars/ganju-siddha-app267s1), **Grace Hopper Conference**, Texas, USA, 2015
+
+[Winner](https://webfest.web.cern.ch/content/winners-2015), **Best Innovative Outreach, CERN WebFest**, Geneva, Switzerland, 2015
+
+[Winner](http://sidgan.me/conference/hackathon/2014/11/25/ghc/), **Grace Hopper Conference Hackathon**, Bangalore, India, 2014
+
+[Finalist](http://sites.nyuad.nyu.edu/hackathon/index.php/previous-hackathons/the-annual-nyuad-international-hackathon-for-social-good-in-the-arab-world-2014/2014-project-teams/), **New York University International Hackathon**, Abu Dhabi, 2014
+
+**Women Ambassador**, The Institution of Engineering and Technology, U.K. (IET), 2013-2014 
+
+[Winner](http://theiet.in/iet-scholarship-award-winners), **India Scholarship Award**, IET, Delhi, India, 2013, [News Coverage](http://sidgan.me/technical/2013/10/27/iet)
+
+**Student Women Representative**, Community Volunteers Conference, IET, Sri Lanka, 2013
+
+
+Finalist, **Nokia Do Good Hackathon**, New Delhi, India, 2013 
+
+
+**Ambuja Scholarship**, NIT, 2011-2015
+
+
+
+## Media
+
+[Apache Spark for Atom-Smashing experiments](https://www.oreilly.com/learning/apache-spark-for-atom-smashing-experiments), June 9, 2016.
+
+[CERN seeks to predict new and popular data sets,](https://www.oreilly.com/ideas/cern-seeks-to-predict-new-and-popular-data-sets), March 22, 2016.
+ 
+## Publications###Peer-reviewed conference articlesWhat’s in a Question: Using Visual Questions as a Form of Supervision, S Ganju, [O Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [A Gupta](http://www.cs.cmu.edu/~abhinavg/), Computer Vision and Pattern Recognition, 2017.
+[[Arxiv coming soon!]()] [[bib](http://sidgan.me/images/GanjuCVPR17.bib)] [[Github coming soon]()]### CERN ResearchZenodo 2015 Evaluation of Apache Spark as an Analytics framework for CERN’s Big DataAnalytics, S Ganju, V Kuznetsov, T Wildish, M Martin Marquez, A Romero Marin, 10.5281/zenodo.3186, 2015.
+
+[[Zenodo](https://zenodo.org/record/31861?ln=en#%23.V7Spu47LNGR)] [[bib](https://zenodo.org/record/31861/export/hx#.WLx2_RIrJE4)] [[Github](https://github.com/sidgan/LHCDataAnalysis)]
 
 ## Select Projects
 
+### Open Advancement of Question Answering Consortium
 
-### What's in a Question: Using Visual Questions as a Form of Supervision (Visual Question Answering)
+Developed Question-Answering systems based on an ensemble of Deep Learning and Rule-based systems.
 
-Our research focuses on an unexplored theme in weak supervision for annotating large scale image datasets: utilizing visual questions asked about images. We base our work on the key observation that the question itself provides useful information about the image (even without the answer being available). For instance, the question 'what is the breed of the dog?' informs the computer that the animal in the scene is a dog and that there is only one dog present. 
+Mentor: [Eric Nyberg](http://www.cs.cmu.edu/~ehn/), [Matthias Grabmair](http://www.andrew.cmu.edu/user/mgrabmai/)
 
-Mentor: [Olga Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [Abhinav Gupta](http://www.cs.cmu.edu/~abhinavg/)
+### What's in the Future: Generating Videos with Motion Sensitive Adversarial Networks (Course Project, Deep Learning-10807)
 
-Arxiv (Coming Soon!)
-
-Code (Coming Soon!)
-
-### What's in the Future: Generating Videos with Motion Sensitive Adversarial Networks 
-
-This was our project for the [Deep Learning course at CMU](http://www.cs.cmu.edu/~rsalakhu/10807_2016/). My goal was to gain a better mathematical understanding of how and why generative adversarial networks work. I worked with [Xiaolong Wang](http://www.cs.cmu.edu/~xiaolonw/) and [Hongyu Zhu]() to gain a deeper sense of how we can use optical flow to generate future frames, trained and tested our models on the UCF101 dataset. We transfer the learned representations to the HMDB51 dataset for action recognition and experimented with Static Image Editing on the MS COCO dataset. We release our models as FlowGAN. 
+Used optical flow and GAN’s to generate future frames using our [FlowGAN](https://github.com/OMGitsHongyu/Frame_prediction_cGAN) architecture. Transferred the learned representations for Action Recognition and Static Image Editing.
 
 Arxiv (Coming Soon!)
 
 [Github](https://github.com/OMGitsHongyu/Frame_prediction_cGAN)
 
-### Open Advancement of Question Answering Consortium
 
-Pursuing active research on QA systems based on an ensemble of Deep Learning and Rule-based systems.
-
-Mentor: [Eric Nyberg](http://www.cs.cmu.edu/~ehn/), [Matthias Grabmair](http://www.andrew.cmu.edu/user/mgrabmai/)
+### Request for Research, OpenAI
+[Jokes Entity Recognition (JER)](https://github.com/sidgan/Is_this_a_joke): Collected 16031 joke-urls licensed under fair use of data. Trained a character-level LSTM language model on collected data and developed JER
 
 
-### [Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab project)
+
+### [Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab research project)
 Used Apache Spark to streamline different predictive prototypes by gathering information from CMS, ran predictive models and proposed datasets which will become popular over time. Evaluated quality of individual models, performed component analysis and selected best predictive model for new set of data. 
 	
 **Publication**: **Siddha Ganju**, Valentin Kuznetsov, Tony Wildish, Manuel Martin Marquez, Antonio Romero Marin (2015). Evaluation of Apache Spark as an Analytics framework for CERN's Big Data Analytics. 
@@ -63,46 +112,12 @@ Created a Python command line toolkit using scikit-learn, numpy, pandas and matp
 
 **Presented** at [Grace Hopper 2015](http://schedule.gracehopper.org/speaker/siddha-ganju/)
 
+[News coverage](http://sidgan.me/technical/hackathon/2015/10/19/ghc-texas)
+
+
 
 	
-## Conferences
-
-**Panelist**, [IBM+Apache Spark Maker Community Event](http://www.eventbrite.com/e/apache-sparktm-maker-community-event-registration-24742595770#), San Francisco, USA, 2016. [News coverage and Twitter feed](http://sidgan.me/conference/2016/06/06/apachesparkmaker)  
-
-**Speaker**, [Strata + Hadoop World, San Jose, 2016](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765), I gave a talk about my [research](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) at [CERN](http://home.cern/), the European Organization for Nuclear Research. 
-<p align="middle" >
-<a href="http://conferences.oreilly.com/strata/hadoop-big-data-ca/">
-	<img src="http://cdn.oreillystatic.com/en/assets/1/event/144/stratasj2016_speaking_125x125.gif" width="125" height="125"  border="0"  alt="Strata + Hadoop World in San Jose 2016"  />
-</a>
-</p>
-
-
-Invited to the [Open Leadership Cohort](https://www.mozillascience.org/wow-introducing-working-open-workshops-and-the-open-leaders-cohort), Working Open Workshop, Mozilla Science Lab, Berlin, Germany, 2016
-
-**Poster Presentation**, [Grace Hopper Conference, Texas, 2015](http://ghc.anitaborg.org/). [News coverage](http://sidgan.me/technical/hackathon/2015/10/19/ghc-texas)
-	
-**Talk**, Mozfest, London, 2015, by Team [OpenCosmics](http://sidgan.me/technical/hackathon/2015/08/25/CERN-Webfest). 
-	- [Git announcement by Mozilla](https://github.com/mozilla/mozfest-program/issues/260) 
-
-
-
-## Achievements
-
-[Scholar](http://ghc.anitaborg.org/scholars/2015-scholars/ganju-siddha-app267s1), **Grace Hopper Conference**, Texas, USA, 2015
-
-[Winner](https://webfest.web.cern.ch/content/winners-2015), **Best Innovative Outreach, CERN WebFest**, Geneva, Switzerland, 2015
-
-[Winner](http://sidgan.me/conference/hackathon/2014/11/25/ghc/), **Grace Hopper Conference Hackathon**, Bangalore, India, 2014
-
-[Finalist](http://sites.nyuad.nyu.edu/hackathon/index.php/previous-hackathons/the-annual-nyuad-international-hackathon-for-social-good-in-the-arab-world-2014/2014-project-teams/), **New York University International Hackathon**, Abu Dhabi, 2014
-
-[Winner](http://theiet.in/iet-scholarship-award-winners), **India Scholarship Award, Institution of Engineering and Technology (IET)**, Delhi, India, 2013, [News Coverage](http://sidgan.me/technical/2013/10/27/iet)
-	
-## Honors	
-
-**Student Women Representative**, Community Volunteers Conference, IET, Sri Lanka, 2013
-
- 
+
 ## Contact
 
 You can contact me on :
