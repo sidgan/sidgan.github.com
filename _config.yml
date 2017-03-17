@@ -75,6 +75,7 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
+  research_path : /research.md
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
