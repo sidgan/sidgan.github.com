@@ -9,8 +9,9 @@ group: navigation
 ---
 {% include JB/setup %}
 
+Click [here](http://sidgan.me/research_timeline) to view in timeline mode. 
 
-## Publications###   Peer-reviewed conference articlesWhat’s in a Question: Using Visual Questions as a Form of Supervision, **S Ganju**, [O Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [A Gupta](http://www.cs.cmu.edu/~abhinavg/), Computer Vision and Pattern Recognition, 2017.
+## Publications###   Peer-reviewed conference articlesWhat’s in a Question: Using Visual Questions as a Form of Supervision, **S Ganju**, [O Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [A Gupta](http://www.cs.cmu.edu/~abhinavg/), Computer Vision and Pattern Recognition, 2017.
 [[Arxiv coming soon!]()] [[bib](http://sidgan.me/images/GanjuCVPR17.bib)] [[Github coming soon]()]### CERN ResearchZenodo 2015 Evaluation of Apache Spark as an Analytics framework for CERN’s Big DataAnalytics, **S Ganju**, [V Kuznetsov](https://www.classe.cornell.edu/~vk/), [T Wildish](http://www.nersc.gov/about/nersc-staff/data-science-engagement-group/tony-wildish/), [M Martin Marquez](http://openlab.cern/about/people/manuel-martin-marquez), [A Romero Marin](http://openlab.cern/about/people/antonio-romero-marin),10.5281/zenodo.3186 2015.
 
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.31861.svg)](http://dx.doi.org/10.5281/zenodo.31861) [[bib](https://zenodo.org/record/31861/export/hx#.WLx2_RIrJE4)] [[Github](https://github.com/sidgan/LHCDataAnalysis)]
