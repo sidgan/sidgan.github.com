@@ -1,0 +1,110 @@
+@import "compass/css3";
+
+$gray: #dddddd;
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+.container {
+  padding: 1em;
+}
+
+.timeline {
+  position: relative;
+  overflow: auto;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: $gray;
+    left: 0;
+  }
+  
+  h2 {
+    background: $gray;
+    max-width: 6em;
+    margin: 0 auto 1em;
+    padding: 0.5em;
+    text-align: center;
+    position: relative;
+    clear: both;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0 0 0 1em;
+    z-index: 1;
+  }
+  
+  li {
+    background: $gray;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 1em solid $gray;
+      border-left: 1em solid transparent;
+      position: absolute;
+      left: -1em;
+      top: 0;
+    }
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  time {
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .timeline {
+    &:before {
+      left: 50%;
+    }
+    
+    ul {
+      padding-left: 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    li {
+      width: 42%;
+    }
+    
+    li:nth-child(even) {
+      float: right;
+      margin-top: 2em;
+    }
+    
+    li:nth-child(odd) {
+      float: left;
+      
+      &:before {
+        border-top: 1em solid $gray;
+        border-right: 1em solid transparent;
+        right: -1em;
+        left: auto;
+      }
+    }
+    
+    li:nth-of-type(2n+1) {
+      clear: both;
+    }
+  }
+}
