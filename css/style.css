@@ -39,17 +39,19 @@ h1, h2, h3 {
   border: solid black 2px;
   margin-bottom: 1em;
   position: relative;
-  text-align: center;
+    text-align: center;
 }
 .timeline li:before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 1em solid black;
-  border-left: 1em solid transparent;
-  position: absolute;
   left: -1em;
+  content: '';
+  width: 14px;
+  height: 1px;
+  position: absolute;
   top: -1.5px;
+  background-color: black;
+  right: 19.6em;
+  border-left: 1em solid transparent;
+  border-top: 0em solid #dddddd;
 }
 .timeline h3 {
   margin-top: 0;
@@ -83,23 +85,12 @@ h1, h2, h3 {
     float: left;
   }
   .timeline li:nth-child(odd):before {
-    border-top: 1em solid #000000;
-    border-right: 1em solid transparent;
+    left: auto;
+    border-top: 0em solid #dddddd;
+    border-left: 1em solid transparent;
     right: -1.5em;
-
   }
   .timeline li:nth-of-type(2n+1) {
     clear: both;
   }
-.timeline li:before {
-    content: '';
-    width: 14px;
-    height: 1px;
-    position: absolute;
-    top: -1.5px;
-    background-color: black;
-    right: 19.6em;
-    border-left: 1em solid transparent;
-    border-top: 0em solid #dddddd;
-}
 }
