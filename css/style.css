@@ -1,5 +1,5 @@
 h1, h2, h3 {
-  font-weight: 300;
+  font-weight: 320;
 }
 
 .container {
@@ -45,7 +45,6 @@ h1, h2, h3 {
   height: 0;
   border-top: 1em solid black;
   border-left: 1em solid transparent;
-
   position: absolute;
   left: -1em;
   top: 0;
@@ -82,12 +81,8 @@ h1, h2, h3 {
     float: left;
   }
   .timeline li:nth-child(odd):before {
-    border-top: 0em solid #dddddd;
+    border-top: 1em solid #000000;
     border-right: 1em solid transparent;
-
-      border-top: 1em solid black;
-  border-left: 1em solid transparent;
-
     right: -1em;
     left: auto;
   }
