@@ -15,11 +15,11 @@ h1, h2, h3 {
   position: absolute;
   height: 100%;
   width: 5px;
-  background: #dddddd;
+  background: #000000;
   left: 0;
 }
 .timeline h2 {
-  background: #dddddd;
+  background: #000000;
   max-width: 6em;
   margin: 0 auto 1em;
   padding: 0.5em;
@@ -33,8 +33,9 @@ h1, h2, h3 {
   z-index: 1;
 }
 .timeline li {
-  background: #dddddd;
+  background: #ffffff;
   padding: 1em;
+  border: solid black 2px;
   margin-bottom: 1em;
   position: relative;
 }
@@ -42,8 +43,9 @@ h1, h2, h3 {
   content: '';
   width: 0;
   height: 0;
-  border-top: 1em solid #dddddd;
+  border-top: 1em solid black;
   border-left: 1em solid transparent;
+
   position: absolute;
   left: -1em;
   top: 0;
@@ -74,14 +76,18 @@ h1, h2, h3 {
   }
   .timeline li:nth-child(even) {
     float: right;
-    margin-top: 2em;
+    margin-top: 4em;
   }
   .timeline li:nth-child(odd) {
     float: left;
   }
   .timeline li:nth-child(odd):before {
-    border-top: 1em solid #dddddd;
+    border-top: 0em solid #dddddd;
     border-right: 1em solid transparent;
+
+      border-top: 1em solid black;
+  border-left: 1em solid transparent;
+
     right: -1em;
     left: auto;
   }
