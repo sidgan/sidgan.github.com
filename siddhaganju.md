@@ -10,35 +10,37 @@ group: navigation
 
 ## [whoami](http://about.me/siddha.ganju) 
 
-Currently, I am employed as a **Data Scientist** at [**Deep Vision**](http://deepvision.io/). I graduated from [**Carnegie Mellon University**](http://www.cmu.edu/) with a **Master's in Computational Data Science**. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Artificial Intelligence, Multi-modal learning Computer Vision, and Data Science (including Statistics). I want to solve problems that connect natural languages and computer vision using deep learning. I did my bachelors from [**National Institute of Technology**](http://www.nith.ac.in/) (NIT), Hamirpur, India.
 
-
-<p align="middle" >
-<a><img src="siddha.jpg" width="125" height="125"  border="0"  alt=""/>
-</a>
-</p>
-
-
-
+<table>
+  <tr>
+    <td>  Currently, I am employed as a **Data Scientist** at <a href="http://deepvision.io/">Deep Vision</a>. I graduated from Carnegie Mellon University with a Master's in Computational Data Science. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Artificial Intelligence, Multi-modal learning Computer Vision, and Data Science (including Statistics). I want to solve problems that connect natural languages and computer vision using deep learning. I did my bachelors from National Institute of Technology (NIT), Hamirpur, India.</td>
+    <td> <a><img src="https://raw.githubusercontent.com/sidgan/sidgan.github.com/master/images/siddha.jpg?token=ADb_B5Qfi-qqrvyyzTl9fBjjPASICoPKks5Y2CGswA%3D%3D" width="140" height="200"  border="0"  alt=""/>
+</a>  </td>
+  </tr>
+</table>
 
 ## Speaker
 
-**Speaker**, [Strata + Hadoop World, San Jose, 2016](http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765), I gave a talk about my [research](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) at [CERN](http://home.cern/), the European Organization for Nuclear Research. 
 
-<p align="middle">
+<table>
+  <tr>
+    <td>
+    <b>Speaker</b>, <a href="http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765">Strata + Hadoop World, San Jose, 2016</a>. I gave a talk about my <a href="http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I">research</a> at CERN, the European Organization for Nuclear Research. 
+    
+    </td>
+    <td> <p align="middle">
 <a href="http://conferences.oreilly.com/strata/hadoop-big-data-ca/">
 	<img src="http://cdn.oreillystatic.com/en/assets/1/event/144/stratasj2016_speaking_125x125.gif" width="125" height="125"  border="0"  alt="Strata + Hadoop World in San Jose 2016"  />
 </a>
-</p>
-
+</p> </td>
+  </tr>
+</table>
 
 **Panelist**, [IBM+Apache Spark Maker Community Event](http://www.eventbrite.com/e/apache-sparktm-maker-community-event-registration-24742595770#), San Francisco, USA, 2016. [News coverage and Twitter feed](http://sidgan.me/conference/2016/06/06/apachesparkmaker)  
 
 	
 **Talk**, Mozfest, London, 2015, by Team [OpenCosmics](http://sidgan.me/technical/hackathon/2015/08/25/CERN-Webfest). 
 	- [Git announcement by Mozilla](https://github.com/mozilla/mozfest-program/issues/260) 
-
-
 
 ## Achievements
 
