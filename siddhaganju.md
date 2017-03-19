@@ -34,13 +34,23 @@ group: navigation
 </a>
 </p> </td>
   </tr>
+  </table>
+  
+  **Panelist**, [IBM+Apache Spark Maker Community Event](http://www.eventbrite.com/e/apache-sparktm-maker-community-event-registration-24742595770#), San Francisco, USA, 2016. [News coverage and Twitter feed](http://sidgan.me/conference/2016/06/06/apachesparkmaker)  
+
+  
+  <table>
+    <tr>
+    <td>
+    <b>Talk</b>, Mozfest, London, 2015, by Team <a href="http://sidgan.me/technical/hackathon/2015/08/25/CERN-Webfest">OpenCosmics</a>.<a href="https://github.com/mozilla/mozfest-program/issues/260">Git announcement by Mozilla</a>.    
+    </td>
+    <td> <p align="middle">
+<a href="http://conferences.oreilly.com/strata/hadoop-big-data-ca/">
+	<img src="https://wiki.mozilla.org/images/4/42/Mozfest2012_5.png" width="325" height="125"  border="0"  alt="Strata + Hadoop World in San Jose 2016"  />
+</a>
+</p> </td>
+  </tr>
 </table>
-
-**Panelist**, [IBM+Apache Spark Maker Community Event](http://www.eventbrite.com/e/apache-sparktm-maker-community-event-registration-24742595770#), San Francisco, USA, 2016. [News coverage and Twitter feed](http://sidgan.me/conference/2016/06/06/apachesparkmaker)  
-
-	
-**Talk**, Mozfest, London, 2015, by Team [OpenCosmics](http://sidgan.me/technical/hackathon/2015/08/25/CERN-Webfest). 
-	- [Git announcement by Mozilla](https://github.com/mozilla/mozfest-program/issues/260) 
 
 ## Achievements
 
