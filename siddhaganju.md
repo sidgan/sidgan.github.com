@@ -99,9 +99,8 @@ You can contact me on :
 
 - Email: Its great having a unique name! 
 	- You can email me on firstnamelastname[at]emailserviceprovider, gmail or yahoo. 
-	- Or, use my andrew id, sganju1 for andrew.cmu.edu OR cs.cmu.edu.
 - Twitter Handle: [SiddhaGanju](http://www.twitter.com/SiddhaGanju) 
-- IRC nick : sidgan 
+- IRC nick : sidgan
 - GPG Fingerprint: FCFC EF8E 95DE 42EC DE83 FA8C 6D18 0E5A DD42 E8B4
 - Send me a postcard!
 	
