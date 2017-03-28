@@ -14,7 +14,7 @@ group: navigation
 <table>
   <tr>
     <td>  Currently, I am employed as a Data Scientist at <a href="http://deepvision.io/">Deep Vision</a>. I graduated from Carnegie Mellon University with a Master's in Computational Data Science. My main research interests are Multimodal Deep Learning and Multimodal Question Answering. Broadly my work is at the intersection of Deep Learning, Machine Learning, Natural Language Processing, Artificial Intelligence, Multi-modal learning Computer Vision, and Data Science (including Statistics). I want to solve problems that connect natural languages and computer vision using deep learning. I did my bachelors from National Institute of Technology (NIT), Hamirpur, India.</td>
-    <td> <a><img src="https://raw.githubusercontent.com/sidgan/sidgan.github.com/master/images/siddha.jpg?token=ADb_B5Qfi-qqrvyyzTl9fBjjPASICoPKks5Y2CGswA%3D%3D" width="140" height="200"  border="0"  alt=""/>
+    <td> <a><img src="https://raw.githubusercontent.com/sidgan/sidgan.github.com/master/images/siddha.jpg?token=ADb_B9luTi_jocKzclGq7Dctnjzf2HT6ks5Y4tP-wA%3D%3D" width="140" height="200"  border="0"  alt=""/>
 </a>  </td>
   </tr>
 </table>
