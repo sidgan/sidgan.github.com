@@ -16,7 +16,7 @@ Click [here](http://sidgan.me/timeline) to view in timeline mode.
 ###   Peer-reviewed conference articles
 
 What’s in a Question: Using Visual Questions as a Form of Supervision, **S Ganju**, [O Russakovsky](http://www.cs.cmu.edu/~orussako/index.html), [A Gupta](http://www.cs.cmu.edu/~abhinavg/), Computer Vision and Pattern Recognition, 2017 (spotlight).
-[[Arxiv](https://arxiv.org/pdf/1704.03895.pdf)] [[bib](http://sidgan.me/images/GanjuCVPR17.bib)] [[Github](https://github.com/sidgan/whats_in_a_question)]
+[[Arxiv](https://arxiv.org/pdf/1704.03895.pdf)] [[bib](http://sidgan.me/images/GanjuCVPR17.bib)] [[Github](https://github.com/sidgan/whats_in_a_question)] [[Project Page](http://sidgan.me/whats_in_a_question/)]
 
 ### CERN Research
 
