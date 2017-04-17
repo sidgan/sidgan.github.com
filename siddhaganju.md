@@ -21,6 +21,9 @@ group: navigation
 
 ## Speaker
 
+**Speaker**, 
+Embedded Deep Learning: Deep Learning for Embedded Systems, O’Reilly Artificial Intelligence, San Francisco, USA, 2017.
+
 
 <table>
   <tr>
