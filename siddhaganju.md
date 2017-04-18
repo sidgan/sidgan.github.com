@@ -28,7 +28,7 @@ Embedded Deep Learning: Deep Learning for Embedded Systems, O’Reilly Artificia
 <table>
   <tr>
     <td>
-    <b>Speaker</b>, <a href="http://conferences.oreilly.com/strata/hadoop-big-data-ca/public/schedule/speaker/225765">Strata + Hadoop World, San Jose, 2016</a>. I gave a talk about my <a href="http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I">research</a> at CERN, the European Organization for Nuclear Research. 
+    <b>Speaker</b>, <a href="https://conferences.oreilly.com/strata/strata-ca-2016/public/schedule/detail/47052">Atom smashing using machine learning at CERN, Strata + Hadoop World, San Jose, 2016</a>. I gave a talk about my <a href="http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I">research</a> at CERN, the European Organization for Nuclear Research. 
     
     </td>
     <td> <p align="middle">
