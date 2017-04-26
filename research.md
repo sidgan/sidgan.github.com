@@ -31,7 +31,7 @@ Analytics, **S Ganju**, [V Kuznetsov](https://www.classe.cornell.edu/~vk/), [T W
 
 ### Open Advancement of Question Answering Consortium
 
-Developed Question-Answering systems based on an ensemble of Deep Learning and Rule-based systems.
+Developed Question-Answering systems based on an ensemble of Deep Learning and Rule-based systems. Other students followed up with [our work](https://github.com/mgrabmair/dependency-traversal-rnn) on Dependency Traversal RNN's which resulted in [#3 on the SQuAD leaderboard!](https://rajpurkar.github.io/SQuAD-explorer/). Congratulations!  
 
 Mentor: [Eric Nyberg](http://www.cs.cmu.edu/~ehn/), [Matthias Grabmair](http://www.andrew.cmu.edu/user/mgrabmai/)
 
