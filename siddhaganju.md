@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Siddha Ganju"
+title: "About"
 tabify: h2
 tagline: 
 header: Pages

@@ -9,8 +9,6 @@ group: navigation
 ---
 {% include JB/setup %}
 
-Click [here](http://sidgan.me/timeline) to view in timeline mode.
-
 ## Publications
 
 ###   Peer-reviewed conference articles
