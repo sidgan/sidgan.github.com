@@ -24,6 +24,7 @@ Analytics, **S Ganju**, [V Kuznetsov](https://www.classe.cornell.edu/~vk/), [T W
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.31861.svg)](http://dx.doi.org/10.5281/zenodo.31861) [[bib](https://zenodo.org/record/31861/export/hx#.WLx2_RIrJE4)] [[Github](https://github.com/sidgan/LHCDataAnalysis)]
 
 
+-----
 
 ## Select Projects
 
@@ -33,23 +34,29 @@ Developed Question-Answering systems based on an ensemble of Deep Learning and R
 
 Mentor: [Eric Nyberg](http://www.cs.cmu.edu/~ehn/), [Matthias Grabmair](http://www.andrew.cmu.edu/user/mgrabmai/)
 
+------ 
 ### What's in the Future: Generating Videos with Motion Sensitive Adversarial Networks (Course Project, Deep Learning-10807)
 
 Used optical flow and GAN’s to generate future frames using our [FlowGAN](https://github.com/OMGitsHongyu/Frame_prediction_cGAN) architecture. Transferred the learned representations for Action Recognition and Static Image Editing.
 
-<p>
-<img align="left" src="https://github.com/sidgan/sidgan.github.com/raw/master/images/clock_input_pred.gif" alt="FlowGAN">
+Sample generation: 
 
-<img align="right" src="https://github.com/sidgan/sidgan.github.com/raw/master/images/snowboard_input_pred.gif" alt="FlowGAN">
+<p>
+<img  src="https://github.com/sidgan/sidgan.github.com/raw/master/images/clock_input_pred.gif" alt="FlowGAN">
+
+<img src="https://github.com/sidgan/sidgan.github.com/raw/master/images/snowboard_input_pred.gif" alt="FlowGAN">
 </p>
 
-[Github](https://github.com/OMGitsHongyu/Frame_prediction_cGAN)
+
+Code and more on [Github](https://github.com/OMGitsHongyu/Frame_prediction_cGAN)
 
 
+------ 
 
 ### Request for Research, OpenAI
 [Jokes Entity Recognition (JER)](https://github.com/sidgan/Is_this_a_joke): Collected 16031 joke-urls licensed under fair use of data. Trained a character-level LSTM language model on collected data and developed JER
 
+------ 
 
 
 ### [Atom Smashing using Machine Learning at CERN](http://sidgan.me/technical/hackathon/2015/08/17/Summer-Internship-CERN-I) (CERN Openlab research project)
@@ -62,6 +69,8 @@ Used Apache Spark to streamline different predictive prototypes by gathering inf
 [O’Reilly Blog post II](https://www.oreilly.com/learning/apache-spark-for-atom-smashing-experiments) about my talk, also featured on their data newsletter.
 
 See [here](http://sidgan.me/technical/2016/04/03/Strata+Hadoop-Conference) for news coverage and Twitter feed. 
+
+------ 
 
 ### [Automated Pipeline for Machine Learning Problems](http://sidgan.me/technical/2014/12/14/pipeline-for-ml)
 
