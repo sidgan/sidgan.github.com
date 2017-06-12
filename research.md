@@ -37,9 +37,14 @@ Mentor: [Eric Nyberg](http://www.cs.cmu.edu/~ehn/), [Matthias Grabmair](http://w
 
 Used optical flow and GAN’s to generate future frames using our [FlowGAN](https://github.com/OMGitsHongyu/Frame_prediction_cGAN) architecture. Transferred the learned representations for Action Recognition and Static Image Editing.
 
-Arxiv (Coming Soon!)
+<p>
+<img align="left" src="https://github.com/sidgan/sidgan.github.com/raw/master/images/clock_input_pred.gif" alt="FlowGAN">
+
+<img align="right" src="https://github.com/sidgan/sidgan.github.com/raw/master/images/snowboard_input_pred.gif" alt="FlowGAN">
+</p>
 
 [Github](https://github.com/OMGitsHongyu/Frame_prediction_cGAN)
+
 
 
 ### Request for Research, OpenAI
