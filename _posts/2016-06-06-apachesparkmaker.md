@@ -10,6 +10,16 @@ tags: [deep learning, ml, ai, nlp, ibm, spark, CERN]
 Twitter Feed of [Apache Spark Maker - IBM](https://www.eventbrite.com/e/livestream-apache-sparktm-maker-community-event-registration-24790223225?cm_mc_uid=19190014728814614560672&cm_mc_sid_50200000=1464426726) where I was an invited panelist among John Akred, Chief Technology Officer, Silicon Valley Data Science; Todd Holloway, Director of Content Science and Algorithms, Netflix; Matthew Conley - Data Scientist, Tesla Motors; Nick Pentreath, Spark Committer and STC Engineer, IBM; and Dr. Eitel J.M. Lauría, Professor and Graduate Director at the School of CS & Math, Lead Data Scientist of the Learning Analytics, Marist College. 
 
 
+Video:
+
+[comment]: https://www.topitvideos.com/apache-spark-maker-community-event-the-livestream-playback/
+
+
+
+[![Youtube Recorded Stream of event](https://img.youtube.com/vi/ZsS-p6uGgv8/0.jpg)](https://www.youtube.com/watch?time_continue=1&v=ZsS-p6uGgv8)
+
+
+
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">IBM+Spark→ links pt. 3<br>• <a href="https://t.co/0O2167XNcz">https://t.co/0O2167XNcz</a><br>• <a href="https://twitter.com/MLnick">@MLnick</a> <a href="https://twitter.com/BigDataAnalysis">@BigDataAnalysis</a> <a href="https://twitter.com/toddmholloway">@toddmholloway</a> <a href="https://t.co/grUDVrHqdm">https://t.co/grUDVrHqdm</a> <a href="https://twitter.com/EitelLauria">@EitelLauria</a> <a href="https://twitter.com/SiddhaGanju">@SiddhaGanju</a></p>&mdash; Brian Krent (@BrianKrent) <a href="https://twitter.com/BrianKrent/status/740014631024889856">June 7, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
