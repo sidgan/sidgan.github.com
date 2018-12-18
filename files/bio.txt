@@ -1,4 +1,0 @@
-Siddha Ganju is a Solution's Architect at Nvidia where she focuses on the Simulation and Resimulation stack of the Autonomous Driving initiative. She was previously a Deep Learning Data Scientist at Deep Vision where she worked on developing and deploying deep learning models on resource constraint edge devices. 
-
-A postgraduate of Carnegie Mellon University, her research ranges from Visual Question Answering to Generative Adversarial Networks to machine learning on CERN's petabyte-scale data and has been published at top-tier conferences like CVPR and NIPS. She is a frequent speaker at Strata Data & O'Reilly AI conferences and advises the Data Lab at NASA. When not working, you might catch her hiking!
-
