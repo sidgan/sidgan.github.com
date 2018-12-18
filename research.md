@@ -9,6 +9,8 @@ group: navigation
 ---
 {% include JB/setup %}
 
+[Not updated. Please see About/CV for the latest.]
+
 ## Publications
 
 ###   Peer-reviewed conference articles
@@ -42,9 +44,9 @@ Used optical flow and GAN’s to generate future frames using our [FlowGAN](http
 Sample generation: 
 
 <p>
-<img  src="https://github.com/sidgan/sidgan.github.com/raw/master/images/clock_input_pred.gif" alt="FlowGAN">
+<img  src="https://github.com/sidgan/sidgan.github.com/raw/master/files/clock_input_pred.gif" alt="FlowGAN">
 
-<img src="https://github.com/sidgan/sidgan.github.com/raw/master/images/snowboard_input_pred.gif" alt="FlowGAN">
+<img src="https://github.com/sidgan/sidgan.github.com/raw/master/files/snowboard_input_pred.gif" alt="FlowGAN">
 </p>
 
 
