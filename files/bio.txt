@@ -1,0 +1,5 @@
+Siddha Ganju is a Architect at Nvidia where is working on the Self-Driving initiative. She was previously at Deep Vision where she worked on developing and deploying deep learning models on resource constraint edge devices. She is a Forbes 30 Under 30 2019 enlister, and also serves as a judge for multiple awards including CES. She is a frequent speaker at various AI conferences and is a NASA AI Advisor.
+
+A graduated from Carnegie Mellon University with a Master's in Computational Data Science. Her prior work ranges from Visual Question Answering to Generative Adversarial Networks to gathering insights from CERN's petabyte scale data and has been published at top tier conferences like CVPR and NIPS.
+
+When not working, you might catch her hiking!
